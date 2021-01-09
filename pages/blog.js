@@ -1,0 +1,45 @@
+import Head from 'next/head'
+import Link from 'next/link'
+import Card from '../components/Card'
+import { getPosts } from '../lib/posts'
+
+export default function Blog({ years, postsByYear }) {
+  return (
+    <>
+      <Head>
+        <title>Blog - Max Petretta</title>
+        <meta name="description" content="Blog of Max Petretta" />
+      </Head>
+      <section>
+        <h1>Blog</h1>
+        <p>This is my blog, where I write about development, technology, and anything else that catches my fancy</p>
+      </section>
+      {years.map(year => {
+        return (
+          <section key={year}>
+            <h2>{year}</h2>
+            {postsByYear[year].map(post => {
+              return <Card key={post.slug} post={post} />
+            })}
+          </section>
+        )
+      })}
+    </>
+  )
+}
+
+export async function getStaticProps() {
+  const posts = getPosts()
+  let postsByYear = {}
+
+  posts.map(post => {
+    const year = post.date.split("-")[0]
+    postsByYear[year] = [...(postsByYear[year] ?? []), post]
+  })
+
+  const years = Object.keys(postsByYear).sort().reverse()
+
+  return {
+    props: { years, postsByYear }
+  }
+}
