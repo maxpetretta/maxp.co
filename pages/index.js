@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import Card from '../components/Card'
 import { getPosts } from '../lib/posts'
 
@@ -7,8 +6,8 @@ export default function Home({ posts }) {
   return (
     <>
       <Head>
-        <title>Max Petretta's Website</title>
-        <meta name="description" content="Personal website of Max Petretta" />
+        <title>Max Petretta - Software Development Engineer</title>
+        <meta name="description" content="A blog by Max Petretta, software development engineer" />
       </Head>
       <section>
         <h1>Hi, I'm Max Petretta 👋</h1>
