@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import Card from '../components/Card'
 import { getPosts } from '../lib/posts'
 
@@ -8,7 +7,7 @@ export default function Blog({ years, postsByYear }) {
     <>
       <Head>
         <title>Blog - Max Petretta</title>
-        <meta name="description" content="Blog of Max Petretta" />
+        <meta name="description" content="A blog by Max Petretta, software development engineer" />
       </Head>
       <section>
         <h1>Blog</h1>
