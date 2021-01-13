@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Card from '../components/Card'
 
 export default function Post({ meta, children }) {
   return (
@@ -10,6 +11,21 @@ export default function Post({ meta, children }) {
       <article>
         {children}
       </article>
+      {meta.related != null &&
+        <section>
+          <h2>Related Post</h2>
+          <Card key={meta.related} post={getPostBySlug(meta.related)} />
+        </section>
+      }
     </>
   )
+}
+
+export function getPostBySlug(slug) {
+  const post = require(`../pages/blog/${slug}.mdx`)
+
+  return {
+    slug: slug,
+    ...post.meta
+  }
 }

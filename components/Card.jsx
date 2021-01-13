@@ -10,9 +10,9 @@ export default function Card({ post }) {
         <div>
           <h2>{post.title}</h2>
           <time>{post.date}</time>
-          {/* {post.tags.map(() => {
-            // Create tags here
-          })} */}
+          {post.tags.map(tag => {
+            return <div key={tag}>{tag}</div>
+          })}
           <p>{post.description}</p>
         </div>
       </a>
