@@ -8,14 +8,14 @@ const components = {
 
 export default function Layout({ children }) {
   return (
-    <>
+    <div className="max-w-4xl mx-auto w-full">
       <Header />
       <MDXProvider components={components}>
-        <main>
+        <main className="max-w-3xl mx-auto">
           {children}
         </main>
       </MDXProvider>
       <Footer />
-    </>
+    </div>
   )
 }

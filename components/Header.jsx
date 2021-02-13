@@ -2,17 +2,19 @@ import Link from 'next/link'
 
 export default function Header() {
   return (
-    <header>
-      <h1>Max Petretta</h1>
+    <header className="flex justify-between items-center my-6 text-xl font-bold">
+      <Link href="/">
+        <a className="rounded-xl p-3 mx-2 hover:bg-gray-300">Max Petretta</a>
+      </Link>
       <nav>
-        <Link href="/blog">
-          <a>Blog</a>
-        </Link>
         <Link href="/about">
-          <a>About</a>
+          <a className="rounded-xl p-3 mx-2 hover:bg-gray-300">About</a>
         </Link>
-        <Link href="/">
-          <a>Home</a>
+        <Link href="/blog">
+          <a className="rounded-xl p-3 mx-2 hover:bg-gray-300">Blog</a>
+        </Link>
+        <Link href="/contact">
+          <a className="rounded-xl p-3 mx-2 hover:bg-gray-300">Contact</a>
         </Link>
       </nav>
       {/* <button>
