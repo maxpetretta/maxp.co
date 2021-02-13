@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Public Sans;
+    font-weight: 100 900;
+    src: url(/fonts/public-sans.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: Inter;
+    font-weight: 100 900;
+    src: url(/fonts/inter.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: Fira Sans;
+    font-weight: 400;
+    src: url(/fonts/fira-sans.woff) format("woff");
+  }
+  html {
+    @apply bg-white text-black;
+  }
+}
