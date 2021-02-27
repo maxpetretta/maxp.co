@@ -18,9 +18,11 @@ export default function Home({ posts }) {
       </section>
       <section>
         <h2 className="text-3xl font-bold my-6">Recent Blog Posts</h2>
-        {posts.slice(0, 3).map(post => {
-          return <Card key={post.slug} post={post} />
-        })}
+        <div className="flex flex-wrap justify-center">
+          {posts.slice(0, 3).map(post => {
+            return <Card key={post.slug} post={post} />
+          })}
+        </div>
       </section>
     </>
   )
