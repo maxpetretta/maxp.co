@@ -4,17 +4,17 @@ export default function Header() {
   return (
     <header className="flex justify-between items-center py-6 text-xl font-bold">
       <Link href="/">
-        <a className="rounded-xl p-3 mx-2 transition duration-300 hover:bg-gray-300 hover:text-black">Max Petretta</a>
+        <a className="btn">Max Petretta</a>
       </Link>
       <nav>
         <Link href="/about">
-          <a className="rounded-xl p-3 mx-2 transition duration-300 hover:bg-gray-300 hover:text-black">About</a>
+          <a className="btn">About</a>
         </Link>
         <Link href="/blog">
-          <a className="rounded-xl p-3 mx-2 transition duration-300 hover:bg-gray-300 hover:text-black">Blog</a>
+          <a className="btn">Blog</a>
         </Link>
         <Link href="/contact">
-          <a className="rounded-xl p-3 mx-2 transition duration-300 hover:bg-gray-300 hover:text-black">Contact</a>
+          <a className="btn">Contact</a>
         </Link>
       </nav>
       {/* <button>
