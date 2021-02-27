@@ -8,7 +8,7 @@
     font-weight: 100 900;
     src: url(/fonts/public-sans.ttf) format("truetype");
   }
-  @font-face {
+  /* @font-face {
     font-family: Inter;
     font-weight: 100 900;
     src: url(/fonts/inter.woff2) format("woff2");
@@ -17,8 +17,17 @@
     font-family: Fira Sans;
     font-weight: 400;
     src: url(/fonts/fira-sans.woff) format("woff");
-  }
-  html {
+  } */
+  /* html {
     @apply bg-white text-black;
+  } */
+  a {
+    @apply p-0.5 font-bold rounded transition duration-300 hover:text-white hover:bg-blue-500 hover:no-underline;
   }
 }
+
+/* @layer components {
+  .link {
+    @apply p-0.5 font-bold rounded transition duration-300 hover:text-white hover:bg-blue-500 hover:no-underline;
+  }
+} */

@@ -4,12 +4,17 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Public Sans', 'Fira Sans', 'Inter', 'sans-serif']
+        sans: ['Public Sans', 'sans-serif']
+        // sans: ['Public Sans', 'Fira Sans', 'Inter', 'sans-serif']
       },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      borderRadius: ['hover'],
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography')
+  ],
 }
