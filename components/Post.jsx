@@ -8,7 +8,7 @@ export default function Post({ meta, children }) {
         <title>{meta.title} - Max Petretta</title>
         <meta name="description" content={meta.description} />
       </Head>
-      <article className="prose prose-lg">
+      <article className="prose prose-lg dark:prose-dark">
         {children}
       </article>
       {meta.related != null &&

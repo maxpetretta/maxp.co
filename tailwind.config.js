@@ -1,6 +1,6 @@
 module.exports = {
   purge: ['./pages/**/*.js', './components/**/*.jsx'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -20,24 +20,99 @@ module.exports = {
         // sans: ['Public Sans', 'Fira Sans', 'Inter', 'sans-serif']
       },
       animation: {
-        'spin-slow': 'spin 5s linear infinite',
+        'spin-slow': 'spin 4s linear infinite',
       },
       typography: (theme) => ({
         DEFAULT: {
           css: {
             a: {
-              textDecoration: null,
               fontWeight: 700,
+              textDecoration: null,
+              transition: 'all 300ms ease-in-out',
               '&:hover': {
                 color: theme('colors.white'),
               },
             },
+            strong: {
+              fontWeight: 700,
+              transition: 'color 300ms ease-in-out',
+            },
+            hr: {
+              borderColor: theme('colors.gray.300'),
+              transition: 'border-color 300ms ease-in-out',
+            },
+            blockquote: {
+              borderLeftColor: theme('colors.gray.300'),
+              transition: 'color 300ms ease-in-out',
+              transition: 'border-left-color 300ms ease-in-out',
+            },
+            h1: {
+              transition: 'color 300ms ease-in-out',
+            },
+            h2: {
+              transition: 'color 300ms ease-in-out',
+            },
+            h3: {
+              transition: 'color 300ms ease-in-out',
+            },
+            h4: {
+              transition: 'color 300ms ease-in-out',
+            },
+            p: {
+              transition: 'color 300ms ease-in-out',
+            },
           },
+        },
+        dark: {
+          css: [
+            {
+              // color: theme('colors.gray.300'),
+              a: {
+                color: theme('colors.white'),
+                transition: 'background-color 300ms ease-in-out',
+              },
+              strong: {
+                color: theme('colors.white'),
+                transition: 'color 300ms ease-in-out',
+              },
+              hr: {
+                borderColor: theme('colors.gray.600'),
+                transition: 'border-color 300ms ease-in-out',
+              },
+              blockquote: {
+                color: theme('colors.gray.300'),
+                borderLeftColor: theme('colors.gray.600'),
+                transition: 'color 300ms ease-in-out',
+                transition: 'border-left-color 300ms ease-in-out',
+              },
+              h1: {
+                color: theme('colors.gray.300'),
+                transition: 'color 300ms ease-in-out',
+              },
+              h2: {
+                color: theme('colors.gray.300'),
+                transition: 'color 300ms ease-in-out',
+              },
+              h3: {
+                color: theme('colors.gray.300'),
+                transition: 'color 300ms ease-in-out',
+              },
+              h4: {
+                color: theme('colors.gray.300'),
+                transition: 'color 300ms ease-in-out',
+              },
+              p: {
+                color: theme('colors.gray.300'),
+                transition: 'color 300ms ease-in-out',
+              },
+            },
+          ],
         },
       }),
     },
   },
   variants: {
+    typography: ['dark'],
     extend: {
       borderRadius: ['hover'],
     },
