@@ -9,7 +9,11 @@ export default function About() {
       </Head>
       <section>
         <h1>About Me</h1>
-        <img src="/max.jpg" alt="A picture of the author, Max Petretta" />
+        <div className="flex justify-center items-center my-16">
+          <div className="absolute w-96 h-96 z-0 rounded-full shadow-2xl"/>
+          <div className="absolute animate-spin-slow w-96 h-96 z-0 rounded-full bg-gradient-to-r from-primary-dark to-primary-light"/>
+          <img className="relative max-h-80 z-10 rounded-full" src="/max.jpeg" alt="A picture of the author, Max Petretta"/>
+        </div>
         <p>Hi!  My name is Max Petretta, I live in Milwaukee, WI. I work as a Software Engineer at GE Healthcare.  My focus is in the cloud infrastructure space, working to modernize applications for the cloud using Infrastructure-as-Code.</p>
         <p>I am originally from Michigan, and graduated with a B.S. in Computer Science from the University of Michigan.  While working towards my degree, I also studied abroad at University College London.</p>
         <p>This website is relatively new, but I hope to use it to share my thoughts on some of my favorite topics.  Including but not limited to...</p>
