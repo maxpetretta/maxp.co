@@ -8,8 +8,8 @@ const components = {
 
 export default function Layout({ children }) {
   return (
-    <div className="flex min-h-screen bg-gradient-to-r from-primary-dark to-primary-light p-8">
-      <div className="flex-1 bg-gray-100 rounded-xl">
+    <div className="brand-gradient flex min-h-screen p-8">
+      <div className="transition duration-300 flex-1 rounded-xl text-gray-900 bg-gray-100 dark:text-gray-300 dark:bg-gray-900">
         <div className="max-w-5xl mx-auto w-full">
           <Header />
           <MDXProvider components={components}>
