@@ -22,10 +22,10 @@
     @apply bg-white text-black;
   } */
   a {
-    @apply transition duration-300 font-bold rounded no-underline p-0.5 hover:text-gray-100 hover:bg-primary dark:text-white dark:hover:bg-primary-light;
+    @apply transition duration-300 font-bold rounded no-underline p-0.5 text-gray-100 bg-primary md:text-gray-900 md:bg-gray-100 hover:text-gray-100 hover:bg-primary dark:text-white dark:bg-primary-light md:dark:text-white md:dark:bg-gray-900 md:dark:hover:text-white md:dark:hover:bg-primary-light;
   }
   h1 {
-    @apply text-5xl font-extrabold my-4;
+    @apply text-4xl md:text-5xl font-extrabold my-4;
   }
   h2 {
     @apply text-3xl font-bold my-4;
@@ -46,7 +46,7 @@
 
 @layer components {
   .btn {
-    @apply transition duration-300 mx-2 p-3 text-xl font-bold rounded-xl hover:text-black hover:bg-gray-300 dark:hover:text-black dark:hover:bg-gray-300;
+    @apply transition duration-300 mx-2 p-3 text-xl font-bold rounded-xl text-gray-900 bg-gray-100 hover:text-gray-900 hover:bg-gray-300 dark:text-gray-100 dark:bg-gray-900 dark:hover:text-gray-900 dark:hover:bg-gray-300;
   }
   .form {
     @apply transition duration-300 w-full my-4 p-3 rounded-xl shadow-inner outline-none border-2 focus:border-accent dark:text-gray-300 dark:bg-gray-800 dark:border-gray-600 dark:focus:border-accent;
