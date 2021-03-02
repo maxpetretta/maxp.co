@@ -11,10 +11,10 @@ export default function About() {
       <section>
         <h1>About Me</h1>
         <div className="flex justify-center items-center my-16">
-          <div className="absolute w-96 h-96 z-0 rounded-full shadow-2xl"/>
-          <div className="brand-gradient absolute animate-spin-slow w-96 h-96 z-0 rounded-full"/>
+          <div className="absolute w-72 h-72 md:w-96 md:h-96 z-0 rounded-full shadow-2xl"/>
+          <div className="brand-gradient absolute animate-spin-slow w-72 h-72 md:w-96 md:h-96 z-0 rounded-full"/>
           {/* <Image className="relative z-10 rounded-full" src="/max.jpeg" alt="A picture of the author, Max Petretta" width={320} height={320}/> */}
-          <img className="relative max-h-80 z-10 rounded-full" src="/max.jpeg" alt="A picture of the author, Max Petretta"/>
+          <img className="relative max-h-64 md:max-h-80 z-10 rounded-full" src="/max.jpeg" alt="A picture of the author, Max Petretta"/>
         </div>
         <p>Hi!  My name is Max Petretta, I live in Milwaukee, WI. I work as a Software Engineer at GE Healthcare.  My focus is in the cloud infrastructure space, working to modernize applications for the cloud using Infrastructure-as-Code.</p>
         <p>I am originally from Michigan, and graduated with a B.S. in Computer Science from the University of Michigan.  While working towards my degree, I also studied abroad at University College London.</p>

@@ -25,14 +25,7 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            a: {
-              fontWeight: 700,
-              textDecoration: null,
-              transition: 'all 300ms ease-in-out',
-              '&:hover': {
-                color: theme('colors.white'),
-              },
-            },
+           a: null,
             strong: {
               fontWeight: 700,
               transition: 'color 300ms ease-in-out',
@@ -46,7 +39,19 @@ module.exports = {
               transition: 'color 300ms ease-in-out',
               transition: 'border-left-color 300ms ease-in-out',
             },
+            li: {
+              transition: 'color 300ms ease-in-out',
+            },
+            'ol > li::before': {
+              color: theme('colors.gray.900'),
+              transition: 'color 300ms ease-in-out',
+            },
+            'ul > li::before': {
+              backgroundColor: theme('colors.gray.900'),
+              transition: 'background-color 300ms ease-in-out',
+            },
             h1: {
+              fontSize: null,
               transition: 'color 300ms ease-in-out',
             },
             h2: {
@@ -63,50 +68,61 @@ module.exports = {
             },
           },
         },
+        lg: {
+          css: {
+            h1: null,
+          },
+        },
         dark: {
-          css: [
-            {
-              // color: theme('colors.gray.300'),
-              a: {
-                color: theme('colors.white'),
-                transition: 'background-color 300ms ease-in-out',
-              },
-              strong: {
-                color: theme('colors.white'),
-                transition: 'color 300ms ease-in-out',
-              },
-              hr: {
-                borderColor: theme('colors.gray.600'),
-                transition: 'border-color 300ms ease-in-out',
-              },
-              blockquote: {
-                color: theme('colors.gray.300'),
-                borderLeftColor: theme('colors.gray.600'),
-                transition: 'color 300ms ease-in-out',
-                transition: 'border-left-color 300ms ease-in-out',
-              },
-              h1: {
-                color: theme('colors.gray.300'),
-                transition: 'color 300ms ease-in-out',
-              },
-              h2: {
-                color: theme('colors.gray.300'),
-                transition: 'color 300ms ease-in-out',
-              },
-              h3: {
-                color: theme('colors.gray.300'),
-                transition: 'color 300ms ease-in-out',
-              },
-              h4: {
-                color: theme('colors.gray.300'),
-                transition: 'color 300ms ease-in-out',
-              },
-              p: {
-                color: theme('colors.gray.300'),
-                transition: 'color 300ms ease-in-out',
-              },
+          css: {
+            a: null,
+            strong: {
+              color: theme('colors.white'),
+              transition: 'color 300ms ease-in-out',
             },
-          ],
+            hr: {
+              borderColor: theme('colors.gray.600'),
+              transition: 'border-color 300ms ease-in-out',
+            },
+            blockquote: {
+              color: theme('colors.gray.300'),
+              borderLeftColor: theme('colors.gray.600'),
+              transition: 'color 300ms ease-in-out',
+              transition: 'border-left-color 300ms ease-in-out',
+            },
+            li: {
+              color: theme('colors.gray.300'),
+              transition: 'color 300ms ease-in-out',
+            },
+            'ol > li::before': {
+              color: theme('colors.gray.300'),
+              transition: 'color 300ms ease-in-out',
+            },
+            'ul > li::before': {
+              backgroundColor: theme('colors.gray.300'),
+              transition: 'background-color 300ms ease-in-out',
+            },
+            h1: {
+              color: theme('colors.gray.300'),
+              transition: 'color 300ms ease-in-out',
+            },
+            h2: {
+              color: theme('colors.gray.300'),
+              transition: 'color 300ms ease-in-out',
+            },
+            h3: {
+              color: theme('colors.gray.300'),
+              transition: 'color 300ms ease-in-out',
+            },
+            h4: {
+              color: theme('colors.gray.300'),
+              transition: 'color 300ms ease-in-out',
+            },
+            p: {
+              color: theme('colors.gray.300'),
+              transition: 'color 300ms ease-in-out',
+            },
+          },
         },
       }),
     },
@@ -115,6 +131,7 @@ module.exports = {
     typography: ['dark'],
     extend: {
       borderRadius: ['hover'],
+      translate: ['checked'],
     },
   },
   plugins: [
