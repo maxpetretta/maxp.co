@@ -6,7 +6,7 @@ export default function About() {
     <>
       <Head>
         <title>About - Max Petretta</title>
-        <meta name="description" content="A blog by Max Petretta, software development engineer" />
+        <meta name="description" content="A blog by Max Petretta, software engineer" />
       </Head>
       <section>
         <h1>About Me</h1>
@@ -19,7 +19,7 @@ export default function About() {
         <p>Hi!  My name is Max Petretta, I live in Milwaukee, WI. I work as a Software Engineer at GE Healthcare.  My focus is in the cloud infrastructure space, working to modernize applications for the cloud using Infrastructure-as-Code.</p>
         <p>I am originally from Michigan, and graduated with a B.S. in Computer Science from the University of Michigan.  While working towards my degree, I also studied abroad at University College London.</p>
         <p>This website is relatively new, but I hope to use it to share my thoughts on some of my favorite topics.  Including but not limited to...</p>
-        <ul className="list-inside list-disc">
+        <ul className="list-disc list-inside">
           <li>Technology</li>
           <li>Productivity</li>
           <li>Software Development</li>
@@ -34,7 +34,7 @@ export default function About() {
       <section>
         <h2>Inspiration</h2>
         <p>I'd like to give credit to a few people who inspired the design of this site:</p>
-        <ul className="list-inside list-disc">
+        <ul className="list-disc list-inside">
           <li><a href="https://leerob.io/">Lee Robinson</a>, who wrote extensively about <a href="https://leerob.io/blog/mdx">the tech stack</a> that I ultimately decided on</li>
           <li><a href="https://www.taniarascia.com/">Tania Rascia</a>, and her excellent <a href="https://www.taniarascia.com/guides">web-focused technology guides</a></li>
           <li><a href="https://paulstamatiou.com/">Paul Stamatiou</a>, and his beautifully designed personal site</li>

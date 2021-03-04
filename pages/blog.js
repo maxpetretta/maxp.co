@@ -7,7 +7,7 @@ export default function Blog({ years, postsByYear }) {
     <>
       <Head>
         <title>Blog - Max Petretta</title>
-        <meta name="description" content="A blog by Max Petretta, software development engineer" />
+        <meta name="description" content="A blog by Max Petretta, software engineer" />
       </Head>
       <section>
         <h1>Posts</h1>
