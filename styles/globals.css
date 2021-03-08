@@ -19,7 +19,7 @@
     src: url(/fonts/fira-sans.woff) format("woff");
   } */
   /* html {
-    @apply bg-white text-black;
+    @apply transition duration-300;
   } */
   a {
     @apply transition duration-300 p-0.5 font-bold no-underline rounded
@@ -39,10 +39,13 @@
     @apply my-2 text-base md:text-lg text-gray-600 dark:text-gray-400;
   }
   p {
-    @apply my-6;
+    @apply my-6 whitespace-pre-wrap;
   }
   hr {
-    @apply transition duration-300 block mb-3 border-2 border-gray-300 dark:border-gray-600
+    @apply transition duration-300 block mb-3 border-2 border-gray-300 dark:border-gray-600;
+  }
+  time {
+    @apply text-base font-normal italic text-gray-600 dark:text-gray-400;
   }
 }
 

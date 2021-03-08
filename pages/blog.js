@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Card from '../components/Card'
 import { getPosts } from '../lib/posts'
 
-export default function Blog({ years, postsByYear }) {
+export default function Blog({ postCount, postsByYear, years }) {
   return (
     <>
       <Head>
@@ -10,8 +10,8 @@ export default function Blog({ years, postsByYear }) {
         <meta name="description" content="A blog by Max Petretta, software engineer" />
       </Head>
       <section>
-        <h1>Posts</h1>
-        <p>This is my blog, where I write about development, technology, and anything else that catches my fancy</p>
+        <h1>Blog</h1>
+        <p>A healthy mix of articles, reviews, and random thoughts.  <strong>{postCount}</strong> posts published since 2020.</p>
       </section>
       {years.map(year => {
         return (
@@ -32,6 +32,7 @@ export default function Blog({ years, postsByYear }) {
 
 export async function getStaticProps() {
   const posts = getPosts()
+  const postCount = posts.length
   let postsByYear = {}
 
   posts.map(post => {
@@ -42,6 +43,6 @@ export async function getStaticProps() {
   const years = Object.keys(postsByYear).sort().reverse()
 
   return {
-    props: { years, postsByYear }
+    props: { postCount, postsByYear, years }
   }
 }

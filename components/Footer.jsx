@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col items-center pt-4">
+    <footer className="pt-4">
       <address className="flex justify-center">
         <a className="btn hover:text-gray-100 hover:bg-black 
         dark:hover:text-black dark:hover:bg-gray-100" href="https://github.com/maxpetretta">
@@ -30,7 +30,8 @@ export default function Footer() {
           </svg>
         </a>
         <Link href="/contact">
-          <a className="btn hover:text-gray-100 hover:bg-accent dark:hover:text-white dark:hover:bg-accent">
+          <a className="btn hover:text-gray-100 hover:bg-accent 
+          dark:hover:text-white dark:hover:bg-accent">
             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-mail" width="40" height="40" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <rect x="3" y="5" width="18" height="14" rx="2" />
@@ -39,7 +40,7 @@ export default function Footer() {
           </a>
         </Link>
       </address>
-      <p className="text-gray-400 text-sm mt-2">&copy; 2020 - {new Date().getFullYear()} Max Petretta</p>
+      <p className="my-3 text-sm text-center text-gray-400">&copy; 2020 - {new Date().getFullYear()} Max Petretta</p>
     </footer>
   )
 }

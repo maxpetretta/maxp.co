@@ -12,10 +12,12 @@ export default function Post({ meta, children }) {
         {children}
       </article>
       {meta.related != null &&
-        <section className="flex flex-wrap">
-          <hr className="w-full mt-10"/>
+        <section>
+          <hr className="mt-10"/>
           <h2>Related Post</h2>
-          <Card key={meta.related} post={getPostBySlug(meta.related)} />
+          <div className="flex flex-wrap justify-center">
+            <Card key={meta.related} post={getPostBySlug(meta.related)} />
+          </div>
         </section>
       }
     </>
