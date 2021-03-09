@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Layout from '../components/Layout'
+import { ThemeProvider } from 'next-themes'
 import '../styles/globals.css'
 
 export default function App({ Component, pageProps }) {
@@ -14,9 +15,11 @@ export default function App({ Component, pageProps }) {
         <meta name="msapplication-TileColor" content="#c73156"/>
         <meta name="theme-color" content="#4361a2"/>
       </Head>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <ThemeProvider attribute="class" defaultTheme="light">
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </ThemeProvider>
     </>
   )
 }

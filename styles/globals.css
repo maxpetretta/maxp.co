@@ -8,19 +8,11 @@
     font-weight: 100 900;
     src: url(/fonts/public-sans.ttf) format("truetype");
   }
-  /* @font-face {
-    font-family: Inter;
-    font-weight: 100 900;
-    src: url(/fonts/inter.woff2) format("woff2");
-  }
   @font-face {
-    font-family: Fira Sans;
-    font-weight: 400;
-    src: url(/fonts/fira-sans.woff) format("woff");
-  } */
-  /* html {
-    @apply transition duration-300;
-  } */
+    font-family: Fira Code;
+    font-weight: 100 900;
+    src: url(/fonts/fira-code.ttf) format("truetype");
+  }
   a {
     @apply transition duration-300 p-0.5 font-bold no-underline rounded
     text-gray-100 bg-primary md:text-gray-900 md:bg-gray-300 hover:text-gray-100 hover:bg-primary 

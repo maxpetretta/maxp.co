@@ -1,6 +1,9 @@
 import Link from 'next/link'
+import { useTheme } from 'next-themes'
 
 export default function Header() {
+  const { theme, setTheme } = useTheme()
+  
   return (
     <header className="flex justify-between sticky top-0 transition duration-300 z-20 py-4 
     bg-gray-100 dark:bg-gray-900">
@@ -23,8 +26,8 @@ export default function Header() {
         </Link>
         <label className="inline-flex align-middle w-14 h-8 ml-4 rounded-full cursor-pointer bg-gray-400">
           <input className="transform transition duration-300 w-6 h-6 m-1 rounded-full cursor-pointer appearance-none
-          bg-white dark:bg-gray-900 checked:translate-x-full" type="checkbox" defaultChecked onClick={() => {
-            document.documentElement.classList.toggle('dark')
+          bg-white dark:bg-gray-900 checked:translate-x-full" id="toggleTheme" type="checkbox" defaultChecked onClick={() => {
+            setTheme(theme === 'dark' ? 'light' : 'dark')
           }}/>
         </label>
       </nav>

@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['./pages/**/*.js', './components/**/*.jsx'],
+  purge: ['./pages/**/*.js', './pages/**/*.mdx', './components/**/*.jsx'],
   darkMode: 'class',
   theme: {
     extend: {
@@ -16,8 +16,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['Public Sans', 'sans-serif']
-        // sans: ['Public Sans', 'Fira Sans', 'Inter', 'sans-serif']
+        sans: ['Public Sans', '-apple-system', 'sans-serif'],
+        mono: ['Fira Code', 'mono'],
       },
       animation: {
         'spin-slow': 'spin 4s linear infinite',
