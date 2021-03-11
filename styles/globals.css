@@ -13,6 +13,10 @@
     font-weight: 100 900;
     src: url(/fonts/fira-code.ttf) format("truetype");
   }
+  html {
+    @apply bg-gray-900;
+    scroll-behavior: smooth;
+  }
   a {
     @apply transition duration-300 p-0.5 font-bold no-underline rounded
     text-gray-100 bg-primary md:text-gray-900 md:bg-gray-300 hover:text-gray-100 hover:bg-primary 
@@ -53,6 +57,6 @@
   }
   .brand-gradient {
     @apply bg-gradient-to-r from-primary-dark to-primary 
-    dark:from-primary dark:to-primary-light
+    dark:from-primary dark:to-primary-light;
   }
 }
