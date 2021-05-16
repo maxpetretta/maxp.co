@@ -10,7 +10,7 @@ export default function Header() {
       <Link href="/">
         <a className="flex items-center bg-transparent hover:bg-transparent 
         dark:bg-transparent dark:hover:bg-transparent">
-          <img className="w-12 h-12" src="/android-chrome-192x192.png"/>
+          <img className="w-12 h-12" src="/android-chrome-192x192.png" alt="Max's personal logo"/>
           <span className="btn hidden md:inline">Max Petretta</span>
         </a>
       </Link>
@@ -24,7 +24,7 @@ export default function Header() {
         <Link href="/contact">
           <a className="btn">Contact</a>
         </Link>
-        <label className="inline-flex align-middle w-14 h-8 ml-4 rounded-full cursor-pointer bg-gray-400">
+        <label className="inline-flex align-middle w-14 h-8 ml-4 rounded-full cursor-pointer bg-gray-400" alt="Toggle dark mode">
           <input className="transform transition duration-300 w-6 h-6 m-1 rounded-full cursor-pointer appearance-none
           bg-white dark:bg-gray-900 checked:translate-x-full" id="toggleTheme" type="checkbox" defaultChecked onClick={() => {
             setTheme(theme === 'dark' ? 'light' : 'dark')
