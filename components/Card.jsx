@@ -11,9 +11,7 @@ export default function Card({ post }) {
           {new Date(post.date).toLocaleDateString("en-US", {month: 'short', day: 'numeric'})}
         </time>
         <div className="absolute right-3">
-          {post.tags.map(tag => {
-            return <span className="text-sm rounded-full ml-3 p-1.5 text-gray-100 bg-accent" key={tag}>{tag}</span>
-          })}
+          <span className="text-sm rounded-full ml-3 p-1.5 text-gray-100 bg-accent" key={post.tag}>{post.tag}</span>
         </div>
         <img className="max-h-72 m-auto mt-8 rounded-xl" src={post.image} alt={post.alt} />
         <div className="z-10">

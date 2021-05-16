@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import Card from '../components/Card'
+// import Card from '../components/Card'
+import Entry from '../components/Entry'
 import { getPosts } from '../lib/posts'
 
 export default function Blog({ postCount, postsByYear, years }) {
@@ -18,11 +19,9 @@ export default function Blog({ postCount, postsByYear, years }) {
           <section key={year}>
             <h2 className="mb-1">{year}</h2>
             <hr/>
-            <div className="flex flex-wrap justify-center">
               {postsByYear[year].map(post => {
-                return <Card key={post.slug} post={post} />
+                return <Entry key={post.slug} post={post} />
               })}
-            </div>
           </section>
         )
       })}
