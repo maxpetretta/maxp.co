@@ -10,7 +10,7 @@ export default function Layout({ children }) {
   return (
     <>
     <div className="brand-gradient fixed top-0 w-full h-full -z-10"/>
-    <div className="p-3 md:p-7">
+    <div className="p-2 md:p-6">
       <div className="transition duration-300 w-full p-2 rounded-xl 
       text-gray-900 bg-gray-100 dark:text-gray-300 dark:bg-gray-900">
         <div className="max-w-5xl mx-auto">
