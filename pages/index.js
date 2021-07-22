@@ -30,18 +30,18 @@ export default function Home({ posts }) {
       <section>
         <h2 className="mt-10">Latest Posts</h2>
         <hr/>
-        {sortPostsByDate(posts).map(post => {
-          return (
-            <Entry key={post.slug} post={post} />
-          )
-        })}
+        <ul className="list">
+          {sortPostsByDate(posts).map(post => {
+            return <Entry key={post.slug} post={post} />
+          })}
+        </ul>
       </section>
     </>
   )
 }
 
 export async function getStaticProps() {
-const posts = getPosts()
+  const posts = getPosts()
   return {
     props: { posts }
   }

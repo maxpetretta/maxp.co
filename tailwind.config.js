@@ -135,6 +135,7 @@ module.exports = {
     typography: ['dark'],
     extend: {
       borderRadius: ['hover'],
+      borderWidth: ['first', 'last'],
       translate: ['checked'],
     },
   },
