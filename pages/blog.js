@@ -19,9 +19,11 @@ export default function Blog({ postCount, postsByYear, years }) {
           <section key={year}>
             <h2 className="mb-1">{year}</h2>
             <hr/>
+            <ul className="list">
               {postsByYear[year].map(post => {
                 return <Entry key={post.slug} post={post} />
               })}
+            </ul>
           </section>
         )
       })}
