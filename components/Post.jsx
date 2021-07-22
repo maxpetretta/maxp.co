@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Card from '../components/Card'
+import Title from '../components/Title'
 
 export default function Post({ meta, children }) {
   return (
@@ -8,18 +9,21 @@ export default function Post({ meta, children }) {
         <title>{meta.title} - Max Petretta</title>
         <meta name="description" content={meta.description} />
       </Head>
-      <article className="prose prose-lg dark:prose-dark">
-        {children}
-      </article>
-      {meta.related != null &&
-        <section>
-          <hr className="mt-10"/>
-          <h2>Related Post</h2>
-          <div className="flex flex-wrap justify-center">
-            <Card key={meta.related} post={getPostBySlug(meta.related)} />
-          </div>
+      <article>
+        <Title meta={meta} />
+        <section className="prose prose-lg dark:prose-dark">
+          {children}
         </section>
-      }
+        {meta.related != null &&
+          <section>
+            <hr className="mt-10"/>
+            <h2>Related Post</h2>
+            <div className="flex flex-wrap justify-center">
+              <Card key={meta.related} post={getPostBySlug(meta.related)} />
+            </div>
+          </section>
+        }
+      </article>
     </>
   )
 }
