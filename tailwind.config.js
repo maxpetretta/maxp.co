@@ -29,7 +29,7 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-           a: null,
+            a: null,
             strong: {
               fontWeight: 700,
               transition: 'color 300ms ease-in-out',
@@ -129,14 +129,6 @@ module.exports = {
           },
         },
       }),
-    },
-  },
-  variants: {
-    typography: ['dark'],
-    extend: {
-      borderRadius: ['hover'],
-      borderWidth: ['first', 'last'],
-      translate: ['checked'],
     },
   },
   plugins: [

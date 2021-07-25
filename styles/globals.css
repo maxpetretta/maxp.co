@@ -13,6 +13,9 @@
     font-weight: 100 900;
     src: url(/fonts/fira-code.ttf) format("truetype");
   }
+  /* * {
+    @apply transition duration-300;
+  } */
   html {
     @apply bg-gray-900;
     scroll-behavior: smooth;
@@ -41,13 +44,13 @@
     @apply transition duration-300 block mb-3 border-2 border-gray-500 dark:border-gray-400;
   }
   time {
-    @apply text-base font-normal italic text-gray-500 dark:text-gray-400;
+    @apply text-base font-normal text-gray-500 dark:text-gray-400;
   }
 }
 
 @layer components {
   .btn {
-    @apply transition duration-300 mx-0 md:mx-3 p-2 md:p-3 text-lg md:text-xl font-bold rounded-xl 
+    @apply transition duration-300 mx-0 md:mx-3 p-2 md:p-3 text-lg md:text-xl font-bold rounded-full 
     text-gray-900 bg-gray-100 hover:text-gray-900 hover:bg-gray-300 
     dark:text-gray-100 dark:bg-gray-900 dark:hover:text-gray-100 dark:hover:bg-gray-700;
   }
@@ -56,7 +59,7 @@
     dark:border-gray-700 dark:divide-gray-700
   }
   .form {
-    @apply transition duration-300 w-full my-4 p-3 rounded-xl shadow-inner outline-none border-2 focus:border-accent 
+    @apply transition duration-300 w-full my-4 p-3 rounded-lg shadow-inner outline-none border-2 focus:border-accent 
     dark:text-gray-300 dark:bg-gray-800 dark:border-gray-600 dark:focus:border-accent;
   }
   .brand-gradient {
