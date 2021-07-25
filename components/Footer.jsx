@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="pt-4">
+    <footer className="pt-8">
       <address className="flex justify-center">
         <a className="btn hover:text-gray-100 hover:bg-black 
         dark:hover:text-black dark:hover:bg-gray-100" href="https://github.com/maxpetretta">
