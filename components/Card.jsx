@@ -13,7 +13,7 @@ export default function Card({ post }) {
         <div className="absolute right-3">
           <span className="text-sm rounded-full ml-3 p-1.5 text-gray-100 bg-accent" key={post.tags[0]}>{post.tags[0]}</span>
         </div>
-        <img className="max-h-72 m-auto mt-8 rounded-xl" src={post.image} alt={post.alt} />
+        <img className="max-h-72 m-auto mt-8 rounded-lg" src={post.image} alt={post.alt} />
         <div className="z-10">
           <h2 className="my-0">{post.title}</h2>
           <p className="mt-2 mb-0 text-base font-normal">{post.description}</p>

@@ -11,18 +11,18 @@ export default function Header() {
         <a className="flex items-center bg-transparent hover:bg-transparent 
         dark:bg-transparent dark:hover:bg-transparent">
           <img className="w-12 h-12" src="/android-chrome-192x192.png" alt="Max's personal logo"/>
-          <span className="btn hidden md:inline">Max Petretta</span>
+          <span className="btn hidden md:inline rounded-lg">Max Petretta</span>
         </a>
       </Link>
       <nav className="flex items-center">
         <Link href="/about">
-          <a className="btn">About</a>
+          <a className="btn rounded-lg">About</a>
         </Link>
         <Link href="/blog">
-          <a className="btn">Blog</a>
+          <a className="btn rounded-lg">Blog</a>
         </Link>
         <Link href="/contact">
-          <a className="btn">Contact</a>
+          <a className="btn rounded-lg">Contact</a>
         </Link>
         <label className="inline-flex align-middle w-14 h-8 ml-4 rounded-full cursor-pointer bg-gray-400" alt="Toggle dark mode">
           <input className="transform transition duration-300 w-6 h-6 m-1 rounded-full cursor-pointer appearance-none
