@@ -11,7 +11,7 @@ export default function Post({ meta, children }) {
       </Head>
       <article>
         <Title meta={meta} />
-        <section className="prose prose-lg dark:prose-dark">
+        <section className="prose md:prose-xl dark:prose-dark max-w-none">
           {children}
         </section>
         {meta.related != null &&

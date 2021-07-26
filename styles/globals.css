@@ -13,9 +13,6 @@
     font-weight: 100 900;
     src: url(/fonts/fira-code.ttf) format("truetype");
   }
-  /* * {
-    @apply transition duration-300;
-  } */
   html {
     @apply bg-gray-900;
     scroll-behavior: smooth;
