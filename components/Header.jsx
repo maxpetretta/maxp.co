@@ -5,7 +5,7 @@ export default function Header() {
   const { theme, setTheme } = useTheme()
   
   return (
-    <header className="flex justify-between sticky top-0 transition duration-300 z-20 py-4 
+    <header className="flex justify-between sticky top-0 transition duration-300 z-20 py-2 
     bg-gray-100 dark:bg-gray-900">
       <Link href="/">
         <a className="flex items-center bg-transparent hover:bg-transparent 
