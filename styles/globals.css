@@ -40,27 +40,34 @@
   hr {
     @apply transition duration-300 block mb-3 border-2 border-gray-500 dark:border-gray-400;
   }
-  time {
-    @apply text-base font-normal text-gray-500 dark:text-gray-400;
-  }
 }
 
 @layer components {
+  .faint {
+    @apply text-base font-normal text-gray-500 dark:text-gray-400;
+  }
+  .chip {
+    @apply text-sm font-bold rounded-full ml-3 p-1.5 text-gray-100 bg-accent;
+  }
   .btn {
     @apply transition duration-300 mx-0 md:mx-3 p-2 md:p-3 text-lg md:text-xl font-bold rounded-full 
     text-gray-900 bg-gray-100 hover:text-gray-900 hover:bg-gray-300 
     dark:text-gray-100 dark:bg-gray-900 dark:hover:text-gray-100 dark:hover:bg-gray-700;
   }
+  .card {
+    @apply transition duration-300 flex flex-col flex-grow md:w-5/12 max-w-lg m-4 p-3 rounded-2xl shadow-md hover:shadow-xl
+    transform hover:scale-105 text-gray-900 bg-gray-50 hover:text-gray-900 dark:from-gray-800 dark:to-gray-700
+    bg-gradient-to-b from-gray-50 to-gray-200;
+  }
   .list {
-    @apply transition duration-300 first:rounded-lg last:rounded-lg border-2 divide-y-2 border-gray-300 divide-gray-300 
-    dark:border-gray-700 dark:divide-gray-700
+    @apply transition duration-300 mx-auto mt-6 first:rounded-lg last:rounded-lg border-2 border-gray-300 dark:border-gray-700
+    divide-y-2 divide-gray-300 dark:divide-gray-700;
   }
   .form {
-    @apply transition duration-300 w-full my-4 p-3 rounded-lg shadow-inner outline-none border-2 focus:border-accent 
-    dark:text-gray-300 dark:bg-gray-800 dark:border-gray-600 dark:focus:border-accent;
+    @apply transition duration-300 w-full my-4 p-3 rounded-lg shadow-inner outline-none dark:text-gray-300 dark:bg-gray-800
+    border-2 focus:border-accent dark:border-gray-600 dark:focus:border-accent;
   }
   .brand-gradient {
-    @apply bg-gradient-to-r from-primary-dark to-primary 
-    dark:from-primary dark:to-primary-light;
+    @apply bg-gradient-to-r from-primary-dark to-primary dark:from-primary dark:to-primary-light;
   }
 }

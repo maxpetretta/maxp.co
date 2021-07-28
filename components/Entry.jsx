@@ -6,7 +6,10 @@ export default function Entry({ post }) {
       <Link href={"/blog/" + post.slug}>
         <a className="btn flex items-center py-0 m-0 rounded-none bg-transparent dark:bg-transparent">
           <span className="ml-2 mr-6 text-lg md:text-2xl">{post.icon}</span>
-          <h3 className="">{post.title}</h3>
+          <div>
+            <h3 className="mt-4 mb-0">{post.title}</h3>
+            <p className="faint mt-1 mb-4">{post.description}</p>
+          </div>
           <span className="mx-auto mr-2 font-normal">&#10095;</span>
         </a>
       </Link>
