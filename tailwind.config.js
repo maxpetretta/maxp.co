@@ -35,11 +35,11 @@ module.exports = {
               transition: 'color 300ms ease-in-out',
             },
             hr: {
-              borderColor: theme('colors.gray.300'),
+              borderColor: theme('colors.gray.500'),
               transition: 'border-color 300ms ease-in-out',
             },
             blockquote: {
-              borderLeftColor: theme('colors.gray.300'),
+              borderLeftColor: theme('colors.gray.500'),
               transition: 'color 300ms ease-in-out',
               transition: 'border-left-color 300ms ease-in-out',
             },
@@ -85,12 +85,12 @@ module.exports = {
               transition: 'color 300ms ease-in-out',
             },
             hr: {
-              borderColor: theme('colors.gray.600'),
+              borderColor: theme('colors.gray.400'),
               transition: 'border-color 300ms ease-in-out',
             },
             blockquote: {
               color: theme('colors.gray.300'),
-              borderLeftColor: theme('colors.gray.600'),
+              borderLeftColor: theme('colors.gray.400'),
               transition: 'color 300ms ease-in-out',
               transition: 'border-left-color 300ms ease-in-out',
             },

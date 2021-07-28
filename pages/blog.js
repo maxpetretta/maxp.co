@@ -17,7 +17,7 @@ export default function Blog({ postCount, postsByYear, years }) {
       {years.map(year => {
         return (
           <section key={year}>
-            <h2 className="mb-1">{year}</h2>
+            <h2 className="mt-8 mb-2">{year}</h2>
             <hr/>
             <ul className="list">
               {postsByYear[year].map(post => {
