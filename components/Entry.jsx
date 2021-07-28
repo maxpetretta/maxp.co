@@ -8,7 +8,7 @@ export default function Entry({ post }) {
           <span className="ml-2 mr-6 text-lg md:text-2xl">{post.icon}</span>
           <div>
             <h3 className="mt-4 mb-0">{post.title}</h3>
-            <p className="faint mt-1 mb-4">{post.description}</p>
+            <p className="faint mt-0 mb-4">{post.description}</p>
           </div>
           <span className="mx-auto mr-2 font-normal">&#10095;</span>
         </a>
