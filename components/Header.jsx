@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { useTheme } from 'next-themes'
 
 export default function Header() {
@@ -10,7 +11,12 @@ export default function Header() {
       <Link href="/">
         <a className="flex items-center bg-transparent hover:bg-transparent 
         dark:bg-transparent dark:hover:bg-transparent">
-          <img className="w-12 h-12" src="/android-chrome-192x192.png" alt="Max's personal logo"/>
+          <Image
+            width={48}
+            height={48}
+            src="/android-chrome-192x192.png"
+            alt="Max's personal logo"
+          />
           <span className="btn hidden md:inline rounded-lg">Max Petretta</span>
         </a>
       </Link>

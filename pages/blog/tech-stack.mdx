@@ -1,11 +1,13 @@
+import Image from 'next/image'
 import Post from '../../components/Post'
+import banner from '../../public/images/stack.png'
 
 export const meta = {
     title: 'Building This Blog',
     description: 'How I built this blog using React, Next.js, and TailwindCSS',
     date: '2021-01-09',
     tags: ['Development', 'Webdev', 'React'],
-    image: '/images/stack.png',
+    image: 'stack.png',
     alt: 'An image of the React, Next.js, and TailwindCSS logos',
     icon: '⚛️',
     related: 'lorem-ipsum',
@@ -13,6 +15,13 @@ export const meta = {
 
 export default Post;
 
-<img className="mx-auto" src={meta.image} alt={meta.alt}/>
+<Image
+    width={1024}
+    height={1024}
+    src={banner}
+    alt={meta.alt}
+    placeholder="blur"
+    priority
+/>
 
 **Coming soon!**
