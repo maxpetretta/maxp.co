@@ -40,6 +40,9 @@
   hr {
     @apply transition duration-300 block mb-3 border-2 border-gray-500 dark:border-gray-400;
   }
+  img {
+    @apply transition duration-100;
+  }
 }
 
 @layer components {

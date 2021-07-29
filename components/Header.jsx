@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useTheme } from 'next-themes'
+import icon from '../public/android-chrome-192x192.png'
 
 export default function Header() {
   const { theme, setTheme } = useTheme()
@@ -14,8 +15,9 @@ export default function Header() {
           <Image
             width={48}
             height={48}
-            src="/android-chrome-192x192.png"
+            src={icon}
             alt="Max's personal logo"
+            priority
           />
           <span className="btn hidden md:inline rounded-lg">Max Petretta</span>
         </a>
