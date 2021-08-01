@@ -1,6 +1,6 @@
 export default function SkillCard() {
   return (
-    <div className="card flex-col md:flex-row max-w-md md:max-w-4xl mx-auto md:m-4 dark:text-gray-100 dark:bg-gray-900 divide-y-2 md:divide-y-0 md:divide-x-2 divide-gray-300 dark:divide-gray-700">
+    <div className="card flex-col md:flex-row max-w-md md:max-w-4xl m-auto md:m-4 dark:text-gray-100 dark:bg-gray-900 divide-y-2 md:divide-y-0 md:divide-x-2 divide-gray-300 dark:divide-gray-700">
       <div className="flex flex-col items-center p-4">
         <svg xmlns="http://www.w3.org/2000/svg" className="transition duration-300 pt-4 text-gray-900 dark:text-gray-100" width="128pt" height="128pt" viewBox="0 0 512 512" strokeWidth="2" stroke="currentColor" fill="currentColor" strokeLinecap="round" strokeLinejoin="round" aria-labelledby="fullstackTitle fullstackDesc" role="img">
           <title id="fullstackTitle">Full stack icon</title>

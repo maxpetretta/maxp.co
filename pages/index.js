@@ -24,13 +24,13 @@ export default function Home({ posts }) {
         <hr/>
         <SkillCard />
         <p className="mt-10">Languages that I know:</p>
-        <ul className="flex flex-wrap items-center">
-          {["HTML", "CSS", "JavaScript", "PostgreSQL", "Python", "Swift", "Java", "Terraform"].map(lang => {
+        <ul className="grid grid-cols-3 md:grid-cols-4 md:gap-2">
+          {["HTML", "CSS", "JavaScript", "SQL", "Python", "Swift", "Java", "Terraform"].map(lang => {
             return <Badge key={lang} logo={lang} />
           })}
         </ul>
         <p>Technologies I am proficient in:</p>
-        <ul className="flex flex-wrap items-center">
+        <ul className="grid grid-cols-3 md:grid-cols-4 md:gap-2">
           {["AWS", "Azure", "Docker", "Linux", "React", "Node.js", "Azure DevOps", "Jenkins", "Git"].map(tech => {
             return <Badge key={tech} logo={tech} />
           })}
