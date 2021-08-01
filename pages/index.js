@@ -22,7 +22,9 @@ export default function Home({ posts }) {
       <section>
         <h2 className="mt-10">Skills</h2>
         <hr/>
-        <SkillCard />
+        <div className="p-4 md:p-0">
+          <SkillCard />
+        </div>
         <p className="mt-10">Languages that I know:</p>
         <ul className="grid grid-cols-3 md:grid-cols-4 md:gap-2">
           {["HTML", "CSS", "JavaScript", "SQL", "Python", "Swift", "Java", "Terraform"].map(lang => {
