@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Card from '../components/Card'
 import Title from '../components/Title'
+import PostCard from '../components/PostCard'
 
 export default function Post({ meta, children }) {
   return (
@@ -19,7 +19,7 @@ export default function Post({ meta, children }) {
             <hr className="mt-10"/>
             <h2>Related Post</h2>
             <div className="flex flex-wrap justify-center">
-              <Card key={meta.related} post={getPostBySlug(meta.related)} />
+              <PostCard key={meta.related} post={getPostBySlug(meta.related)} />
             </div>
           </section>
         }

@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
+import profilePic from '../public/images/max.jpeg'
 
 export default function About() {
   return (
@@ -12,7 +14,18 @@ export default function About() {
         <h1>About Me</h1>
         <div className="flex justify-center items-center my-16">
           <div className="brand-gradient absolute animate-spin-slow w-72 h-72 md:w-96 md:h-96 z-0 rounded-full shadow-2xl"/>
-          <img className="h-64 md:h-80 z-10 rounded-full" src="/images/max.jpeg" alt="A picture of the author, Max Petretta"/>
+          <div className="w-64 h-64 md:w-80 md:h-80">
+            <Image
+              width={256}
+              height={256}
+              layout="responsive"
+              src={profilePic}
+              alt="A picture of the author, Max Petretta"
+              placeholder="blur"
+              className="z-10 rounded-full"
+              priority
+            />
+          </div>
         </div>
         <p>Hello!</p>
         <p>My name is Max Petretta.  I'm a software engineer with ~5 years of professional work experience.  During that time, I've worked on a variety of projects in the web, mobile, and cloud fields.  Currently, I work as a software engineer at <a href="https://www.gehealthcare.com/">GE Healthcare</a>.  My focus is in the cloud space, working to modernize our applications using automation & infrastructure-as-code.</p>

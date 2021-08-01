@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Card from '../components/Card'
+import Badge from '../components/Badge'
 import Entry from '../components/Entry'
+import PostCard from '../components/PostCard'
+import SkillCard from '../components/SkillCard'
 import { getPosts } from '../lib/posts'
 
 export default function Home({ posts }) {
@@ -18,11 +20,30 @@ export default function Home({ posts }) {
         <p>Want to get in touch?  You can find me on <a href="https://twitter.com/maxpetretta">Twitter</a>, connect with me on <a href="https://www.linkedin.com/in/maxpetretta/">LinkedIn</a>, or send me <Link href="/contact"><a>an email</a></Link>.</p>
       </section>
       <section>
+        <h2 className="mt-10">Skills</h2>
+        <hr/>
+        <div className="p-4 md:p-0">
+          <SkillCard />
+        </div>
+        <p className="mt-10">Languages that I know:</p>
+        <ul className="grid grid-cols-3 md:grid-cols-4 md:gap-2">
+          {["HTML", "CSS", "JavaScript", "SQL", "Python", "Swift", "Java", "Terraform"].map(lang => {
+            return <Badge key={lang} logo={lang} />
+          })}
+        </ul>
+        <p>Technologies I am proficient in:</p>
+        <ul className="grid grid-cols-3 md:grid-cols-4 md:gap-2">
+          {["AWS", "Azure", "Docker", "Linux", "React", "Node.js", "Azure DevOps", "Jenkins", "Git"].map(tech => {
+            return <Badge key={tech} logo={tech} />
+          })}
+        </ul>
+      </section>
+      <section>
         <h2 className="mt-10">Featured Articles</h2>
         <hr/>
         <div className="flex flex-wrap justify-center">
           {getFeaturedPosts(posts).map(post => {
-            return <Card key={post.slug} post={post} />
+            return <PostCard key={post.slug} post={post} />
           })}
         </div>
       </section>

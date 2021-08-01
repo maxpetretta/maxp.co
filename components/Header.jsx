@@ -1,16 +1,23 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { useTheme } from 'next-themes'
+import icon from '../public/android-chrome-192x192.png'
 
 export default function Header() {
   const { theme, setTheme } = useTheme()
   
   return (
-    <header className="flex justify-between sticky top-0 transition duration-300 z-20 py-2 
-    bg-gray-100 dark:bg-gray-900">
+    <header className="flex justify-between sticky top-0 transition duration-300 z-20 py-2 bg-gray-100 dark:bg-gray-900">
       <Link href="/">
         <a className="flex items-center bg-transparent hover:bg-transparent 
         dark:bg-transparent dark:hover:bg-transparent">
-          <img className="w-12 h-12" src="/android-chrome-192x192.png" alt="Max's personal logo"/>
+          <Image
+            width={48}
+            height={48}
+            src={icon}
+            alt="Max's personal logo"
+            priority
+          />
           <span className="btn hidden md:inline rounded-lg">Max Petretta</span>
         </a>
       </Link>

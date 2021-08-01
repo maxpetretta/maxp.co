@@ -1,12 +1,13 @@
 import Image from 'next/image'
 import Post from '../../components/Post'
+import banner from '../../public/images/ampersand.png'
 
 export const meta = {
     title: 'Lorem Ipsum',
     description: 'Lorem Ipsum dolor sit amet, consectetur adipiscing elit',
     date: '2020-12-31',
     tags: ['Example', 'Placeholder', 'Foobar'],
-    image: '/images/ampersand.png',
+    image: 'ampersand.png',
     alt: 'An image of a placeholder image',
     icon: '🅰️',
     related: 'tech-stack',
@@ -14,9 +15,18 @@ export const meta = {
 
 export default Post;
 
-<img className="mx-auto" src={meta.image} alt={meta.alt}/>
+<div className="flex justify-center">
+    <Image
+        width={512}
+        height={512}
+        src={banner}
+        alt={meta.alt}
+        placeholder="blur"
+        priority
+    />
+</div>
 
-[Lorem Ipsum dolor sit amet](www.google.com), consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, _sunt in culpa qui officia deserunt mollit anim id est laborum._
+[Lorem Ipsum dolor sit amet](https://www.google.com/), consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, _sunt in culpa qui officia deserunt mollit anim id est laborum._
 
 Ante metus dictum at tempor. Natoque penatibus et magnis dis parturient montes nascetur. Ultricies mi quis hendrerit dolor magna eget est lorem. Erat imperdiet sed euismod nisi porta lorem. Adipiscing tristique risus nec feugiat in fermentum posuere...
 
