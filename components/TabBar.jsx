@@ -27,9 +27,9 @@ export default function TabBar({ sections }) {
       <div className={"transition duration-300 absolute inset-x-0 inset-y-0 bg-white dark:bg-gray-500 rounded-md shadow-md transform translate-x-0 " + tabWidth} id="selector" />
       {tabs.map(tab => {
         return (
-          <label className="cursor-pointer self-center justify-self-center" key={tab.section.toLowerCase()} onClick={() => { current = tab }}>
+          <label className="flex items-center justify-center cursor-pointer" key={tab.section.toLowerCase()} onClick={() => { current = tab }}>
             <input className="appearance-none" id={tab.section.toLowerCase() + "Tab"} type="radio" name="tabs" />
-            <a className="no-link relative z-10 font-bold" href={"#" + tab.section.toLowerCase()}>{tab.section}</a>
+            <a className="no-link relative z-10 font-bold leading-none" href={"#" + tab.section.toLowerCase()}>{tab.section}</a>
           </label>
       )})}
     </div>
