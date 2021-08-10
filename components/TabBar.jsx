@@ -20,7 +20,7 @@ export default function TabBar({ sections }) {
   const tabWidth = widths[sections.length - 1]
   
   return (
-    <div className={"transition duration-300 relative grid gap-2 justify-items-center content-center h-8 ml-2 text-sm md:text-lg bg-gray-400 dark:bg-gray-700 border-3 border-gray-400 dark:border-gray-700 rounded-lg " + numColumns} onClick={() => {
+    <div className={"transition duration-300 relative grid gap-2 items-center justify-items-center content-center h-8 ml-2 text-sm md:text-lg bg-gray-400 dark:bg-gray-700 border-3 border-gray-400 dark:border-gray-700 rounded-lg " + numColumns} onClick={() => {
         document.getElementById("selector").classList.remove(...classes)
         document.getElementById("selector").classList.add(current.class)
       }}>
