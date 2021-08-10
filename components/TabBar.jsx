@@ -20,14 +20,14 @@ export default function TabBar({ sections }) {
   const tabWidth = widths[sections.length - 1]
   
   return (
-    <div className={"transition duration-300 relative grid gap-2 place-items-center h-8 ml-2 text-sm md:text-lg bg-gray-400 dark:bg-gray-700 border-3 border-gray-400 dark:border-gray-700 rounded-lg " + numColumns} onClick={() => {
+    <div className={"transition duration-300 relative grid gap-2 h-8 ml-2 text-sm md:text-lg bg-gray-400 dark:bg-gray-700 border-3 border-gray-400 dark:border-gray-700 rounded-lg " + numColumns} onClick={() => {
         document.getElementById("selector").classList.remove(...classes)
         document.getElementById("selector").classList.add(current.class)
       }}>
       <div className={"transition duration-300 absolute inset-x-0 inset-y-0 bg-white dark:bg-gray-500 rounded-md shadow-md transform translate-x-0 " + tabWidth} id="selector" />
       {tabs.map(tab => {
         return (
-          <label className="cursor-pointer" key={tab.section.toLowerCase()} onClick={() => { current = tab }}>
+          <label className="cursor-pointer self-center justify-self-center" key={tab.section.toLowerCase()} onClick={() => { current = tab }}>
             <input className="appearance-none" id={tab.section.toLowerCase() + "Tab"} type="radio" name="tabs" />
             <a className="no-link relative z-10 font-bold" href={"#" + tab.section.toLowerCase()}>{tab.section}</a>
           </label>
