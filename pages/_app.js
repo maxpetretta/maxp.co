@@ -29,6 +29,10 @@ export default function App({ Component, pageProps }) {
         id="smoothscroll"
         src="/scripts/smoothscroll.min.js"
       />
+      <Script
+        id="smoothscroll-anchor"
+        src="/scripts/smoothscroll-anchor.min.js"
+      />
     </>
   )
 }

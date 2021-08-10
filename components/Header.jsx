@@ -41,7 +41,7 @@ export default function Header() {
           <span className="btn hidden md:inline rounded-lg">Max Petretta</span>
         </a>
       </Link>
-      <nav className="flex items-center">
+      <nav className="flex flex-grow max-w-lg items-center">
         {navBar}
         <Toggle id="toggleTheme" alt="Toggle dark mode" onClick={() => { setTheme(theme === 'dark' ? 'light' : 'dark') }} />
       </nav>  
