@@ -25,6 +25,10 @@ export default function App({ Component, pageProps }) {
         id="animate"
         src="/scripts/animate.js"
       />
+      <Script
+        id="smoothscroll"
+        src="/scripts/smoothscroll.min.js"
+      />
     </>
   )
 }
