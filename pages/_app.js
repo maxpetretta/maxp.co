@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Script from 'next/script'
 import Layout from '../components/Layout'
 import { ThemeProvider } from 'next-themes'
 import '../styles/globals.css'
@@ -20,6 +21,10 @@ export default function App({ Component, pageProps }) {
           <Component {...pageProps} />
         </Layout>
       </ThemeProvider>
+      <Script
+        id="animate"
+        src="/scripts/animate.js"
+      />
     </>
   )
 }

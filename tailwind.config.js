@@ -1,6 +1,9 @@
 module.exports = {
   mode: 'jit',
-  purge: ['./pages/**/*.js', './pages/**/*.mdx', './components/**/*.jsx'],
+  purge: {
+    content: ['./pages/**/*.js', './pages/**/*.mdx', './components/**/*.jsx'],
+    safelist: ["opacity-0", "animate-fade-in"],
+  },
   darkMode: 'class',
   theme: {
     extend: {
@@ -20,6 +23,17 @@ module.exports = {
         sans: ['Public Sans', '-apple-system', 'sans-serif'],
         mono: ['Fira Code', 'mono'],
       },
+      screens: {
+        'xs': '370px',
+      },
+      borderWidth: {
+        DEFAULT: '1px',
+        '0': '0',
+        '2': '2px',
+        '3': '3px',
+        '4': '4px',
+        '8': '8px',
+      },
       boxShadow: {
         sm: '0 1px 2px 0 rgba(0, 0, 0, 0.1)',
         DEFAULT: '0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
@@ -27,11 +41,24 @@ module.exports = {
         lg: '0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
         xl: '0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
         '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
-        inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
+        inner: 'inset 0 4px 6px 0 rgba(0, 0, 0, 0.2)',
         none: 'none',
       },
       animation: {
         'spin-slow': 'spin 4s linear infinite',
+        'fade-in': 'fade-in 0.5s ease-in-out forwards',
+      },
+      keyframes: {
+        'fade-in': {
+          '0%': { opacity: 0, transform: 'translateY(1.5em)' },
+          '100%': { opacity: 1 },
+        },
+      },
+      translate: {
+        'fullx2': '200%',
+        'fullx3': '300%',
+        'fullx4': '400%',
+        'fullx5': '500%',
       },
       zIndex: {
         '-10': '-10',

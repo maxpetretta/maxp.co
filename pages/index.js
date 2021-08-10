@@ -13,32 +13,32 @@ export default function Home({ posts }) {
         <title>Max Petretta - Software Engineer</title>
         <meta name="description" content="A blog by Max Petretta, software engineer" />
       </Head>
-      <section>
+      <section className="show-on-scroll" id="about">
         <h4>👋 Hey there!</h4>
         <h1>I'm Max Petretta,</h1>
         <p>A <a href="https://github.com/maxpetretta">software engineer</a> living in Milwaukee, WI.  I work at GE Healthcare, where I design & build infrastructure for our cloud applications.  Previously, I've worked in the web & mobile spaces.  This is my blog, where I keep up with the <Link href="/blog/tech-stack"><a>latest technology trends</a></Link>, and write about the <Link href="/blog"><a>things that interest me</a></Link>.</p>
         <p>Want to get in touch?  You can find me on <a href="https://twitter.com/maxpetretta">Twitter</a>, connect with me on <a href="https://www.linkedin.com/in/maxpetretta/">LinkedIn</a>, or send me <Link href="/contact"><a>an email</a></Link>.</p>
       </section>
-      <section>
+      <section className="show-on-scroll" id="skills">
         <h2 className="mt-10">Skills</h2>
         <hr/>
         <div className="p-4 md:p-0">
           <SkillCard />
         </div>
         <p className="mt-10">Languages that I know:</p>
-        <ul className="grid grid-cols-3 md:grid-cols-4 md:gap-2">
+        <ul className="show-on-scroll grid grid-cols-3 md:grid-cols-4 md:gap-2">
           {["HTML", "CSS", "JavaScript", "SQL", "Python", "Swift", "Java", "Terraform"].map(lang => {
             return <Badge key={lang} logo={lang} />
           })}
         </ul>
         <p>Technologies I am proficient in:</p>
-        <ul className="grid grid-cols-3 md:grid-cols-4 md:gap-2">
+        <ul className="show-on-scroll grid grid-cols-3 md:grid-cols-4 md:gap-2">
           {["AWS", "Azure", "Docker", "Linux", "React", "Node.js", "Azure DevOps", "Jenkins", "Git"].map(tech => {
             return <Badge key={tech} logo={tech} />
           })}
         </ul>
       </section>
-      <section>
+      <section className="show-on-scroll" id="articles">
         <h2 className="mt-10">Featured Articles</h2>
         <hr/>
         <div className="flex flex-wrap justify-center">
@@ -47,7 +47,7 @@ export default function Home({ posts }) {
           })}
         </div>
       </section>
-      <section>
+      <section className="show-on-scroll" id="posts">
         <h2 className="mt-10">Latest Posts</h2>
         <hr/>
         <ul className="list">
