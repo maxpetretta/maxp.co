@@ -28,20 +28,20 @@ export default function Header() {
   }
   
   return (
-    <header className="flex justify-between sticky top-0 transition duration-300 z-20 py-2 bg-gray-100 dark:bg-gray-900">
+    <header className="transition duration-300 flex justify-between sticky top-0 z-20 py-2 bg-gray-100 dark:bg-gray-900">
       <Link href="/">
         <a className="no-link flex items-center">
           <img
             width={48}
             height={48}
-            src="/android-chrome-192x192.png"
+            src="/favicons/android-chrome-192x192.png"
             alt="Max's personal logo"
             className="hidden xs:inline"
           />
           <span className="btn hidden md:inline rounded-lg">Max Petretta</span>
         </a>
       </Link>
-      <nav className="flex flex-grow max-w-lg items-center">
+      <nav className="flex flex-grow max-w-lg items-center justify-end">
         {navBar}
         <Toggle id="toggleTheme" alt="Toggle dark mode" onClick={() => { setTheme(theme === 'dark' ? 'light' : 'dark') }} />
       </nav>  

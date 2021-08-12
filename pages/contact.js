@@ -16,9 +16,7 @@ export default function Contact() {
           <input className="form" type="email" name="_replyto" tabIndex="1" placeholder="Email address" required />
           <input type="hidden" name="_subject" value="Contact Form"/>
           <textarea className="form" rows="8" type="text" tabIndex="2" placeholder="Message" required />
-          <input className="btn block mr-0 ml-auto transform px-8 outline-none cursor-pointer hover:scale-110 focus:scale-110 
-          text-gray-100 bg-accent hover:text-white hover:bg-accent-light focus:bg-accent-light 
-          dark:bg-accent dark:hover:text-white dark:hover:bg-accent-light" type="submit" tabIndex="3" value="Send"/>
+          <input className="btn block ml-auto mr-0 px-8 outline-none cursor-pointer transform hover:scale-110 focus:scale-110 text-gray-100 bg-accent hover:text-white hover:bg-accent-light focus:bg-accent-light dark:bg-accent dark:hover:text-white dark:hover:bg-accent-light" type="submit" tabIndex="3" value="Send"/>
         </form>
       </section>
     </>

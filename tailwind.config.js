@@ -7,27 +7,9 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-      colors: {
-        primary: {
-          DEFAULT: '#4361a2',
-          light: '#73a0ec',
-          dark: '#132257',
-        },
-        accent: {
-          DEFAULT: '#c73156',
-          light: '#ff6188',
-          dark: '#8f0024',
-        },
-      },
-      fontFamily: {
-        sans: ['Public Sans', '-apple-system', 'sans-serif'],
-        mono: ['Fira Code', 'mono'],
-      },
-      screens: {
-        'xs': '370px',
-      },
-      spacing: {
-        '13': '3.25rem',
+      animation: {
+        'spin-slow': 'spin 4s linear infinite',
+        'fade-in': 'fade-in 0.5s ease-in-out forwards',
       },
       borderWidth: {
         DEFAULT: '1px',
@@ -47,15 +29,36 @@ module.exports = {
         inner: 'inset 0 4px 6px 0 rgba(0, 0, 0, 0.2)',
         none: 'none',
       },
-      animation: {
-        'spin-slow': 'spin 4s linear infinite',
-        'fade-in': 'fade-in 0.5s ease-in-out forwards',
+      colors: {
+        primary: {
+          DEFAULT: '#4361a2',
+          light: '#73a0ec',
+          dark: '#132257',
+        },
+        accent: {
+          DEFAULT: '#c73156',
+          light: '#ff6188',
+          dark: '#8f0024',
+        },
+      },
+      fontFamily: {
+        sans: ['Public Sans', '-apple-system', 'sans-serif'],
+        mono: ['Fira Code', 'mono'],
       },
       keyframes: {
         'fade-in': {
           '0%': { opacity: 0, transform: 'translateY(1.5em)' },
           '100%': { opacity: 1 },
         },
+      },
+      minHeight: {
+        '75': '75vh',
+      },
+      screens: {
+        'xs': '370px',
+      },
+      spacing: {
+        '13': '3.25rem',
       },
       translate: {
         'fullx2': '200%',
