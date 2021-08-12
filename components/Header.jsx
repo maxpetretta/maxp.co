@@ -38,7 +38,7 @@ export default function Header() {
             alt="Max's personal logo"
             className="hidden xs:inline"
           />
-          <span className="btn hidden md:inline rounded-lg">Max Petretta</span>
+          <span className="transition duration-300 btn hidden md:inline rounded-lg">Max Petretta</span>
         </a>
       </Link>
       <nav className="flex flex-grow max-w-lg items-center justify-end">

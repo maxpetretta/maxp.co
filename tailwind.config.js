@@ -26,7 +26,7 @@ module.exports = {
         lg: '0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
         xl: '0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
         '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
-        inner: 'inset 0 4px 6px 0 rgba(0, 0, 0, 0.2)',
+        inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.2)',
         none: 'none',
       },
       colors: {
@@ -44,6 +44,9 @@ module.exports = {
       fontFamily: {
         sans: ['Public Sans', '-apple-system', 'sans-serif'],
         mono: ['Fira Code', 'mono'],
+      },
+      height: {
+        '76': '19rem',
       },
       keyframes: {
         'fade-in': {
@@ -65,6 +68,9 @@ module.exports = {
         'fullx3': '300%',
         'fullx4': '400%',
         'fullx5': '500%',
+      },
+      width: {
+        '76': '19rem',
       },
       zIndex: {
         '-10': '-10',
@@ -119,7 +125,7 @@ module.exports = {
           css: {
             a: null,
             strong: {
-              color: theme('colors.white'),
+              color: theme('colors.gray.100'),
               transition: 'color 300ms ease-in-out',
             },
             hr: {
