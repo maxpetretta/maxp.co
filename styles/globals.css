@@ -50,14 +50,13 @@
   .brand-gradient {
     @apply bg-gradient-to-r from-primary-dark to-primary dark:from-primary dark:to-primary-light;
   }
-  .btn {
-    @apply mx-0 md:mx-3 p-2 md:p-3 text-base md:text-lg font-bold 
-    bg-transparent hover:text-gray-900 hover:bg-gray-300
-    dark:bg-transparent dark:hover:text-gray-100 dark:hover:bg-gray-700;
+  .button {
+    @apply transition duration-300 px-8 py-2 font-bold rounded-full cursor-pointer transform hover:scale-110 focus:scale-110
+    text-gray-100 bg-accent hover:bg-accent-light focus:bg-accent-light dark:bg-accent dark:hover:bg-accent-light;
   }
   .card {
-    @apply transition duration-300 flex flex-grow m-4 rounded-2xl shadow-md hover:shadow-xl 
-    transform hover:scale-105 bg-gradient-to-b from-white to-gray-200 dark:from-gray-800 dark:to-gray-700;
+    @apply transition duration-300 flex flex-grow m-4 rounded-2xl shadow-md
+    bg-gradient-to-b from-white to-gray-200 dark:from-gray-800 dark:to-gray-700;
   }
   .chip {
     @apply ml-3 p-2 text-sm font-bold rounded-full text-gray-100 bg-accent;
@@ -69,6 +68,11 @@
     @apply transition duration-300 w-full my-4 p-3 rounded-lg shadow-inner outline-none border-2 focus:border-accent
     border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:focus:border-accent;
   }
+  .link {
+    @apply mx-0 md:mx-3 p-2 md:p-3 text-base md:text-xl font-bold 
+    bg-transparent hover:text-gray-900 hover:bg-gray-300
+    dark:bg-transparent dark:hover:text-gray-100 dark:hover:bg-gray-700;
+  }
   .list {
     @apply transition duration-300 mx-auto mt-6 first:rounded-lg last:rounded-lg 
     border-2 divide-y-2 border-gray-300 divide-gray-300 dark:border-gray-700 dark:divide-gray-700;
@@ -78,7 +82,9 @@
   }
   .show-on-scroll {
     @apply outline-none;
-    margin-top: -0.1em;
-    padding-top: 0.1em;
+  }
+  .heading {
+    margin-top: -2.5em;
+    padding-top: 2.5em;
   }
 }

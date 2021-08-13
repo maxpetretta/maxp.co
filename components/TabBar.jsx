@@ -15,8 +15,10 @@ export default function TabBar({ sections }) {
   
   return (
     <div className="transition duration-300 relative flex flex-1 md:w-96 h-8 ml-0 xs:ml-2 text-sm md:text-lg rounded-lg bg-gray-400 dark:bg-gray-700 border-3 border-gray-400 dark:border-gray-700" onClick={() => {
-        document.getElementById("selector").classList.remove(...classes)
-        document.getElementById("selector").classList.add(current.class)
+        var selector = document.getElementById("selector")
+        selector.classList.remove(...classes)
+        selector.classList.add(current.class, "clicked")
+        setTimeout(() => {selector.classList.remove("clicked")}, 1000)
       }}>
       <div className={"transition duration-300 absolute inset-x-0 inset-y-0 rounded-md shadow-md transform translate-x-0 bg-white dark:bg-gray-500 " + tabWidth} id="selector" />
       {tabs.map(tab => {

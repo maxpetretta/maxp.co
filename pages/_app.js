@@ -22,9 +22,13 @@ export default function App({ Component, pageProps }) {
         </Layout>
       </ThemeProvider>
       <Script
-        id="animate"
-        src="/scripts/animate.js"
+        id="show-on-scroll"
+        src="/scripts/show-on-scroll.js"
         strategy="beforeInteractive"
+      />
+      <Script
+        id="update-selector"
+        src="/scripts/update-selector.js"
       />
       <Script
         id="smoothscroll"

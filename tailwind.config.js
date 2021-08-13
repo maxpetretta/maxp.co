@@ -50,12 +50,14 @@ module.exports = {
       },
       keyframes: {
         'fade-in': {
-          '0%': { opacity: 0, transform: 'translateY(1.5em)' },
+          '0%': { opacity: 0, transform: 'translateY(50px)' },
           '100%': { opacity: 1 },
         },
       },
       minHeight: {
-        '75': '75vh',
+        '1/4': '25vh',
+        '1/2': '50vh',
+        '3/4': '75vh',
       },
       screens: {
         'xs': '370px',

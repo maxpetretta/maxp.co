@@ -7,21 +7,21 @@ import { useRouter } from 'next/router'
 export default function Header() {
   const router = useRouter()
   const { theme, setTheme } = useTheme()
-  var navBar = {}
+  var navigation = {}
 
   if (router.pathname == "/") {
-    navBar = (<TabBar sections={["About", "Skills", "Articles", "Posts"]} />)
+    navigation = (<TabBar sections={["About", "Skills", "Articles", "Posts", "Contact"]} />)
   } else {
-    navBar = (
+    navigation = (
       <>
         <Link href="/about">
-          <a className="btn rounded-lg">About</a>
+          <a className="link rounded-lg">About</a>
         </Link>
         <Link href="/blog">
-          <a className="btn rounded-lg">Blog</a>
+          <a className="link rounded-lg">Blog</a>
         </Link>
         <Link href="/contact">
-          <a className="btn rounded-lg">Contact</a>
+          <a className="link rounded-lg">Contact</a>
         </Link>
       </>
     )
@@ -38,11 +38,11 @@ export default function Header() {
             alt="Max's personal logo"
             className="hidden xs:inline"
           />
-          <span className="transition duration-300 btn hidden md:inline rounded-lg">Max Petretta</span>
+          <span className="transition duration-300 link hidden md:inline rounded-lg">Max Petretta</span>
         </a>
       </Link>
       <nav className="flex flex-grow max-w-lg items-center justify-end">
-        {navBar}
+        {navigation}
         <Toggle id="toggleTheme" alt="Toggle dark mode" onClick={() => { setTheme(theme === 'dark' ? 'light' : 'dark') }} />
       </nav>  
     </header>
