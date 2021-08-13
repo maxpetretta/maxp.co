@@ -68,6 +68,11 @@
     @apply transition duration-300 w-full my-4 p-3 rounded-lg shadow-inner outline-none border-2 focus:border-accent
     border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:focus:border-accent;
   }
+  .heading {
+    @apply outline-none;
+    margin-top: -2.75em;
+    padding-top: 2.75em;
+  }
   .link {
     @apply mx-0 md:mx-3 p-2 md:p-3 text-base md:text-xl font-bold 
     bg-transparent hover:text-gray-900 hover:bg-gray-300
@@ -79,12 +84,5 @@
   }
   .no-link {
     @apply bg-transparent hover:text-gray-900 hover:bg-transparent dark:bg-transparent dark:hover:text-gray-100 dark:hover:bg-transparent;
-  }
-  .show-on-scroll {
-    @apply outline-none;
-  }
-  .heading {
-    margin-top: -2.5em;
-    padding-top: 2.5em;
   }
 }

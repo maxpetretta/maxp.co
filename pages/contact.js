@@ -16,7 +16,7 @@ export default function Contact() {
           <input className="form" type="email" name="_replyto" tabIndex="1" placeholder="Email address" required />
           <input type="hidden" name="_subject" value="Contact Form"/>
           <textarea className="form" rows="8" type="text" tabIndex="2" placeholder="Message" required />
-          <input className="button block ml-auto mr-0 outline-none" type="submit" tabIndex="3" value="Send"/>
+          <input className="button block mt-4 ml-auto mr-0 outline-none" type="submit" tabIndex="3" value="Send"/>
         </form>
       </section>
     </>

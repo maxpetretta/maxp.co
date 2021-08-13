@@ -19,7 +19,7 @@ export default function Home({ posts }) {
         <p className="fade-delay-lg">A <a href="https://github.com/maxpetretta">software engineer</a> living in Milwaukee, WI.  I work at GE Healthcare, where I design & build infrastructure for our cloud applications.  Previously, I've worked in the web & mobile spaces.  This is my blog, where I keep up with the <Link href="/blog/tech-stack"><a>latest technology trends</a></Link>, and write about the <Link href="/blog"><a>things that interest me</a></Link>.</p>
         <p className="fade-delay-lg">Want to get in touch?  You can find me on <a href="https://twitter.com/maxpetretta">Twitter</a>, connect with me on <a href="https://www.linkedin.com/in/maxpetretta/">LinkedIn</a>, or send me <Link href="/contact"><a>an email</a></Link>.</p>
         <span className="fade-delay-lg flex justify-end">
-          <a className="button flex items-center" href="https://github.com/maxpetretta/resume">
+          <a className="button flex items-center mt-4" href="https://github.com/maxpetretta/resume">
             <svg xmlns="http://www.w3.org/2000/svg" className="inline mr-2" width="36" height="36" viewBox="4 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <path d="M14 3v4a1 1 0 0 0 1 1h4" />
@@ -31,7 +31,7 @@ export default function Home({ posts }) {
             Resume
           </a>
         </span>
-        <span className="fade-delay-lg mx-auto mt-16">
+        <span className="fade-delay-lg mx-auto mt-10">
           <svg xmlns="http://www.w3.org/2000/svg" className="animate-bounce" width="52" height="52" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <path d="M15 4v8h3.586a1 1 0 0 1 .707 1.707l-6.586 6.586a1 1 0 0 1 -1.414 0l-6.586 -6.586a1 1 0 0 1 .707 -1.707h3.586v-8a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1z" />
@@ -81,7 +81,7 @@ export default function Home({ posts }) {
           <input className="form" type="email" name="_replyto" tabIndex="1" placeholder="Email address" required />
           <input type="hidden" name="_subject" value="Contact Form"/>
           <textarea className="form" rows="8" type="text" tabIndex="2" placeholder="Message" required />
-          <input className="button block ml-auto mr-0 outline-none" type="submit" tabIndex="3" value="Send"/>
+          <input className="button block mt-4 ml-auto mr-0 outline-none" type="submit" tabIndex="3" value="Send"/>
         </form>
       </section>
     </>
