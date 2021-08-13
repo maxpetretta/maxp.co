@@ -12,14 +12,16 @@
     "@next/mdx": "11.0.1",
     "@tailwindcss/forms": "0.3.3",
     "@tailwindcss/typography": "0.4.1",
-    "autoprefixer": "10.3.1",
     "gray-matter": "4.0.3",
     "next": "11.0.1",
     "next-themes": "0.0.15",
-    "postcss": "8.3.6",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "rehype-shiki": "0.0.9",
-    "tailwindcss": "2.2.6"
+    "rehype-shiki": "0.0.9"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
   }
 }

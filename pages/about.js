@@ -13,7 +13,7 @@ export default function About() {
       <section>
         <h1>About Me</h1>
         <div className="flex justify-center items-center my-16">
-          <div className="brand-gradient absolute animate-spin-slow w-72 h-72 md:w-96 md:h-96 z-0 rounded-full shadow-2xl"/>
+          <div className="brand-gradient animate-spin-slow absolute w-72 h-72 md:w-96 md:h-96 z-0 rounded-full shadow-2xl"/>
           <div className="w-64 h-64 md:w-80 md:h-80">
             <Image
               width={256}

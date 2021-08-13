@@ -4,9 +4,9 @@ export default function Title({ meta }) {
       <h1>{meta.title}</h1>
       <div className="flex justify-between mb-8">
         <time className="faint text-lg">{new Date(meta.date).toLocaleDateString("en-US", {year: 'numeric', month: 'long', day: 'numeric'})}</time>
-        <div>
+        <div className="flex flex-wrap justify-end">
           {meta.tags.map(tag => {
-            return <span className="chip" key={tag}>{tag}</span>
+            return <span className="chip my-1" key={tag}>{tag}</span>
           })}
         </div>
       </div>

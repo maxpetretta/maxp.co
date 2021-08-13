@@ -1,9 +1,34 @@
 module.exports = {
   mode: 'jit',
-  purge: ['./pages/**/*.js', './pages/**/*.mdx', './components/**/*.jsx'],
+  purge: {
+    content: ['./pages/**/*.js', './pages/**/*.mdx', './components/**/*.jsx'],
+    safelist: ["opacity-0", "animate-fade-in"],
+  },
   darkMode: 'class',
   theme: {
     extend: {
+      animation: {
+        'spin-slow': 'spin 4s linear infinite',
+        'fade-in': 'fade-in 0.5s ease-in-out forwards',
+      },
+      borderWidth: {
+        DEFAULT: '1px',
+        '0': '0',
+        '2': '2px',
+        '3': '3px',
+        '4': '4px',
+        '8': '8px',
+      },
+      boxShadow: {
+        sm: '0 1px 2px 0 rgba(0, 0, 0, 0.1)',
+        DEFAULT: '0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+        md: '0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+        lg: '0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+        xl: '0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+        '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+        inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.2)',
+        none: 'none',
+      },
       colors: {
         primary: {
           DEFAULT: '#4361a2',
@@ -20,18 +45,34 @@ module.exports = {
         sans: ['Public Sans', '-apple-system', 'sans-serif'],
         mono: ['Fira Code', 'mono'],
       },
-      boxShadow: {
-        sm: '0 1px 2px 0 rgba(0, 0, 0, 0.1)',
-        DEFAULT: '0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
-        md: '0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
-        lg: '0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
-        xl: '0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
-        '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
-        inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
-        none: 'none',
+      height: {
+        '76': '19rem',
       },
-      animation: {
-        'spin-slow': 'spin 4s linear infinite',
+      keyframes: {
+        'fade-in': {
+          '0%': { opacity: 0, transform: 'translateY(50px)' },
+          '100%': { opacity: 1 },
+        },
+      },
+      minHeight: {
+        '1/4': '25vh',
+        '1/2': '50vh',
+        '3/4': '75vh',
+      },
+      screens: {
+        'xs': '370px',
+      },
+      spacing: {
+        '13': '3.25rem',
+      },
+      translate: {
+        'fullx2': '200%',
+        'fullx3': '300%',
+        'fullx4': '400%',
+        'fullx5': '500%',
+      },
+      width: {
+        '76': '19rem',
       },
       zIndex: {
         '-10': '-10',
@@ -86,7 +127,7 @@ module.exports = {
           css: {
             a: null,
             strong: {
-              color: theme('colors.white'),
+              color: theme('colors.gray.100'),
               transition: 'color 300ms ease-in-out',
             },
             hr: {
