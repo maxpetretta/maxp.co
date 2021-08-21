@@ -83,43 +83,21 @@ module.exports = {
             a: null,
             strong: {
               fontWeight: 700,
-              transition: 'color 300ms ease-in-out',
             },
             hr: {
               borderColor: theme('colors.gray.500'),
-              transition: 'border-color 300ms ease-in-out',
             },
             blockquote: {
               borderLeftColor: theme('colors.gray.500'),
-              transition: 'color 300ms ease-in-out',
-              transition: 'border-left-color 300ms ease-in-out',
-            },
-            li: {
-              transition: 'color 300ms ease-in-out',
             },
             'ol > li::before': {
               color: theme('colors.gray.900'),
-              transition: 'color 300ms ease-in-out',
             },
             'ul > li::before': {
               backgroundColor: theme('colors.gray.900'),
-              transition: 'background-color 300ms ease-in-out',
             },
             h1: {
               fontSize: null,
-              transition: 'color 300ms ease-in-out',
-            },
-            h2: {
-              transition: 'color 300ms ease-in-out',
-            },
-            h3: {
-              transition: 'color 300ms ease-in-out',
-            },
-            h4: {
-              transition: 'color 300ms ease-in-out',
-            },
-            p: {
-              transition: 'color 300ms ease-in-out',
             },
           },
         },
@@ -128,49 +106,37 @@ module.exports = {
             a: null,
             strong: {
               color: theme('colors.gray.100'),
-              transition: 'color 300ms ease-in-out',
             },
             hr: {
               borderColor: theme('colors.gray.400'),
-              transition: 'border-color 300ms ease-in-out',
             },
             blockquote: {
               color: theme('colors.gray.100'),
               borderLeftColor: theme('colors.gray.400'),
-              transition: 'color 300ms ease-in-out',
-              transition: 'border-left-color 300ms ease-in-out',
             },
             li: {
               color: theme('colors.gray.100'),
-              transition: 'color 300ms ease-in-out',
             },
             'ol > li::before': {
               color: theme('colors.gray.100'),
-              transition: 'color 300ms ease-in-out',
             },
             'ul > li::before': {
               backgroundColor: theme('colors.gray.100'),
-              transition: 'background-color 300ms ease-in-out',
             },
             h1: {
               color: theme('colors.gray.100'),
-              transition: 'color 300ms ease-in-out',
             },
             h2: {
               color: theme('colors.gray.100'),
-              transition: 'color 300ms ease-in-out',
             },
             h3: {
               color: theme('colors.gray.100'),
-              transition: 'color 300ms ease-in-out',
             },
             h4: {
               color: theme('colors.gray.400'),
-              transition: 'color 300ms ease-in-out',
             },
             p: {
               color: theme('colors.gray.100'),
-              transition: 'color 300ms ease-in-out',
             },
           },
         },

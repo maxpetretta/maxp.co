@@ -1,5 +1,5 @@
-async function showOnScroll() {
-  const entries = document.querySelectorAll(".show-on-scroll, .fade-delay-sm, .fade-delay-lg");
+async function fadeIn() {
+  const entries = document.querySelectorAll(".fade, .animate-fade-in");
   const options = {
     root: null,
     threshold: 0,
@@ -16,17 +16,20 @@ async function showOnScroll() {
   }, options);
 
   entries.forEach(entry => {
-    const children = entry.querySelectorAll(".fade-delay-sm, .fade-delay-lg")
+    const children = entry.querySelectorAll(".fade-sm, .fade-lg")
     children.forEach(function (child, i) {
-      if (child.classList.contains("fade-delay-sm")) {
+      if (child.classList.contains("fade-sm")) {
         child.setAttribute("style", "animation-delay: " + i * 0.2 + "s")
       } else {
         child.setAttribute("style", "animation-delay: " + i * 1.0 + "s")
       }
     })
+
     entry.classList.add("opacity-0");
-    observer.observe(entry);
+    if (entry.classList.contains("fade")) {
+      observer.observe(entry);
+    }
   });
 }
 
-showOnScroll();
+fadeIn();

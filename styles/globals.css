@@ -42,7 +42,7 @@
     @apply block mb-3 border-2 border-gray-500 dark:border-gray-400;
   }
   img {
-    @apply transition duration-100;
+    @apply transition duration-150;
   }
 }
 
@@ -55,7 +55,7 @@
     text-gray-100 bg-accent hover:bg-accent-light focus:bg-accent-light dark:bg-accent dark:hover:bg-accent-light;
   }
   .card {
-    @apply transition duration-300 flex flex-grow m-4 rounded-2xl shadow-md
+    @apply flex flex-grow m-4 rounded-2xl shadow-md
     bg-gradient-to-b from-white to-gray-200 dark:from-gray-800 dark:to-gray-700;
   }
   .chip {
@@ -65,24 +65,30 @@
     @apply text-base font-normal text-gray-500 dark:text-gray-400;
   }
   .form {
-    @apply transition duration-300 w-full my-4 p-3 rounded-lg shadow-inner outline-none border-2 focus:border-accent
+    @apply w-full my-4 p-3 rounded-lg shadow-inner outline-none border-2 focus:border-accent
     border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:focus:border-accent;
   }
+  .link {
+    @apply transition-colors duration-300 mx-0 md:mx-3 p-2 md:p-3 text-base md:text-xl font-bold 
+    bg-transparent hover:text-gray-900 hover:bg-gray-300
+    dark:bg-transparent dark:hover:text-gray-100 dark:hover:bg-gray-700;
+  }
+  .list {
+    @apply mx-auto mt-6 first:rounded-lg last:rounded-lg 
+    border-2 divide-y-2 border-gray-300 divide-gray-300 dark:border-gray-700 dark:divide-gray-700;
+  }
+  .no-link {
+    @apply transition-none bg-transparent hover:text-gray-900 hover:bg-transparent dark:bg-transparent dark:hover:text-gray-100 dark:hover:bg-transparent;
+  }
+}
+
+@layer utilities {
   .heading {
     @apply outline-none;
     margin-top: -2.75em;
     padding-top: 2.75em;
   }
-  .link {
-    @apply mx-0 md:mx-3 p-2 md:p-3 text-base md:text-xl font-bold 
-    bg-transparent hover:text-gray-900 hover:bg-gray-300
-    dark:bg-transparent dark:hover:text-gray-100 dark:hover:bg-gray-700;
-  }
-  .list {
-    @apply transition duration-300 mx-auto mt-6 first:rounded-lg last:rounded-lg 
-    border-2 divide-y-2 border-gray-300 divide-gray-300 dark:border-gray-700 dark:divide-gray-700;
-  }
-  .no-link {
-    @apply bg-transparent hover:text-gray-900 hover:bg-transparent dark:bg-transparent dark:hover:text-gray-100 dark:hover:bg-transparent;
+  .transition-stop *:not(input) {
+    transition: none !important;
   }
 }

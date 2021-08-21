@@ -22,8 +22,8 @@ export default function App({ Component, pageProps }) {
         </Layout>
       </ThemeProvider>
       <Script
-        id="show-on-scroll"
-        src="/scripts/show-on-scroll.js"
+        id="fade-in"
+        src="/scripts/fade-in.js"
         strategy="beforeInteractive"
       />
       <Script
