@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Entry({ post }) {
   return (
-    <li className="list-none">
+    <li className="list-none" key={post.slug}>
       <Link href={"/blog/" + post.slug}>
         <a className="link flex items-center m-0 py-0 rounded-none">
           <span className="hidden md:block ml-2 mr-6 text-lg md:text-2xl">{post.icon}</span>

@@ -2,8 +2,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Accordion from '../components/Accordion'
 import Badge from '../components/Badge'
-import Entry from '../components/Entry'
-import PostCard from '../components/PostCard'
 import SkillCard from '../components/SkillCard'
 import { getJobs } from '../lib/jobs'
 import { getPosts } from '../lib/posts'
@@ -15,9 +13,9 @@ export default function Home({ jobs, posts }) {
         <title>Max Petretta - Software Engineer</title>
         <meta name="description" content="A blog by Max Petretta, software engineer" />
       </Head>
-      <section className="animate-fade-in flex flex-col justify-center min-h-3/4 mb-24">
+      <section className="animate-fade-in flex flex-col justify-center min-h-3/4 mb-16">
         <h4 className="animate-fade-in fade-lg heading" id="about">👋 Hey there!</h4>
-        <h1 className="animate-fade-in fade-lg">I'm Max Petretta,</h1>
+        <h1 className="animate-fade-in fade-lg text-3xl xs:text-4xl md:text-6xl">I'm Max Petretta,</h1>
         <p className="animate-fade-in fade-lg">A <a href="https://github.com/maxpetretta">software engineer</a> living in Milwaukee, WI.  I work at GE Healthcare, where I design & build infrastructure for our cloud applications.  Previously, I've worked in the web & mobile spaces.  This is my blog, where I keep up with the <Link href="/blog/tech-stack"><a>latest technology trends</a></Link>, and write about the <Link href="/blog"><a>things that interest me</a></Link>.</p>
         <p className="animate-fade-in fade-lg">Want to get in touch?  You can find me on <a href="https://twitter.com/maxpetretta">Twitter</a>, connect with me on <a href="https://www.linkedin.com/in/maxpetretta/">LinkedIn</a>, or send me <Link href="/contact"><a>an email</a></Link>.</p>
         <span className="animate-fade-in fade-lg flex justify-end">
@@ -40,35 +38,26 @@ export default function Home({ jobs, posts }) {
           </svg>
         </span>
       </section>
-      <section className="fade mb-24">
-        <h2 className="heading" id="skills">Skills</h2>
+      <section className="fade mb-28">
+        <h2 className="heading" id="skills">Skill Set</h2>
         <hr/>
         <div className="px-4 md:px-0">
           <SkillCard />
         </div>
-        <p>Languages that I know:</p>
+        <p className="mt-14">Languages that I know:</p>
         <ul className="fade grid grid-cols-3 md:grid-cols-4 md:gap-2">
           {["HTML", "CSS", "JavaScript", "SQL", "Python", "Swift", "Java", "Terraform"].map(skill => {
             return <li className="fade fade-sm" key={skill}><Badge logo={skill} /></li>
           })}
         </ul>
-        <p>Technologies I am proficient in:</p>
+        <p className="mt-14">Technologies I am proficient in:</p>
         <ul className="fade grid grid-cols-3 md:grid-cols-4 md:gap-2">
-          {["AWS", "Azure", "Docker", "Linux", "React", "Tailwind", "Next.js", "Node.js", "DevOps", "Jenkins", "Git"].map(skill => {
+          {["AWS", "Azure", "Docker", "Linux", "React", "Tailwind", "Next.js", "Node.js", "DevOps", "Git"].map(skill => {
             return <li className="fade fade-sm" key={skill}><Badge logo={skill} /></li>
           })}
         </ul>
       </section>
-      <section className="fade mb-24">
-        <h2 className="heading" id="articles">Featured Articles</h2>
-        <hr/>
-        <div className="flex flex-wrap justify-center">
-          {getFeaturedPosts(posts).map(post => {
-            return <PostCard key={post.slug} post={post} />
-          })}
-        </div>
-      </section>
-      <section className="fade mb-24">
+      <section className="fade mb-28">
         <h2 className="heading" id="work">Work Experience</h2>
         <hr/>
         <ul className="list">
@@ -77,23 +66,12 @@ export default function Home({ jobs, posts }) {
           })}
         </ul>
       </section>
-      <section className="fade mb-24">
-        <h2 className="heading" id="posts">Latest Posts</h2>
-        <hr/>
-        <ul className="list">
-          {sortPostsByDate(posts).map(post => {
-            return <Entry key={post.slug} post={post} />
-          })}
-        </ul>
-      </section>
-      <section className="fade">
-        <h2 className="heading" id="contact">Contact</h2>
-        <form action="https://formspree.io/f/xeqpbarr" method="POST">
-          <input className="form" type="email" name="_replyto" tabIndex="1" placeholder="Email address" required />
-          <input type="hidden" name="_subject" value="Contact Form"/>
-          <textarea className="form" rows="8" type="text" tabIndex="2" placeholder="Message" required />
-          <input className="button block mt-4 ml-auto mr-0 outline-none" type="submit" tabIndex="3" value="Send"/>
-        </form>
+      <section className="fade flex flex-col justify-center min-h-1/3 text-center">
+        <h2 className="heading" id="contact">Let's Connect!</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <span className="animate-fade-in fade-lg flex justify-center">
+          <a className="button flex items-center mt-4" href="mailto:hello@maxpetretta.com">hello@maxpetretta.com</a>
+        </span>
       </section>
     </>
   )

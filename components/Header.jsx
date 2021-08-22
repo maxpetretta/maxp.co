@@ -10,7 +10,7 @@ export default function Header() {
   var navigation = {}
 
   if (router.pathname == "/") {
-    navigation = (<TabBar sections={["About", "Skills", "Articles", "Contact"]} />)
+    navigation = (<TabBar sections={["About", "Skills", "Work", "Contact"]} />)
   } else {
     navigation = (
       <>

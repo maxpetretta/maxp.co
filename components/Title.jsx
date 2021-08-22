@@ -6,7 +6,7 @@ export default function Title({ meta }) {
         <time className="faint text-lg">{new Date(meta.date).toLocaleDateString("en-US", {year: 'numeric', month: 'long', day: 'numeric'})}</time>
         <div className="flex flex-wrap justify-end">
           {meta.tags.map(tag => {
-            return <span className="chip my-1" key={tag}>{tag}</span>
+            return <span className="chip my-1">{tag}</span>
           })}
         </div>
       </div>

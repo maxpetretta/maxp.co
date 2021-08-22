@@ -19,7 +19,7 @@ export default function Post({ meta, children }) {
             <hr className="mt-10"/>
             <h2>Related Post</h2>
             <div className="flex flex-wrap justify-center">
-              <PostCard key={meta.related} post={getPostBySlug(meta.related)} />
+              <PostCard post={getPostBySlug(meta.related)} />
             </div>
           </section>
         }

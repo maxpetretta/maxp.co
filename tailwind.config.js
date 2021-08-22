@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   mode: 'jit',
   purge: {
@@ -6,6 +8,11 @@ module.exports = {
   },
   darkMode: 'class',
   theme: {
+    screens: {
+      'xs': '370px',
+      'ph': '410px',
+      ...defaultTheme.screens,
+    },
     extend: {
       animation: {
         'spin-slow': 'spin 4s linear infinite',
@@ -47,6 +54,7 @@ module.exports = {
       },
       height: {
         '76': '19rem',
+        '88': '22rem',
       },
       keyframes: {
         'fade-in': {
@@ -55,12 +63,15 @@ module.exports = {
         },
       },
       minHeight: {
+        '1/5': '20vh',
         '1/4': '25vh',
+        '1/3': '33vh',
+        '2/5': '40vh',
         '1/2': '50vh',
+        '3/5': '60vh',
+        '2/3': '66vh',
         '3/4': '75vh',
-      },
-      screens: {
-        'xs': '370px',
+        '4/5': '80vh',
       },
       spacing: {
         '13': '3.25rem',

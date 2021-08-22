@@ -40,7 +40,7 @@ export default function About() {
       <section>
         <h2>Inspiration</h2>
         <p>I'd like to give credit to a few people who inspired the design of this site:</p>
-        <ul className="list-disc list-inside">
+        <ul className="list-disc ml-4">
           <li><a href="https://leerob.io/">Lee Robinson</a>, who <a href="https://leerob.io/blog/mdx">wrote extensively</a> about the <a href="https://leerob.io/blog/tailwind">tech stack</a> that I ultimately decided on</li>
           <li><a href="https://www.taniarascia.com/">Tania Rascia</a>, and her excellent web-focused <a href="https://www.taniarascia.com/guides">technology guides</a></li>
           <li><a href="https://paulstamatiou.com/">Paul Stamatiou</a> & <a href="https://barrowclift.me/">Marc Barrowclift</a>, and their beautifully designed personal sites</li>

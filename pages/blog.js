@@ -14,7 +14,7 @@ export default function Blog({ posts, postCount, postsByYear, years }) {
         <h1>Blog</h1>
         <p>A healthy mix of articles, reviews, and random thoughts.  <strong>{postCount}</strong> posts published since 2020.</p>
       </section>
-      {/* <section>
+      <section>
         <h2 className="mt-10">Featured Articles</h2>
         <hr/>
         <div className="flex flex-wrap justify-center">
@@ -22,7 +22,7 @@ export default function Blog({ posts, postCount, postsByYear, years }) {
             return <PostCard key={post.slug} post={post} />
           })}
         </div>
-      </section> */}
+      </section>
       {years.map(year => {
         return (
           <section key={year}>
@@ -57,13 +57,13 @@ export async function getStaticProps() {
   }
 }
 
-// export function getFeaturedPosts(posts) {
-//   const featured = ['lorem-ipsum', 'airpods-max', 'hotdox', 'tech-stack']
+export function getFeaturedPosts(posts) {
+  const featured = ['lorem-ipsum', 'airpods-max', 'hotdox', 'tech-stack']
 
-//   const sorted = posts.filter(post => featured.includes(post.slug))
-//   .sort((a, b) => {
-//     return featured.indexOf(a.slug) < featured.indexOf(b.slug) ? -1 : 1
-//   })
+  const sorted = posts.filter(post => featured.includes(post.slug))
+  .sort((a, b) => {
+    return featured.indexOf(a.slug) < featured.indexOf(b.slug) ? -1 : 1
+  })
 
-//   return sorted
-// }
+  return sorted
+}

@@ -24,7 +24,7 @@ export default function TabBar({ sections }) {
       {tabs.map(tab => {
         return (
           <label className="flex-1 flex items-center justify-center cursor-pointer" key={tab.section.toLowerCase()} onClick={() => { current = tab }}>
-            <input className="hidden appearance-none" id={tab.section.toLowerCase() + "Tab"} type="radio" name="tabs" />
+            <input className="hidden appearance-none" type="radio" name="tabs" />
             <a className="no-link relative w-full z-10 text-center font-bold leading-none" href={"#" + tab.section.toLowerCase()}>{tab.section}</a>
           </label>
       )})}

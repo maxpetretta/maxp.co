@@ -22,20 +22,16 @@ export default function App({ Component, pageProps }) {
         </Layout>
       </ThemeProvider>
       <Script
-        id="fade-in"
         src="/scripts/fade-in.js"
         strategy="beforeInteractive"
       />
       <Script
-        id="update-selector"
         src="/scripts/update-selector.js"
       />
       <Script
-        id="smoothscroll"
         src="/scripts/smoothscroll.min.js"
       />
       <Script
-        id="smoothscroll-anchor"
         src="/scripts/smoothscroll-anchor.min.js"
       />
     </>

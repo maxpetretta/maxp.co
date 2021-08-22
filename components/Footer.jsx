@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="pt-8">
+    <footer className="mt-28">
       <address className="flex justify-center">
         <a className="link rounded-full hover:text-gray-100 hover:bg-black dark:hover:text-black dark:hover:bg-gray-100" href="https://github.com/maxpetretta">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" aria-labelledby="githubTitle githubDesc" role="img">
@@ -45,7 +45,7 @@ export default function Footer() {
         </Link>
       </address>
       <nav className="flex justify-center gap-6 mt-3">
-        <Link href="/home">
+        <Link href="/">
           <a className="no-link faint">/home</a>
         </Link>
         <Link href="/about">

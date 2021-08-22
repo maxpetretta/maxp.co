@@ -21,7 +21,7 @@ async function fadeIn() {
       if (child.classList.contains("fade-sm")) {
         child.setAttribute("style", "animation-delay: " + i * 0.2 + "s")
       } else {
-        child.setAttribute("style", "animation-delay: " + i * 1.0 + "s")
+        child.setAttribute("style", "animation-delay: " + i * 0.8 + "s")
       }
     })
 
