@@ -7,11 +7,13 @@
     font-family: Public Sans;
     font-weight: 100 900;
     src: url(/fonts/public-sans.ttf) format("truetype");
+    font-display: swap;
   }
   @font-face {
     font-family: Fira Code;
     font-weight: 100 900;
     src: url(/fonts/fira-code.ttf) format("truetype");
+    font-display: swap;
   }
   html {
     @apply bg-gray-900;

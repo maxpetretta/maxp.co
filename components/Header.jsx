@@ -30,7 +30,7 @@ export default function Header() {
   return (
     <header className="flex justify-between sticky top-0 z-20 py-2 bg-gray-100 dark:bg-gray-900">
       <Link href="/">
-        <a className="no-link flex items-center">
+        <a className="no-link flex items-center" area-label="A link to the homepage">
           <img
             width={48}
             height={48}
