@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Layout from '../components/Layout'
 import PostCard from '../components/PostCard'
 import Entry from '../components/Entry'
 import { getPosts } from '../lib/posts'
@@ -6,36 +7,36 @@ import { getPosts } from '../lib/posts'
 export default function Blog({ posts, postCount, postsByYear, years }) {
   return (
     <>
-      <Head>
-        <title>Blog - Max Petretta</title>
-        <meta name="description" content="A blog by Max Petretta, software engineer" />
-      </Head>
-      <section>
-        <h1 className="mb-0">Blog</h1>
-        <p>A healthy mix of articles, reviews, and random thoughts.  <strong>{postCount}</strong> posts published since 2020.</p>
-      </section>
-      <section>
-        <h2 className="mb-0">Featured Articles</h2>
-        <hr className="mt-2 mb-8 md:mt-3 md:mb-10" />
-        <div className="flex flex-wrap justify-center">
-          {getFeaturedPosts(posts).map(post => {
-            return <PostCard key={post.slug} post={post} />
-          })}
-        </div>
-      </section>
-      {years.map(year => {
-        return (
-          <section key={year}>
-            <h2 className="mb-0">{year}</h2>
-            <hr className="mt-2 mb-8 md:mt-3 md:mb-10" />
-            <ul className="list">
-              {postsByYear[year].map(post => {
-                return <Entry key={post.slug} post={post} />
-              })}
-            </ul>
-          </section>
-        )
-      })}
+      <Layout
+        title="Blog - Max Petretta"
+      >
+        <section>
+          <h1 className="mb-0">Blog</h1>
+          <p>A healthy mix of articles, reviews, and random thoughts.  <strong>{postCount}</strong> posts published since 2020.</p>
+        </section>
+        <section>
+          <h2 className="mb-0">Featured Articles</h2>
+          <hr className="mt-2 mb-8 md:mt-3 md:mb-10" />
+          <div className="flex flex-wrap justify-center">
+            {getFeaturedPosts(posts).map(post => {
+              return <PostCard key={post.slug} post={post} />
+            })}
+          </div>
+        </section>
+        {years.map(year => {
+          return (
+            <section key={year}>
+              <h2 className="mb-0">{year}</h2>
+              <hr className="mt-2 mb-8 md:mt-3 md:mb-10" />
+              <ul className="list">
+                {postsByYear[year].map(post => {
+                  return <Entry key={post.slug} post={post} />
+                })}
+              </ul>
+            </section>
+          )
+        })}
+      </Layout>
     </>
   )
 }

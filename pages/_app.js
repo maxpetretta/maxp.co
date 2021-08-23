@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Script from 'next/script'
-import Layout from '../components/Layout'
 import { ThemeProvider } from 'next-themes'
 import '../styles/globals.css'
 
@@ -17,9 +16,7 @@ export default function App({ Component, pageProps }) {
         <meta name="theme-color" content="#4361a2"/>
       </Head>
       <ThemeProvider attribute="class" defaultTheme="light">
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <Component {...pageProps} />
       </ThemeProvider>
       <Script
         src="/scripts/fade-in.js"
