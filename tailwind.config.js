@@ -96,6 +96,7 @@ module.exports = {
               fontWeight: 700,
             },
             hr: {
+              borderWidth: 2,
               borderColor: theme('colors.gray.500'),
             },
             blockquote: {

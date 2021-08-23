@@ -11,12 +11,12 @@ export default function Blog({ posts, postCount, postsByYear, years }) {
         <meta name="description" content="A blog by Max Petretta, software engineer" />
       </Head>
       <section>
-        <h1>Blog</h1>
+        <h1 className="mb-0">Blog</h1>
         <p>A healthy mix of articles, reviews, and random thoughts.  <strong>{postCount}</strong> posts published since 2020.</p>
       </section>
       <section>
-        <h2 className="mt-10">Featured Articles</h2>
-        <hr/>
+        <h2 className="mb-0">Featured Articles</h2>
+        <hr className="mt-2 mb-8 md:mt-3 md:mb-10" />
         <div className="flex flex-wrap justify-center">
           {getFeaturedPosts(posts).map(post => {
             return <PostCard key={post.slug} post={post} />
@@ -26,8 +26,8 @@ export default function Blog({ posts, postCount, postsByYear, years }) {
       {years.map(year => {
         return (
           <section key={year}>
-            <h2 className="mt-8 mb-2">{year}</h2>
-            <hr/>
+            <h2 className="mb-0">{year}</h2>
+            <hr className="mt-2 mb-8 md:mt-3 md:mb-10" />
             <ul className="list">
               {postsByYear[year].map(post => {
                 return <Entry key={post.slug} post={post} />

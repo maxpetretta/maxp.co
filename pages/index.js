@@ -13,13 +13,13 @@ export default function Home({ jobs, posts }) {
         <title>Max Petretta - Software Engineer</title>
         <meta name="description" content="A blog by Max Petretta, software engineer" />
       </Head>
-      <section className="animate-fade-in flex flex-col justify-center min-h-3/4 mb-16">
+      <section className="animate-fade-in flex flex-col justify-center min-h-screen md:min-h-3/4">
         <h4 className="animate-fade-in fade-lg heading" id="about">👋 Hey there!</h4>
-        <h1 className="animate-fade-in fade-lg text-3xl xs:text-4xl md:text-6xl">I'm Max Petretta,</h1>
+        <h1 className="animate-fade-in fade-lg text-3xl xs:text-4xl md:text-6xl my-0">I'm Max Petretta,</h1>
         <p className="animate-fade-in fade-lg">A <a href="https://github.com/maxpetretta">software engineer</a> living in Milwaukee, WI.  I work at GE Healthcare, where I design & build infrastructure for our cloud applications.  Previously, I've worked in the web & mobile spaces.  This is my blog, where I keep up with the <Link href="/blog/tech-stack"><a>latest technology trends</a></Link>, and write about the <Link href="/blog"><a>things that interest me</a></Link>.</p>
-        <p className="animate-fade-in fade-lg">Want to get in touch?  You can find me on <a href="https://twitter.com/maxpetretta">Twitter</a>, connect with me on <a href="https://www.linkedin.com/in/maxpetretta/">LinkedIn</a>, or send me <Link href="/contact"><a>an email</a></Link>.</p>
+        <p className="animate-fade-in fade-lg mt-0">Want to get in touch?  You can find me on <a href="https://twitter.com/maxpetretta">Twitter</a>, connect with me on <a href="https://www.linkedin.com/in/maxpetretta/">LinkedIn</a>, or send me <Link href="/contact"><a>an email</a></Link>.</p>
         <span className="animate-fade-in fade-lg flex justify-end">
-          <a className="button flex items-center mt-4" href="https://github.com/maxpetretta/resume">
+          <a className="button flex items-center" href="https://github.com/maxpetretta/resume">
             <svg xmlns="http://www.w3.org/2000/svg" className="inline mr-2" width="36" height="36" viewBox="4 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <path d="M14 3v4a1 1 0 0 0 1 1h4" />
@@ -39,8 +39,8 @@ export default function Home({ jobs, posts }) {
         </span>
       </section>
       <section className="fade mb-28">
-        <h2 className="heading" id="skills">Skill Set</h2>
-        <hr/>
+        <h2 className="heading my-0" id="skills">Skill Set</h2>
+        <hr className="mt-2 mb-8 md:mt-3 md:mb-10" />
         <div className="px-4 md:px-0">
           <SkillCard />
         </div>
@@ -58,8 +58,8 @@ export default function Home({ jobs, posts }) {
         </ul>
       </section>
       <section className="fade mb-28">
-        <h2 className="heading" id="work">Work Experience</h2>
-        <hr/>
+        <h2 className="heading my-0" id="work">Work Experience</h2>
+        <hr className="mt-2 mb-8 md:mt-3 md:mb-10" />
         <ul className="list">
           {jobs.map(job => {
             return <Accordion key={job.title} job={job} />
@@ -67,10 +67,10 @@ export default function Home({ jobs, posts }) {
         </ul>
       </section>
       <section className="fade flex flex-col justify-center min-h-1/3 text-center">
-        <h2 className="heading" id="contact">Let's Connect!</h2>
+        <h2 className="heading my-0 text-3xl md:text-4xl" id="contact">Let's Connect!</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <span className="animate-fade-in fade-lg flex justify-center">
-          <a className="button flex items-center mt-4" href="mailto:hello@maxpetretta.com">hello@maxpetretta.com</a>
+          <a className="button flex items-center" href="mailto:hello@maxpetretta.com">hello@maxpetretta.com</a>
         </span>
       </section>
     </>
