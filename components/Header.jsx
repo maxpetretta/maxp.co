@@ -10,7 +10,7 @@ export default function Header() {
   var navigation = {}
 
   if (router.pathname == "/") {
-    navigation = (<TabBar sections={["About", "Skills", "Articles", "Posts", "Contact"]} />)
+    navigation = (<TabBar sections={["About", "Skills", "Work", "Contact"]} />)
   } else {
     navigation = (
       <>
@@ -28,9 +28,9 @@ export default function Header() {
   }
   
   return (
-    <header className="transition duration-300 flex justify-between sticky top-0 z-20 py-2 bg-gray-100 dark:bg-gray-900">
+    <header className="flex justify-between sticky top-0 z-20 py-2 bg-gray-100 dark:bg-gray-900">
       <Link href="/">
-        <a className="no-link flex items-center">
+        <a className="no-link flex items-center" aria-label="A link to the homepage">
           <img
             width={48}
             height={48}
@@ -38,12 +38,16 @@ export default function Header() {
             alt="Max's personal logo"
             className="hidden xs:inline"
           />
-          <span className="transition duration-300 link hidden md:inline rounded-lg">Max Petretta</span>
+          <span className="link hidden md:inline rounded-lg">Max Petretta</span>
         </a>
       </Link>
       <nav className="flex flex-grow max-w-lg items-center justify-end">
         {navigation}
-        <Toggle id="toggleTheme" alt="Toggle dark mode" onClick={() => { setTheme(theme === 'dark' ? 'light' : 'dark') }} />
+        <Toggle id="toggleTheme" alt="Toggle dark mode" onClick={() => { 
+          document.body.classList.add("transition-stop");
+          setTheme(theme === 'dark' ? 'light' : 'dark');
+          setTimeout(() => {document.body.classList.remove("transition-stop");}, 1000);
+        }} />
       </nav>  
     </header>
   )

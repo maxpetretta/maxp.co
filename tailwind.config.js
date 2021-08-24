@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   mode: 'jit',
   purge: {
@@ -6,6 +8,11 @@ module.exports = {
   },
   darkMode: 'class',
   theme: {
+    screens: {
+      'xs': '370px',
+      'ph': '410px',
+      ...defaultTheme.screens,
+    },
     extend: {
       animation: {
         'spin-slow': 'spin 4s linear infinite',
@@ -47,6 +54,7 @@ module.exports = {
       },
       height: {
         '76': '19rem',
+        '88': '22rem',
       },
       keyframes: {
         'fade-in': {
@@ -55,12 +63,15 @@ module.exports = {
         },
       },
       minHeight: {
+        '1/5': '20vh',
         '1/4': '25vh',
+        '1/3': '33vh',
+        '2/5': '40vh',
         '1/2': '50vh',
+        '3/5': '60vh',
+        '2/3': '66vh',
         '3/4': '75vh',
-      },
-      screens: {
-        'xs': '370px',
+        '4/5': '80vh',
       },
       spacing: {
         '13': '3.25rem',
@@ -83,43 +94,22 @@ module.exports = {
             a: null,
             strong: {
               fontWeight: 700,
-              transition: 'color 300ms ease-in-out',
             },
             hr: {
+              borderWidth: 2,
               borderColor: theme('colors.gray.500'),
-              transition: 'border-color 300ms ease-in-out',
             },
             blockquote: {
               borderLeftColor: theme('colors.gray.500'),
-              transition: 'color 300ms ease-in-out',
-              transition: 'border-left-color 300ms ease-in-out',
-            },
-            li: {
-              transition: 'color 300ms ease-in-out',
             },
             'ol > li::before': {
               color: theme('colors.gray.900'),
-              transition: 'color 300ms ease-in-out',
             },
             'ul > li::before': {
               backgroundColor: theme('colors.gray.900'),
-              transition: 'background-color 300ms ease-in-out',
             },
             h1: {
               fontSize: null,
-              transition: 'color 300ms ease-in-out',
-            },
-            h2: {
-              transition: 'color 300ms ease-in-out',
-            },
-            h3: {
-              transition: 'color 300ms ease-in-out',
-            },
-            h4: {
-              transition: 'color 300ms ease-in-out',
-            },
-            p: {
-              transition: 'color 300ms ease-in-out',
             },
           },
         },
@@ -128,49 +118,37 @@ module.exports = {
             a: null,
             strong: {
               color: theme('colors.gray.100'),
-              transition: 'color 300ms ease-in-out',
             },
             hr: {
               borderColor: theme('colors.gray.400'),
-              transition: 'border-color 300ms ease-in-out',
             },
             blockquote: {
               color: theme('colors.gray.100'),
               borderLeftColor: theme('colors.gray.400'),
-              transition: 'color 300ms ease-in-out',
-              transition: 'border-left-color 300ms ease-in-out',
             },
             li: {
               color: theme('colors.gray.100'),
-              transition: 'color 300ms ease-in-out',
             },
             'ol > li::before': {
               color: theme('colors.gray.100'),
-              transition: 'color 300ms ease-in-out',
             },
             'ul > li::before': {
               backgroundColor: theme('colors.gray.100'),
-              transition: 'background-color 300ms ease-in-out',
             },
             h1: {
               color: theme('colors.gray.100'),
-              transition: 'color 300ms ease-in-out',
             },
             h2: {
               color: theme('colors.gray.100'),
-              transition: 'color 300ms ease-in-out',
             },
             h3: {
               color: theme('colors.gray.100'),
-              transition: 'color 300ms ease-in-out',
             },
             h4: {
               color: theme('colors.gray.400'),
-              transition: 'color 300ms ease-in-out',
             },
             p: {
               color: theme('colors.gray.100'),
-              transition: 'color 300ms ease-in-out',
             },
           },
         },

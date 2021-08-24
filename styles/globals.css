@@ -7,11 +7,13 @@
     font-family: Public Sans;
     font-weight: 100 900;
     src: url(/fonts/public-sans.ttf) format("truetype");
+    font-display: swap;
   }
   @font-face {
     font-family: Fira Code;
     font-weight: 100 900;
     src: url(/fonts/fira-code.ttf) format("truetype");
+    font-display: swap;
   }
   html {
     @apply bg-gray-900;
@@ -24,25 +26,22 @@
     dark:bg-gray-700 dark:hover:text-gray-100 dark:hover:bg-primary-light;
   }
   h1 {
-    @apply my-4 text-4xl md:text-5xl font-extrabold;
+    @apply mt-4 mb-8 md:mb-12 text-4xl md:text-5xl font-extrabold;
   }
   h2 {
-    @apply my-4 text-2xl md:text-3xl font-bold;
+    @apply mt-12 mb-6 md:mt-14 md:mb-8 text-2xl md:text-3xl font-bold;
   }
   h3 {
-    @apply my-4 text-xl md:text-2xl font-bold;
+    @apply mb-3 md:mb-5 text-xl md:text-2xl font-bold;
   }
   h4 {
-    @apply my-2 text-base md:text-lg text-gray-500 dark:text-gray-400;
+    @apply mb-2 md:mb-3 text-base md:text-lg text-gray-500 dark:text-gray-400;
   }
   p {
-    @apply my-6 whitespace-pre-wrap;
+    @apply my-5 md:my-6 whitespace-pre-wrap;
   }
   hr {
-    @apply block mb-3 border-2 border-gray-500 dark:border-gray-400;
-  }
-  img {
-    @apply transition duration-100;
+    @apply block my-12 md:my-14 border-2 border-gray-500 dark:border-gray-400;
   }
 }
 
@@ -51,11 +50,11 @@
     @apply bg-gradient-to-r from-primary-dark to-primary dark:from-primary dark:to-primary-light;
   }
   .button {
-    @apply transition duration-300 px-8 py-2 font-bold rounded-full cursor-pointer transform hover:scale-110 focus:scale-110
+    @apply transition duration-300 px-5 py-2 md:px-8 md:py-2 font-bold rounded-full cursor-pointer transform hover:scale-110 focus:scale-110
     text-gray-100 bg-accent hover:bg-accent-light focus:bg-accent-light dark:bg-accent dark:hover:bg-accent-light;
   }
   .card {
-    @apply transition duration-300 flex flex-grow m-4 rounded-2xl shadow-md
+    @apply flex flex-grow m-4 rounded-2xl shadow-md
     bg-gradient-to-b from-white to-gray-200 dark:from-gray-800 dark:to-gray-700;
   }
   .chip {
@@ -65,26 +64,30 @@
     @apply text-base font-normal text-gray-500 dark:text-gray-400;
   }
   .form {
-    @apply transition duration-300 w-full my-4 p-3 rounded-lg shadow-inner outline-none border-2 focus:border-accent
+    @apply w-full my-4 p-3 rounded-lg shadow-inner outline-none border-2 focus:border-accent
     border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:focus:border-accent;
   }
   .link {
-    @apply mx-0 md:mx-3 p-2 md:p-3 text-base md:text-xl font-bold 
+    @apply transition-colors duration-300 mx-1 md:mx-3 p-2 md:p-3 text-base md:text-xl font-bold 
     bg-transparent hover:text-gray-900 hover:bg-gray-300
     dark:bg-transparent dark:hover:text-gray-100 dark:hover:bg-gray-700;
   }
   .list {
-    @apply transition duration-300 mx-auto mt-6 first:rounded-lg last:rounded-lg 
+    @apply mx-auto mt-6 first:rounded-lg last:rounded-lg 
     border-2 divide-y-2 border-gray-300 divide-gray-300 dark:border-gray-700 dark:divide-gray-700;
   }
   .no-link {
-    @apply bg-transparent hover:text-gray-900 hover:bg-transparent dark:bg-transparent dark:hover:text-gray-100 dark:hover:bg-transparent;
+    @apply transition-none bg-transparent hover:text-gray-900 hover:bg-transparent dark:bg-transparent dark:hover:text-gray-100 dark:hover:bg-transparent;
   }
-  .show-on-scroll {
-    @apply outline-none;
-  }
+}
+
+@layer utilities {
   .heading {
-    margin-top: -2.5em;
-    padding-top: 2.5em;
+    @apply outline-none;
+    margin-top: -2.75em;
+    padding-top: 2.75em;
+  }
+  .transition-stop *:not(input) {
+    transition: none !important;
   }
 }

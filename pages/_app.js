@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Script from 'next/script'
-import Layout from '../components/Layout'
 import { ThemeProvider } from 'next-themes'
 import '../styles/globals.css'
 
@@ -17,27 +16,35 @@ export default function App({ Component, pageProps }) {
         <meta name="theme-color" content="#4361a2"/>
       </Head>
       <ThemeProvider attribute="class" defaultTheme="light">
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <Component {...pageProps} />
       </ThemeProvider>
       <Script
-        id="show-on-scroll"
-        src="/scripts/show-on-scroll.js"
+        src="/scripts/fade-in.js"
         strategy="beforeInteractive"
       />
       <Script
-        id="update-selector"
         src="/scripts/update-selector.js"
       />
       <Script
-        id="smoothscroll"
         src="/scripts/smoothscroll.min.js"
       />
       <Script
-        id="smoothscroll-anchor"
         src="/scripts/smoothscroll-anchor.min.js"
       />
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        strategy="lazyOnload"
+      />
+      <Script strategy="lazyOnload">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+            page_path: window.location.pathname,
+          });
+        `}
+      </Script>
     </>
   )
 }
