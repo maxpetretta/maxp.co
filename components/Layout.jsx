@@ -22,10 +22,10 @@ export default function Layout(props) {
   return (
     <>
       <Head>
-        {/* SEO, courtesy of Lee Robinson [leerob.io] */}
+        {/* Dynamic SEO, courtesy of Lee Robinson [leerob.io] */}
         <title>{meta.title}</title>
-        <meta name="description" content={meta.description} />
         <meta name="robots" content="follow, index" />
+        <meta name="description" content={meta.description} />
         <link rel="canonical" href={`https://maxpetretta.com${router.asPath}`} />
         <meta property="og:url" content={`https://maxpetretta.com${router.asPath}`} />
         <meta property="og:title" content={meta.title} />
