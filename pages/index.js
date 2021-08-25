@@ -13,9 +13,9 @@ export default function Home({ jobs }) {
           <h4 className="animate-fade-in fade-lg heading" id="about">👋 Hey there!</h4>
           <h1 className="animate-fade-in fade-lg text-3xl xs:text-4xl md:text-6xl my-0">I'm Max Petretta,</h1>
           <p className="animate-fade-in fade-lg">A <a href="https://github.com/maxpetretta">software engineer</a> with a passion for building intuitive applications, reliable services, and systems that scale.  Currently, I'm building the future of cloud at <a href="https://www.gehealthcare.com/">GE Healthcare</a>.</p>
-          <ul className="animate-fade-in fade-lg list-none">
+          <ul className="animate-fade-in fade-lg">
             <li>📍 Based out of Milwaukee, WI</li>
-            <li>🎓 Proud University of Michigan alum</li>
+            <li>🎓 Proud University of Michigan alumni</li>
             <li>⚽️ Supports Tottenham Hotspur FC</li>
           </ul>
           {/* <p className="animate-fade-in fade-lg">Want to get in touch?  You can find me on <a href="https://twitter.com/maxpetretta">Twitter</a>, connect on <a href="https://www.linkedin.com/in/maxpetretta/">LinkedIn</a>, or send me <Link href="/contact"><a>an email</a></Link>.</p> */}

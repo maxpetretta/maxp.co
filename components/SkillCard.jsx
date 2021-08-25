@@ -1,7 +1,7 @@
 export default function SkillCard() {
   return (
     <div className="card flex-col md:flex-row max-w-md md:max-w-4xl my-8 mx-auto md:mx-6 divide-y-2 md:divide-y-0 md:divide-x-2 divide-gray-300 dark:divide-gray-700">
-      <div className="flex flex-col items-center w-1/3 p-4">
+      <div className="flex flex-col items-center md:w-1/3 p-4">
         <svg xmlns="http://www.w3.org/2000/svg" className="" width="80pt" height="80pt" viewBox="0 0 512 512" strokeWidth="2" stroke="currentColor" fill="currentColor" strokeLinecap="round" strokeLinejoin="round" aria-labelledby="fullstackTitle fullstackDesc" role="img">
           <title id="fullstackTitle">Full stack icon</title>
           <desc id="fullstackDesc">An icon representing full stack development</desc>
@@ -19,7 +19,7 @@ export default function SkillCard() {
         <h3 className="mt-6 mb-2">Full Stack</h3>
         <p className="text-base m-0">Experienced in developing responsive, customer-facing sites, collecting feedback from users.</p>
       </div>
-      <div className="flex flex-col items-center w-1/3 p-4">
+      <div className="flex flex-col items-center md:w-1/3 p-4">
         <svg xmlns="http://www.w3.org/2000/svg" className="" width="80pt" height="80pt" viewBox="0 0 512 512" strokeWidth="2" stroke="currentColor" fill="currentColor" strokeLinecap="round" strokeLinejoin="round" aria-labelledby="mobileTitle mobileDesc" role="img">
           <title id="mobileTitle">Mobile icon</title>
           <desc id="mobileDesc">An icon representing mobile development</desc>
@@ -34,7 +34,7 @@ export default function SkillCard() {
         <h3 className="mt-6 mb-2">Mobile</h3>
         <p className="text-base m-0">Served as tech-lead for iOS-based volunteer project, involving SwiftUI, UIKit, HealthKit, and MapKit features.</p>
       </div>
-      <div className="flex flex-col items-center w-1/3 p-4">
+      <div className="flex flex-col items-center md:w-1/3 p-4">
         <svg xmlns="http://www.w3.org/2000/svg" className="" width="80pt" height="80pt" viewBox="0 0 512 512" strokeWidth="2" stroke="currentColor" fill="currentColor" strokeLinecap="round" strokeLinejoin="round" aria-labelledby="devopsTitle devopsDesc" role="img">
           <title id="devopsTitle">DevOps icon</title>
           <desc id="devopsDesc">An icon representing devops development</desc>
