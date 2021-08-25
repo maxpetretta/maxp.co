@@ -38,7 +38,7 @@
     @apply mb-2 md:mb-3 text-base md:text-lg text-gray-500 dark:text-gray-400;
   }
   p {
-    @apply my-5 md:my-6 whitespace-pre-wrap;
+    @apply my-4 xs:my-5 md:my-6 whitespace-pre-wrap;
   }
   hr {
     @apply block my-12 md:my-14 border-2 border-gray-500 dark:border-gray-400;

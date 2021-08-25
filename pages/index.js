@@ -12,9 +12,14 @@ export default function Home({ jobs }) {
         <section className="animate-fade-in flex flex-col justify-center min-h-screen md:min-h-3/4">
           <h4 className="animate-fade-in fade-lg heading" id="about">👋 Hey there!</h4>
           <h1 className="animate-fade-in fade-lg text-3xl xs:text-4xl md:text-6xl my-0">I'm Max Petretta,</h1>
-          <p className="animate-fade-in fade-lg">A <a href="https://github.com/maxpetretta">software engineer</a> living in Milwaukee, WI.  I work at GE Healthcare, where I design & build infrastructure for our cloud applications.  Previously, I've worked in the web & mobile spaces.  This is my blog, where I keep up with the <Link href="/blog/tech-stack"><a>latest technology trends</a></Link>, and write about the <Link href="/blog"><a>things that interest me</a></Link>.</p>
-          <p className="animate-fade-in fade-lg mt-0">Want to get in touch?  You can find me on <a href="https://twitter.com/maxpetretta">Twitter</a>, connect with me on <a href="https://www.linkedin.com/in/maxpetretta/">LinkedIn</a>, or send me <Link href="/contact"><a>an email</a></Link>.</p>
-          <span className="animate-fade-in fade-lg flex justify-end">
+          <p className="animate-fade-in fade-lg">A <a href="https://github.com/maxpetretta">software engineer</a> with a passion for building intuitive applications, reliable services, and systems that scale.  Currently, I'm building the future of cloud at <a href="https://www.gehealthcare.com/">GE Healthcare</a>.</p>
+          <ul className="animate-fade-in fade-lg list-none">
+            <li>📍 Based out of Milwaukee, WI</li>
+            <li>🎓 Proud University of Michigan alum</li>
+            <li>⚽️ Supports Tottenham Hotspur FC</li>
+          </ul>
+          {/* <p className="animate-fade-in fade-lg">Want to get in touch?  You can find me on <a href="https://twitter.com/maxpetretta">Twitter</a>, connect on <a href="https://www.linkedin.com/in/maxpetretta/">LinkedIn</a>, or send me <Link href="/contact"><a>an email</a></Link>.</p> */}
+          <span className="animate-fade-in fade-lg flex justify-end mt-6">
             <a className="button flex items-center" href="https://github.com/maxpetretta/resume">
               <svg xmlns="http://www.w3.org/2000/svg" className="inline mr-2" width="36" height="36" viewBox="4 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -46,9 +51,9 @@ export default function Home({ jobs }) {
               return <li className="fade fade-sm" key={skill}><Badge logo={skill} /></li>
             })}
           </ul>
-          <p className="mt-14">Technologies I am proficient in:</p>
+          <p className="mt-14">Technologies I have used:</p>
           <ul className="fade grid grid-cols-3 md:grid-cols-4 md:gap-2">
-            {["AWS", "Azure", "Docker", "Linux", "React", "Tailwind", "Next.js", "Node.js", "DevOps", "Git"].map(skill => {
+            {["AWS", "Azure", "DevOps", "Docker", "React", "Next.js", "Node.js", "Tailwind", "Linux", "Git"].map(skill => {
               return <li className="fade fade-sm" key={skill}><Badge logo={skill} /></li>
             })}
           </ul>
@@ -63,8 +68,8 @@ export default function Home({ jobs }) {
           </ul>
         </section>
         <section className="fade flex flex-col justify-center min-h-1/3 text-center">
-          <h2 className="heading my-0 text-3xl md:text-4xl" id="contact">Let's Connect!</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h2 className="heading my-0 text-3xl md:text-4xl" id="contact">Keep In Touch</h2>
+          <p>I'm always open to hearing about new opportunities.  Let's connect!</p>
           <span className="animate-fade-in fade-lg flex justify-center">
             <a className="button flex items-center" href="mailto:hello@maxpetretta.com">hello@maxpetretta.com</a>
           </span>
