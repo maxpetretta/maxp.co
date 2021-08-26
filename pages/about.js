@@ -10,10 +10,10 @@ export default function About() {
         title="About - Max Petretta"
       >
         <section>
-          <h1>About Me</h1>
+          <h1>About</h1>
           <div className="flex justify-center items-center my-16">
-            <div className="brand-gradient animate-spin-slow absolute w-72 h-72 md:w-96 md:h-96 z-0 rounded-full shadow-2xl"/>
-            <div className="w-64 h-64 md:w-80 md:h-80">
+            <div className="brand-gradient animate-spin-slow absolute w-56 h-56 md:w-80 md:h-80 z-0 rounded-full shadow-2xl overflow-hidden"/>
+            <div className="w-48 h-48 md:w-72 md:h-72">
               <Image
                 width={256}
                 height={256}
@@ -26,8 +26,8 @@ export default function About() {
               />
             </div>
           </div>
-          <p>Hello!</p>
-          <p>My name is Max Petretta.  I'm a software engineer with ~5 years of professional work experience.  During that time, I've worked on a variety of projects in the web, mobile, and cloud fields.  Currently, I work as a software engineer at <a href="https://www.gehealthcare.com/">GE Healthcare</a>.  My focus is in the cloud space, working to modernize our applications using automation & infrastructure-as-code.</p>
+          <h2>Hello!</h2>
+          <p>My name is Max Petretta.  I'm a software engineer with over 4 years of professional work experience.  During that time, I've worked on a variety of projects in the web, mobile, and cloud fields.  Currently, I work as a software engineer at <a href="https://www.gehealthcare.com/">GE Healthcare</a>.  My focus is in the cloud space, working to modernize our applications using automation & infrastructure-as-code.</p>
           <p>Originally from Michigan, I graduated with a B.S. in computer science from the <a href="https://umdearborn.edu/">University of Michigan</a>.  In our senior design competition, my team and our Android app were fortunate enough to win the <a href="https://umdearborn.edu/news/articles/senior-design-day-takes-students-beyond-books">Most Innovative Project</a> award.  While working towards my degree, I also studied abroad at <a href="https://www.ucl.ac.uk/">University College London</a>.</p>
           <p>After graduating college, I joined GE's Digital Technology Leadership Program (DTLP), where I spent two years traveling around the country (and the globe!) working in different businesses & roles.  I currently live in Milwaukee, Wisconsin.</p>
           <p>In my spare time, I maintain a pretty diverse set of hobbies: I practice woodworking, I wire & assemble mechanical keyboards, and I'm an avid Premier League fan (<strong>#COYS</strong>).</p>

@@ -48,7 +48,7 @@ export default function Layout(props) {
           <div className="max-w-5xl mx-auto">
             <Header />
             <MDXProvider components={components}>
-              <main className="max-w-4xl mx-auto md:text-xl">
+              <main className="max-w-4xl mx-auto text-sm xs:text-base md:text-xl">
                 {children}
               </main>
             </MDXProvider>
