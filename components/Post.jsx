@@ -8,7 +8,7 @@ export default function Post({ meta, children }) {
       <Layout
         title={meta.title}
         description={meta.description}
-        image={meta.image}
+        image={"https://maxpetretta.com" + meta.image}
         date={meta.date}
         type="article"
       >

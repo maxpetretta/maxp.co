@@ -10,7 +10,7 @@ export default function PostCard({ post }) {
           <Image
             layout="fill"
             objectFit="contain"
-            src={"/images/" + post.image}
+            src={post.image}
             alt={post.alt}
           />
         </div>

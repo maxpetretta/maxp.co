@@ -14,7 +14,7 @@ export default function Layout(props) {
   const meta = {
     title: 'Max Petretta - Software Engineer',
     description: 'A blog by Max Petretta, software engineer',
-    image: 'https://maxpetretta.com/public/images/banner.png',
+    image: 'https://maxpetretta.com/images/banner.png',
     type: 'website',
     ...pageMeta
   };
