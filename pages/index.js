@@ -67,7 +67,7 @@ export default function Home({ jobs }) {
           <h2 className="heading my-0" id="about">About Me</h2>
           <hr className="mt-2 mb-8 md:mt-3 md:mb-10" />
           <p>I've always had a love of technology, and have been more-or-less in front of a keyboard since <a href="https://98.js.org/">Windows 98</a> and <a href="https://www.dialupsound.com/">AOL</a> were the hot new things.  I did not discover programming until college, while looking for fun electives to distract from my engineering classes.</p>
-          <p>One major change later, and the rest is history.  I graduated with a B.S. in Computer Science from the University of Michigan-Dearborn in 2018.  Immediately afterwords, I joined GE's <a href="https://jobs.gecareers.com/global/en/leadership-dtlp-page">Digital Technology Leadership Program</a>, and spent two years growing my technical and leadership abilities.</p>
+          <p>One major change later, and the rest is history.  I graduated with a B.S. in Computer Science from the University of Michigan-Dearborn in 2018.  Afterwards, I joined GE's <a href="https://jobs.gecareers.com/global/en/leadership-dtlp-page">Digital Technology Leadership Program</a>, and spent two years growing my technical and leadership abilities.</p>
           <p>My work has spanned everything from the modern web, to native mobile apps, to cloud architecture and automation.</p>
           <p>Outside of development, my hobbies include: golf, casual woodworking, mechanical keyboards, and watching Premier League <strong>#COYS</strong></p>
           <span className="flex justify-end">
