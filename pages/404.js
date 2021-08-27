@@ -5,7 +5,7 @@ export default function Error404() {
   return (
     <>
       <Layout
-        title="Error 404 - Max Petretta"
+        title="Error 404 | Max Petretta"
         description="That page cannot be found!"
       >
         <section>

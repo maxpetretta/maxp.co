@@ -7,7 +7,7 @@ export default function About() {
   return (
     <>
       <Layout
-        title="About - Max Petretta"
+        title="About | Max Petretta"
       >
         <section>
           <h1>About</h1>
@@ -27,14 +27,17 @@ export default function About() {
             </div>
           </div>
           <h2>Hello!</h2>
-          <p>My name is Max Petretta.  I'm a software engineer with over 4 years of professional work experience.  During that time, I've worked on a variety of projects in the web, mobile, and cloud fields.  Currently, I work as a software engineer at <a href="https://www.gehealthcare.com/">GE Healthcare</a>.  My focus is in the cloud space, working to modernize our applications using automation & infrastructure-as-code.</p>
-          <p>Originally from Michigan, I graduated with a B.S. in computer science from the <a href="https://umdearborn.edu/">University of Michigan</a>.  In our senior design competition, my team and our Android app were fortunate enough to win the <a href="https://umdearborn.edu/news/articles/senior-design-day-takes-students-beyond-books">Most Innovative Project</a> award.  While working towards my degree, I also studied abroad at <a href="https://www.ucl.ac.uk/">University College London</a>.</p>
-          <p>After graduating college, I joined GE's Digital Technology Leadership Program (DTLP), where I spent two years traveling around the country (and the globe!) working in different businesses & roles.  I currently live in Milwaukee, Wisconsin.</p>
-          <p>In my spare time, I maintain a pretty diverse set of hobbies: I practice woodworking, I wire & assemble mechanical keyboards, and I'm an avid Premier League fan (<strong>#COYS</strong>).</p>
+          <p>My name is Max Petretta.  I'm a software engineer with over 4 years of professional work experience.  You've found my corner of the internet, where I experiment with <Link href="/blog/tech-stack"><a>new tech</a></Link> and sometimes <Link href="/blog"><a>write too</a></Link>.</p>
+          <p>Born in '94, I practically grew up as the world came online.  Plenty of fond memories come to mind: AIM conversations, forum posts, and long nights spent playing <a href="https://oldschool.runescape.com/">RuneScape</a> with friends.  My love of technology really started in 2008, when I bought my first iPod Touch, jailbroke it 😈, and started downloading any app I could find.</p>
+          <p>Originally from Michigan, I graduated with a B.S. in Computer Science from the <a href="https://umdearborn.edu/">University of Michigan</a> after a brief foray in mechanical engineering.  In my senior design competition, my team was fortunate enough to win <a href="https://umdearborn.edu/news/articles/senior-design-day-takes-students-beyond-books">"Most Innovative Project"</a> for our Android application.</p>
+          <p>After graduating college, I joined General Electric's <a href="https://jobs.gecareers.com/global/en/leadership-dtlp-page">Digital Technology Leadership Program</a>, where I spent two years traveling around the country (and the globe!) working in different businesses & roles.  From front-end web development to launching a new hardware product, I grew as both an engineer and a leader.</p>
+          <p>I work for <a href="https://www.gehealthcare.com/">GE Healthcare</a> now, and live in Milwaukee, Wisconsin.  My role is in the cloud space, where I work to modernize our applications and processes by delivering reliable services, advanced automation, and infrastructure-as-code.</p>
+          <p>In my spare time, I maintain a pretty diverse set of hobbies: I play golf, practice woodworking (poorly 😅), wire & assemble mechanical keyboards, and I'm an avid Premier League fan <strong>#COYS</strong>.</p>
+
         </section>
         <section>
           <h2>About This Site</h2>
-          <p>This site was built using React, Next.js, and TailwindCSS.  It is completely static 🚀, and is deployed with ▲Vercel.  If you are interested in how any of that works, you can <Link href="/blog/tech-stack"><a>read more here</a></Link>, or take a glance at the <a href="https://github.com/maxpetretta/blog">source code!</a></p>
+          <p>This site was built using Next.js, TailwindCSS, and MDX.  It is completely static 🚀, and is deployed with ▲Vercel.  If you are interested in how any of that works, you can <Link href="/blog/tech-stack"><a>read more here</a></Link>, or take a glance at the <a href="https://github.com/maxpetretta/blog">source code!</a></p>
         </section>
         <section>
           <h2>Inspiration</h2>
@@ -42,8 +45,9 @@ export default function About() {
           <ul className="list-disc ml-4">
             <li><a href="https://leerob.io/">Lee Robinson</a>, who <a href="https://leerob.io/blog/mdx">wrote extensively</a> about the <a href="https://leerob.io/blog/tailwind">tech stack</a> that I ultimately decided on</li>
             <li><a href="https://www.taniarascia.com/">Tania Rascia</a>, and her excellent web-focused <a href="https://www.taniarascia.com/guides">technology guides</a></li>
-            <li><a href="https://paulstamatiou.com/">Paul Stamatiou</a> & <a href="https://barrowclift.me/">Marc Barrowclift</a>, and their beautifully designed personal sites</li>
+            <li><a href="https://paulstamatiou.com/">Paul Stamatiou</a>, <a href="https://brittanychiang.com/">Brittany Chiang</a>, & <a href="https://barrowclift.me/">Marc Barrowclift</a>, and their beautifully designed personal sites</li>
           </ul>
+          <p>And a special thanks to <a href="https://github.com/tabler/tabler-icons">Tabler icons</a> and <a href="https://www.flaticon.com/authors/freepik">Freepik graphics</a>.</p>
         </section>
       </Layout>
     </>

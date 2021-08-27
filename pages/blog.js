@@ -8,7 +8,7 @@ export default function Blog({ posts, postCount, postsByYear, years }) {
   return (
     <>
       <Layout
-        title="Blog - Max Petretta"
+        title="Blog | Max Petretta"
       >
         <section>
           <h1 className="mb-0">Blog</h1>

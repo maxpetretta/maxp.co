@@ -6,7 +6,7 @@ export default function Post({ meta, children }) {
   return (
     <>
       <Layout
-        title={meta.title}
+        title={meta.title + " | Max Petretta"}
         description={meta.description}
         image={"https://maxpetretta.com" + meta.image}
         date={meta.date}

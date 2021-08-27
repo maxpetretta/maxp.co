@@ -12,9 +12,9 @@ export default function Layout(props) {
   const { children, ...pageMeta } = props;
   const router = useRouter();
   const meta = {
-    title: 'Max Petretta - Software Engineer',
-    description: 'A blog by Max Petretta, software engineer',
-    image: 'https://maxpetretta.com/images/banner.png',
+    title: 'Max Petretta | Software Engineer',
+    description: 'I design and build intuitive applications, reliable services, and systems that scale.',
+    image: 'https://maxpetretta.com/images/card.png',
     type: 'website',
     ...pageMeta
   };
