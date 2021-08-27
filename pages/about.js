@@ -11,9 +11,9 @@ export default function About() {
       >
         <section>
           <h1>About</h1>
-          <div className="flex justify-center items-center my-16">
-            <div className="brand-gradient animate-spin-slow absolute w-56 h-56 md:w-80 md:h-80 z-0 rounded-full shadow-2xl overflow-hidden"/>
-            <div className="w-48 h-48 md:w-72 md:h-72">
+          <div className="flex justify-center items-center my-8">
+            <div className="brand-gradient animate-spin-slow absolute w-56 h-56 md:w-96 md:h-96 z-0 rounded-full shadow-2xl overflow-hidden"/>
+            <div className="w-48 h-48 md:w-80 md:h-80">
               <Image
                 width={256}
                 height={256}
