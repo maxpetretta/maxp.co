@@ -30,7 +30,7 @@ export default function Header() {
   return (
     <header className="flex justify-between sticky top-0 z-20 py-2 bg-gray-100 dark:bg-gray-900">
       <Link href="/">
-        <a className="no-link flex items-center" aria-label="A link to the homepage">
+        <a className="no-link hidden xs:inline" aria-label="A link to the homepage">
           <img
             width={48}
             height={48}
@@ -38,7 +38,7 @@ export default function Header() {
             alt="Max's personal logo"
             className="hidden xs:inline"
           />
-          <span className="link hidden md:inline rounded-lg">Max Petretta</span>
+          <span className="link hidden md:inline rounded-lg align-middle">Max Petretta</span>
         </a>
       </Link>
       <nav className="flex flex-grow max-w-lg items-center justify-end">

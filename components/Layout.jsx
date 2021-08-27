@@ -12,9 +12,9 @@ export default function Layout(props) {
   const { children, ...pageMeta } = props;
   const router = useRouter();
   const meta = {
-    title: 'Max Petretta - Software Engineer',
-    description: 'A blog by Max Petretta, software engineer',
-    image: 'https://maxpetretta.com/public/images/banner.png',
+    title: 'Max Petretta | Software Engineer',
+    description: 'I design and build intuitive applications, reliable services, and systems that scale.',
+    image: 'https://maxpetretta.com/images/card.png',
     type: 'website',
     ...pageMeta
   };
@@ -48,7 +48,7 @@ export default function Layout(props) {
           <div className="max-w-5xl mx-auto">
             <Header />
             <MDXProvider components={components}>
-              <main className="max-w-4xl mx-auto md:text-xl">
+              <main className="max-w-4xl mx-auto text-sm xs:text-base md:text-xl">
                 {children}
               </main>
             </MDXProvider>

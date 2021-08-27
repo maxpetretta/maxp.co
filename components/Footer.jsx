@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="mt-28">
       <address className="flex justify-center">
         <a className="link rounded-full hover:text-gray-100 hover:bg-black dark:hover:text-black dark:hover:bg-gray-100" href="https://github.com/maxpetretta">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" aria-labelledby="githubTitle githubDesc" role="img">
+          <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 md:w-10 md:h-10" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" aria-labelledby="githubTitle githubDesc" role="img">
             <title id="githubTitle">GitHub link</title>
             <desc id="githubDesc">A link to Max's GitHub profile</desc>
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -13,7 +13,7 @@ export default function Footer() {
           </svg>
         </a>
         <a className="link rounded-full hover:text-gray-100 hover:bg-blue-400 dark:hover:bg-blue-400" href="https://twitter.com/maxpetretta">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" aria-labelledby="twitterTitle twitterDesc" role="img">
+          <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 md:w-10 md:h-10" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" aria-labelledby="twitterTitle twitterDesc" role="img">
             <title id="twitterTitle">Twitter link</title>
             <desc id="twitterDesc">A link to Max's Twitter profile</desc>
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -21,7 +21,7 @@ export default function Footer() {
           </svg>
         </a>
         <a className="link rounded-full hover:text-gray-100 hover:bg-blue-800 dark:hover:bg-blue-800" href="https://www.linkedin.com/in/maxpetretta/">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" aria-labelledby="linkedinTitle linkedinDesc" role="img">
+          <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 md:w-10 md:h-10" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" aria-labelledby="linkedinTitle linkedinDesc" role="img">
             <title id="linkedinTitle">LinkedIn link</title>
             <desc id="linkedinDesc">A link to Max's LinkedIn profile</desc>
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -34,7 +34,7 @@ export default function Footer() {
         </a>
         <Link href="/contact">
           <a className="link rounded-full hover:text-gray-100 hover:bg-accent dark:hover:bg-accent">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" aria-labelledby="emailTitle emailDesc" role="img">
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 md:w-10 md:h-10" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" aria-labelledby="emailTitle emailDesc" role="img">
               <title id="emailTitle">Email link</title>
               <desc id="emailDesc">A link to an email contact page</desc>
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>

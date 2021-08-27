@@ -38,7 +38,7 @@
     @apply mb-2 md:mb-3 text-base md:text-lg text-gray-500 dark:text-gray-400;
   }
   p {
-    @apply my-5 md:my-6 whitespace-pre-wrap;
+    @apply my-4 xs:my-5 md:my-6 whitespace-pre-wrap;
   }
   hr {
     @apply block my-12 md:my-14 border-2 border-gray-500 dark:border-gray-400;
@@ -68,7 +68,7 @@
     border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:focus:border-accent;
   }
   .link {
-    @apply transition-colors duration-300 mx-1 md:mx-3 p-2 md:p-3 text-base md:text-xl font-bold 
+    @apply transition-colors duration-300 mx-2 md:mx-3 p-2 md:p-3 text-base md:text-xl font-bold 
     bg-transparent hover:text-gray-900 hover:bg-gray-300
     dark:bg-transparent dark:hover:text-gray-100 dark:hover:bg-gray-700;
   }

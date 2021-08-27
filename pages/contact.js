@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <>
       <Layout
-        title="Contact - Max Petretta"
+        title="Contact | Max Petretta"
       >
         <section>
           <h1 className="mb-0">Contact</h1>
