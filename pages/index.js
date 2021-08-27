@@ -67,7 +67,7 @@ export default function Home({ jobs }) {
           <h2 className="heading my-0" id="about">About Me</h2>
           <hr className="mt-2 mb-8 md:mt-3 md:mb-10" />
           <p>I've always had a love of technology, and have been more-or-less in front of a keyboard since <a href="https://98.js.org/">Windows 98</a> and <a href="https://www.dialupsound.com/">AOL</a> were the hot new things.  I discovered programming much later, while looking for fun electives to distract from my college engineering courses.</p>
-          <p>One major change later, and the rest is history.  I graduated with a B.S. in Computer Science from the University of Michigan-Dearborn.  Afterwards, I joined GE's <a href="https://jobs.gecareers.com/global/en/leadership-dtlp-page">Digital Technology Leadership Program</a>, and spent two years growing my technical and leadership abilities.</p>
+          <p>One major change later, and the rest is history.  I graduated with a B.S. in Computer Science from the University of Michigan-Dearborn.  Afterwards, I joined GE's <a href="https://jobs.gecareers.com/global/en/leadership-dtlp-page">Digital Technology Leadership Program</a>, and spent two years honing my technical and leadership abilities.</p>
           <p>If I'm not coding, you can probably find me: golfing, woodworking (poorly 😅), building mechanical keyboards, or watching Premier League <strong>#COYS</strong></p>
           <span className="flex justify-end">
             <Link href="/about"><a className="button flex items-center">Read More</a></Link>

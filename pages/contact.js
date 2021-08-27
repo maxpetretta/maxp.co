@@ -10,7 +10,7 @@ export default function Contact() {
           <h1 className="mb-0">Contact</h1>
           <p>Do you have a question on one of my articles?  A comment you'd like to share?  Or maybe you just want to talk;  The easiest way to reach me is <a href="https://twitter.com/maxpetretta">via Twitter</a>.  You can also send me an email if you'd like:</p>
         </section>
-        <section>
+        <section className="md:min-h-1/2">
           <form action="https://formspree.io/f/xeqpbarr" method="POST">
             <input className="form" type="email" name="_replyto" tabIndex="1" placeholder="Email address" required />
             <input type="hidden" name="_subject" value="Contact Form"/>

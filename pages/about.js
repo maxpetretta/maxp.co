@@ -27,13 +27,12 @@ export default function About() {
             </div>
           </div>
           <h2>Hello!</h2>
-          <p>My name is Max Petretta.  I'm a software engineer with over 4 years of professional work experience.  You've found my corner of the internet, where I experiment with <Link href="/blog/tech-stack"><a>new tech</a></Link> and sometimes <Link href="/blog"><a>write too</a></Link>.</p>
+          <p>My name is Max Petretta.  I'm a software engineer with over 4 years of professional work experience.  You've found my corner of the internet, where I experiment with <Link href="/blog/tech-stack"><a>new tech</a></Link> and sometimes <Link href="/blog"><a>write about it</a></Link>.</p>
           <p>Born in '94, I practically grew up as the world came online.  Plenty of fond memories come to mind: AIM conversations, forum posts, and long nights spent playing <a href="https://oldschool.runescape.com/">RuneScape</a> with friends.  My love of technology really started in 2008, when I bought my first iPod Touch, jailbroke it 😈, and started downloading any app I could find.</p>
           <p>Originally from Michigan, I graduated with a B.S. in Computer Science from the <a href="https://umdearborn.edu/">University of Michigan</a> after a brief foray in mechanical engineering.  In my senior design competition, my team was fortunate enough to win <a href="https://umdearborn.edu/news/articles/senior-design-day-takes-students-beyond-books">"Most Innovative Project"</a> for our Android application.</p>
           <p>After graduating college, I joined General Electric's <a href="https://jobs.gecareers.com/global/en/leadership-dtlp-page">Digital Technology Leadership Program</a>, where I spent two years traveling around the country (and the globe!) working in different businesses & roles.  From front-end web development to launching a new hardware product, I grew as both an engineer and a leader.</p>
           <p>I work for <a href="https://www.gehealthcare.com/">GE Healthcare</a> now, and live in Milwaukee, Wisconsin.  My role is in the cloud space, where I work to modernize our applications and processes by delivering reliable services, advanced automation, and infrastructure-as-code.</p>
           <p>In my spare time, I maintain a pretty diverse set of hobbies: I play golf, practice woodworking (poorly 😅), wire & assemble mechanical keyboards, and I'm an avid Premier League fan <strong>#COYS</strong>.</p>
-
         </section>
         <section>
           <h2>About This Site</h2>
