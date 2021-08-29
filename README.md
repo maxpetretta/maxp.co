@@ -12,16 +12,17 @@ open http://localhost:3000
 ```
 
 ## Tech Stack
-Built using the following technologies:
-* Next.js: Static site builds and routing
-* Tailwind: Adaptive CSS page styling
-* MDX: Parsing markdown files to post content
-* Shiki: VSCode syntax highlighting for the web
-* Vercel: Web hosting and automated deployments
+Built with the following technologies:
+* [Next.js](https://nextjs.org/): Static site builds and routing
+* [Tailwind](https://tailwindcss.com/): Adaptive CSS page styling
+* [MDX](https://mdxjs.com/): Parsing markdown files to post content
+* [Shiki](https://shiki.matsu.io/): VSCode syntax highlighting for the web
+* [Vercel](https://vercel.com/): Web hosting and automated deployments
 
 ## Performance
 ![An image of Google Chrome lighthouse scores](./public/images/lighthouse.png)
-Thanks to the [JAMStack architecture](https://jamstack.org/), performance of the site is pretty great 😁
+
+Thanks to the [JAMStack architecture](https://jamstack.org/), this site's performance is _blazing fast_ 🚀
 
 ## Contributions
 PRs are always welcome, please tag me when you're ready for merge.
