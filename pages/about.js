@@ -36,7 +36,7 @@ export default function About() {
         </section>
         <section>
           <h2>About This Site</h2>
-          <p>This site was built using Next.js, TailwindCSS, and MDX.  It is completely static 🚀, and is deployed with ▲Vercel.  If you are interested in how any of that works, you can <Link href="/blog/tech-stack"><a>read more here</a></Link>, or take a glance at the <a href="https://github.com/maxpetretta/blog">source code!</a></p>
+          <p>This site was built using Next.js, TailwindCSS, and MDX.  It is completely static 🚀, and is deployed with ▲Vercel.  If you are interested in how any of that works, you can <Link href="/blog/tech-stack"><a>read more here</a></Link>, or take a glance at the <a href="https://github.com/maxpetretta/maxpetretta.com">source code!</a></p>
         </section>
         <section>
           <h2>Inspiration</h2>
