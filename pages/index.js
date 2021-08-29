@@ -81,7 +81,7 @@ export default function Home({ jobs }) {
           </div>
           <p className="mt-14">Languages that I know:</p>
           <ul className="fade grid grid-cols-3 md:grid-cols-4 md:gap-2">
-            {["HTML", "CSS", "JavaScript", "SQL", "Python", "Swift", "Java", "Terraform"].map(skill => {
+            {["Python", "Swift", "Java", "Terraform", "HTML", "CSS", "JavaScript", "SQL"].map(skill => {
               return <li className="fade fade-sm" key={skill}><Badge logo={skill} /></li>
             })}
           </ul>
