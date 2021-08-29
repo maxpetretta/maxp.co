@@ -42,7 +42,7 @@ export default function Home({ jobs }) {
             </li>
           </ul>
           <span className="animate-fade-in fade-lg flex justify-end mt-6">
-            <a className="button flex items-center" href="https://github.com/maxpetretta/resume">
+            <a className="button flex items-center" href="https://raw.githubusercontent.com/maxpetretta/resume/master/Maximilian%20Petretta%20Resume.pdf">
               <svg xmlns="http://www.w3.org/2000/svg" className="inline mr-2 md:mr-3 w-7 h-7 md:w-10 md:h-10" viewBox="4 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M14 3v4a1 1 0 0 0 1 1h4" />

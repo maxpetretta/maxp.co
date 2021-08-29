@@ -11,6 +11,14 @@ npm run dev
 open http://localhost:3000
 ```
 
+## Tech Stack
+Built using the following technologies:
+* Next.js: Static site builds and routing
+* Tailwind: Adaptive CSS page styling
+* MDX: Parsing markdown files to post content
+* Shiki: VSCode syntax highlighting for the web
+* Vercel: Web hosting and automated deployments
+
 ## Performance
 ![An image of Google Chrome lighthouse scores](./public/images/lighthouse.png)
 Thanks to the [JAMStack architecture](https://jamstack.org/), performance of the site is pretty great 😁
