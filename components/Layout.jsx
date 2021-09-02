@@ -1,24 +1,29 @@
-import Head from 'next/head'
-import Header from './Header'
-import Footer from './Footer'
-import { useRouter } from 'next/router'
-import { MDXProvider } from '@mdx-js/react'
+import Head from "next/head"
+import Header from "./Header"
+import Footer from "./Footer"
+import { useRouter } from "next/router"
+import { MDXProvider } from "@mdx-js/react"
 
 const components = {
-  pre: props => <pre style={{background: props.style[0].split(":")[1]}}>{props.children}</pre>
+  pre: (props) => (
+    <pre style={{ background: props.style[0].split(":")[1] }}>
+      {props.children}
+    </pre>
+  ),
 }
 
 export default function Layout(props) {
-  const { children, ...pageMeta } = props;
-  const router = useRouter();
+  const { children, ...pageMeta } = props
+  const router = useRouter()
   const meta = {
-    title: 'Max Petretta | Software Engineer',
-    description: 'I design and build intuitive applications, reliable services, and systems that scale.',
-    image: 'https://maxpetretta.com/images/card.png',
-    type: 'website',
-    ...pageMeta
-  };
-  
+    title: "Max Petretta | Software Engineer",
+    description:
+      "I design and build intuitive applications, reliable services, and systems that scale.",
+    image: "https://maxpetretta.com/images/card.png",
+    type: "website",
+    ...pageMeta,
+  }
+
   return (
     <>
       <Head>
@@ -26,8 +31,14 @@ export default function Layout(props) {
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta name="description" content={meta.description} />
-        <link rel="canonical" href={`https://maxpetretta.com${router.asPath}`} />
-        <meta property="og:url" content={`https://maxpetretta.com${router.asPath}`} />
+        <link
+          rel="canonical"
+          href={`https://maxpetretta.com${router.asPath}`}
+        />
+        <meta
+          property="og:url"
+          content={`https://maxpetretta.com${router.asPath}`}
+        />
         <meta property="og:title" content={meta.title} />
         <meta property="og:description" content={meta.description} />
         <meta property="og:image" content={meta.image} />
@@ -42,7 +53,7 @@ export default function Layout(props) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <div className="brand-gradient fixed bottom-0 w-full h-full -z-10"/>
+      <div className="brand-gradient fixed bottom-0 w-full h-full -z-10" />
       <div className="flex min-h-screen p-2 md:p-6">
         <div className="flex-1 w-full p-3 rounded-2xl text-gray-900 bg-gray-100 dark:text-gray-100 dark:bg-gray-900">
           <div className="max-w-5xl mx-auto">
@@ -56,7 +67,7 @@ export default function Layout(props) {
           </div>
         </div>
       </div>
-      <div className="brand-gradient fixed bottom-0 w-full h-full -z-10"/>
+      <div className="brand-gradient fixed bottom-0 w-full h-full -z-10" />
     </>
   )
 }

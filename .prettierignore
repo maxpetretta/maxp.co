@@ -11,6 +11,7 @@
 # next.js
 /.next/
 /out/
+.vercel
 
 # production
 /build
@@ -18,6 +19,7 @@
 # misc
 .DS_Store
 *.pem
+README.md
 
 # debug
 npm-debug.log*
@@ -29,6 +31,3 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
-
-# vercel
-.vercel

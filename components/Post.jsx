@@ -1,6 +1,6 @@
-import Title from '../components/Title'
-import Layout from '../components/Layout'
-import PostCard from '../components/PostCard'
+import Title from "../components/Title"
+import Layout from "../components/Layout"
+import PostCard from "../components/PostCard"
 
 export default function Post({ meta, children }) {
   return (
@@ -17,15 +17,15 @@ export default function Post({ meta, children }) {
           <section className="prose md:prose-xl dark:prose-dark max-w-none">
             {children}
           </section>
-          {meta.related != null &&
+          {meta.related != null && (
             <section>
-              <hr className="mt-10"/>
+              <hr className="mt-10" />
               <h2>Related Post</h2>
               <div className="flex flex-wrap justify-center">
                 <PostCard post={getPostBySlug(meta.related)} />
               </div>
             </section>
-          }
+          )}
         </article>
       </Layout>
     </>
@@ -37,6 +37,6 @@ export function getPostBySlug(slug) {
 
   return {
     slug: slug,
-    ...post.meta
+    ...post.meta,
   }
 }
