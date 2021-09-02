@@ -87,7 +87,7 @@ export default function Home({ jobs }) {
           </ul>
           <p className="mt-14">Technologies I have used:</p>
           <ul className="fade grid grid-cols-3 md:grid-cols-4 md:gap-2">
-            {["AWS", "Azure", "DevOps", "Docker", "React", "Next.js", "Node.js", "Tailwind", "Linux", "Git"].map(skill => {
+            {["AWS", "Azure", "DevOps", "Docker", "React", "Next.js", "Node.js", "Tailwind", "Linux", "git"].map(skill => {
               return <li className="fade fade-sm" key={skill}><Badge logo={skill} /></li>
             })}
           </ul>
