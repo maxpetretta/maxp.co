@@ -1,4 +1,4 @@
-const rehypeShiki = require('rehype-shiki')
+const rehypeShiki = require("rehype-shiki")
 const withMDX = require("@next/mdx")({
   extension: /\.mdx?$/,
   options: {
@@ -12,8 +12,8 @@ const withMDX = require("@next/mdx")({
       ],
     ],
   },
-});
+})
 
 module.exports = withMDX({
-  pageExtensions: ['js', 'jsx', 'mdx'],
+  pageExtensions: ["js", "jsx", "mdx"],
 })
