@@ -43,6 +43,9 @@
   hr {
     @apply block my-12 md:my-14 border-2 border-gray-500 dark:border-gray-400;
   }
+  img {
+    @apply transition duration-500;
+  }
 }
 
 @layer components {
