@@ -32,7 +32,7 @@ export default function App({ Component, pageProps }) {
           color="#4361a2"
         />
         <meta name="msapplication-TileColor" content="#c73156" />
-        <meta name="theme-color" content="#4361a2" />
+        <meta name="theme-color" content="#111827" />
         {/* Preconnects */}
         <link rel="preconnect" href="https://vitals.vercel-insights.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
