@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="mt-28">
       <address className="flex justify-center">
         <a
-          className="link rounded-full hover:text-gray-100 hover:bg-black dark:hover:text-black dark:hover:bg-gray-100"
+          className="link rounded-full hover:text-gray-100 hover:bg-black dark:hover:text-black dark:hover:bg-white"
           href="https://github.com/maxpetretta"
         >
           <svg

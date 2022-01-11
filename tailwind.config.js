@@ -122,38 +122,38 @@ module.exports = {
           css: {
             a: null,
             strong: {
-              color: theme("colors.gray.100"),
+              color: theme("colors.gray.200"),
             },
             hr: {
               borderColor: theme("colors.gray.400"),
             },
             blockquote: {
-              color: theme("colors.gray.100"),
+              color: theme("colors.gray.200"),
               borderLeftColor: theme("colors.gray.400"),
             },
             li: {
-              color: theme("colors.gray.100"),
+              color: theme("colors.gray.200"),
             },
             "ol > li::before": {
-              color: theme("colors.gray.100"),
+              color: theme("colors.gray.200"),
             },
             "ul > li::before": {
-              backgroundColor: theme("colors.gray.100"),
+              backgroundColor: theme("colors.gray.200"),
             },
             h1: {
-              color: theme("colors.gray.100"),
+              color: theme("colors.gray.200"),
             },
             h2: {
-              color: theme("colors.gray.100"),
+              color: theme("colors.gray.200"),
             },
             h3: {
-              color: theme("colors.gray.100"),
+              color: theme("colors.gray.200"),
             },
             h4: {
               color: theme("colors.gray.400"),
             },
             p: {
-              color: theme("colors.gray.100"),
+              color: theme("colors.gray.200"),
             },
           },
         },
