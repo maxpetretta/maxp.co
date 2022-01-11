@@ -28,7 +28,7 @@ export default function Header() {
   }
 
   return (
-    <header className="flex justify-between sticky top-0 z-20 py-2 bg-gray-100 dark:bg-gray-900">
+    <header className="flex justify-between sticky top-0 z-20 py-2 bg-white dark:bg-gray-900">
       <Link href="/">
         <a
           className="no-link hidden xs:inline"

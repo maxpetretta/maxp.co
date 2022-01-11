@@ -54,7 +54,7 @@ export default function Accordion({ job }) {
         <span className="transition-transform duration-500 transform rotate-90 peer-checked:-rotate-90 mr-3 md:mr-5 font-normal">
           &#10095;
         </span>
-        <div className="transition-all duration-500 flex flex-col-reverse md:flex-row justify-end w-full h-0 peer-checked:h-88 ph:peer-checked:h-76 md:peer-checked:h-72 peer-checked:border-t-2 overflow-hidden bg-gray-100 border-gray-300 dark:bg-gray-900 dark:border-gray-700">
+        <div className="transition-all duration-500 flex flex-col-reverse md:flex-row justify-end w-full h-0 peer-checked:h-88 ph:peer-checked:h-76 md:peer-checked:h-72 peer-checked:border-t-2 overflow-hidden bg-white border-gray-300 dark:bg-gray-900 dark:border-gray-700">
           <div
             className="prose prose-sm md:prose dark:prose-dark w-full md:w-2/3 px-2 md:px-4 pt-2 font-normal"
             dangerouslySetInnerHTML={{ __html: job.description }}
