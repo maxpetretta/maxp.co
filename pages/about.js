@@ -26,10 +26,10 @@ export default function About() {
           </div>
           <h2>Hello!</h2>
           <p>
-            My name is Max Petretta. I'm a software engineer with over 4 years
+            My name is Max Petretta. I'm a software engineer with over 5 years
             of professional work experience. You've found my corner of the
             internet, where I experiment with{" "}
-            <Link href="/blog/tech-stack">
+            <Link href="/tech-stack">
               <a>new tech</a>
             </Link>{" "}
             and sometimes{" "}
@@ -77,7 +77,7 @@ export default function About() {
           </p>
           <p>
             In my spare time, I maintain a pretty diverse set of hobbies: I play
-            golf, practice woodworking (poorly 😅), wire & assemble mechanical
+            golf (poorly 😅), practice woodworking, wire & assemble mechanical
             keyboards, and I'm an avid Premier League fan <strong>#COYS</strong>
             .
           </p>
@@ -88,7 +88,7 @@ export default function About() {
             This site was built using Next.js, TailwindCSS, and MDX. It is
             completely static 🚀, and is deployed with ▲Vercel. If you are
             interested in how any of that works, you can{" "}
-            <Link href="/blog/tech-stack">
+            <Link href="/tech-stack">
               <a>read more here</a>
             </Link>
             , or take a glance at the{" "}
@@ -113,7 +113,7 @@ export default function About() {
             <li>
               <a href="https://www.taniarascia.com/">Tania Rascia</a>, and her
               excellent web-focused{" "}
-              <a href="https://www.taniarascia.com/guides">technology guides</a>
+              <a href="https://www.taniarascia.com/blog">technology guides</a>
             </li>
             <li>
               <a href="https://paulstamatiou.com/">Paul Stamatiou</a>,{" "}

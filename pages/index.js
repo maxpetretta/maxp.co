@@ -76,7 +76,7 @@ export default function Home({ jobs }) {
                 <path d="M3 13a20 20 0 0 0 18 0" />
               </svg>
               <span className="align-middle">
-                Over 4 years of work experience
+                Over 5 years of work experience
               </span>
             </li>
           </ul>
@@ -146,8 +146,8 @@ export default function Home({ jobs }) {
             , and spent two years honing my technical and leadership abilities.
           </p>
           <p>
-            If I'm not coding, you can probably find me: golfing, woodworking
-            (poorly 😅), building mechanical keyboards, or watching Premier
+            If I'm not coding, you can probably find me: golfing (poorly 😅),
+            woodworking, building mechanical keyboards, or watching Premier
             League <strong>#COYS</strong>
           </p>
           <span className="flex justify-end">

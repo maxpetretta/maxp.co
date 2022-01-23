@@ -1,7 +1,7 @@
 import Layout from "../components/Layout"
 import PostCard from "../components/PostCard"
 import Entry from "../components/Entry"
-import { getPosts } from "../lib/posts"
+import { getAllPosts } from "../lib/posts"
 
 export default function Blog({ posts, postCount, postsByYear, years }) {
   return (
@@ -18,9 +18,9 @@ export default function Blog({ posts, postCount, postsByYear, years }) {
           <h2 className="mb-0">Featured Articles</h2>
           <hr className="mt-2 mb-8 md:mt-3 md:mb-10" />
           <div className="flex flex-wrap justify-center">
-            {getFeaturedPosts(posts).map((post) => {
+            {/* {getFeaturedPosts(posts).map((post) => {
               return <PostCard key={post.slug} post={post} />
-            })}
+            })} */}
           </div>
         </section>
         {years.map((year) => {
@@ -42,7 +42,7 @@ export default function Blog({ posts, postCount, postsByYear, years }) {
 }
 
 export async function getStaticProps() {
-  const posts = getPosts()
+  const posts = await getAllPosts()
   const postCount = posts.length
   let postsByYear = {}
 
