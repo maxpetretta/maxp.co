@@ -1,0 +1,79 @@
+<!-- Post metadata -->
+
+import Image from "next/image"
+import Post from "../../components/Post"
+import banner from "../../public/images/hello.png"
+
+export const meta = {
+  title: "Hello World",
+  description: "I suppose an introduction is in order...",
+  date: "2022-1-24",
+  tags: ["Personal"],
+  image: "/images/hello.png",
+  alt: "The handwaving emoji, in yellow",
+  icon: "👋",
+  related: "tech-stack",
+}
+
+export default Post
+
+<div className="flex justify-center">
+  <Image
+    width={1024}
+    height={512}
+    src={banner}
+    alt={meta.alt}
+    placeholder="blur"
+    priority
+  />
+</div>
+
+<!-- Post content -->
+
+Hello, and thanks again for visiting my blog. As we get started, I just wanted to establish some ground rules...
+
+## Who am I?
+
+Not trying to be philosophical or anything, but identity is complicated. It's always felt weird to me that (as Americans), the go-to introduction is "I'm an X role at Y company".
+
+Aren't we more than our 9-5's?
+
+We have hobbies and dreams and fears and much more. I'm still figuring out who I am, and maybe you are too. But, if you'd like to read more about my background, the [About](/about) page is a good place to start. And, as you may have already gathered, I'm a software developer by trade.
+
+## Why the website?
+
+At this point, I've been online for most of my life. I've spent most of that time as a [lurker](https://en.wikipedia.org/wiki/Lurker), passively consuming the content of others, but never really creating my own. This is a common phenonenom, so much so that it has been decribed as the ["1% rule of the internet"](<https://en.wikipedia.org/wiki/1%25_rule_(Internet_culture)>); only a small handful of users create the posts that the rest of us enjoy on a daily basis.
+
+I've been aware of this quality in myself for quite some time. In fact, I built this blog over a year ago, at the end of 2020. But it's sat empty all this time. I think much of that stems from my crippling fear of [being wrong on the internet](https://xkcd.com/386/).
+
+**That was pretty silly, on my part.**
+
+Of course I will make mistakes, that's only natural! It's also doing myself a disservice, as the potential to learn and improve is much greater when you let the world "check your math". This idea is known as ["Learn in Public"](https://www.swyx.io/learn-in-public/), popularized by [@swyx](https://twitter.com/swyx).
+
+And it's not just Shawn, many of [the people](https://twitter.com/Stammy/status/1393217964841787397) I follow have [extolled the power](https://www.fabrizio.so/notes/grow-on-twitter) of [this methodology](https://twitter.com/SimonHoiberg/status/1452218476807000067).
+
+So I guess that's the disclaimer: **I don't have all the answers, and I'll never claim to be always right.** The stuff here is based on the knowledge I have at the time, and I reserve the right to edit or change things as I learn more. _Progress over perfection_.
+
+## What can you expect?
+
+If all of that sounds good to you, here's what you can expect content on:
+
+**Anything that interests me**
+
+Incredibly vague, right? Well, I have a lot of ideas for articles, such as:
+
+- How I built this blog w/ Next.js
+- Why I use a split, mechanical keyboard
+- A review of Apple's AirPods Max
+- How to make great epoxy tables
+- The pitfalls and shortcomings of Infrastructure-as-Code
+
+It's pretty tough for me to come up with one or two categories that work for all of that (if you have ideas, feel free to [tweet them at me!](https://twitter.com/maxpetretta)). So instead, no promises other than sharing what I'm learning about.
+
+## In closing
+
+This year, instead of setting goals and spending the entire year trying to acheive them, I'm trying something different:
+
+<Tweet align="center" tweetLink="maxpetretta/status/1483882167528669184" />
+
+Writing is one of the habits I've decided to focus on. So cheers to 2022, let's see where we end up.

@@ -26,7 +26,7 @@ export default function About() {
           </div>
           <h2>Hello!</h2>
           <p>
-            My name is Max Petretta. I'm a software engineer with over 4 years
+            My name is Max Petretta. I'm a software engineer with over 5 years
             of professional work experience. You've found my corner of the
             internet, where I experiment with{" "}
             <Link href="/blog/tech-stack">
@@ -77,7 +77,7 @@ export default function About() {
           </p>
           <p>
             In my spare time, I maintain a pretty diverse set of hobbies: I play
-            golf, practice woodworking (poorly 😅), wire & assemble mechanical
+            golf (poorly 😅), practice woodworking, wire & assemble mechanical
             keyboards, and I'm an avid Premier League fan <strong>#COYS</strong>
             .
           </p>

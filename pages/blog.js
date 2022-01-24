@@ -1,7 +1,7 @@
 import Layout from "../components/Layout"
 import PostCard from "../components/PostCard"
 import Entry from "../components/Entry"
-import { getPosts } from "../lib/posts"
+import { getAllPosts } from "../lib/posts"
 
 export default function Blog({ posts, postCount, postsByYear, years }) {
   return (
@@ -42,7 +42,7 @@ export default function Blog({ posts, postCount, postsByYear, years }) {
 }
 
 export async function getStaticProps() {
-  const posts = getPosts()
+  const posts = getAllPosts()
   const postCount = posts.length
   let postsByYear = {}
 

@@ -3,6 +3,7 @@ import Header from "./Header"
 import Footer from "./Footer"
 import { useRouter } from "next/router"
 import { MDXProvider } from "@mdx-js/react"
+import { Tweet } from "mdx-embed"
 
 const components = {
   pre: (props) => (
@@ -10,6 +11,7 @@ const components = {
       {props.children}
     </pre>
   ),
+  Tweet,
 }
 
 export default function Layout(props) {
