@@ -49,6 +49,9 @@
 }
 
 @layer components {
+  /* .anchor {
+    @apply no-link absolute opacity-0 hover:opacity-100 transform -translate-x-4;
+  } */
   .brand-gradient {
     @apply bg-gradient-to-r from-primary-dark to-primary dark:from-primary dark:to-primary-light;
   }
