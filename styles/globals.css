@@ -10,6 +10,12 @@
     font-display: swap;
   }
   @font-face {
+    font-family: Inter;
+    font-weight: 100 900;
+    src: url(/fonts/inter.ttf) format("truetype");
+    font-display: swap;
+  }
+  @font-face {
     font-family: Fira Code;
     font-weight: 100 900;
     src: url(/fonts/fira-code.ttf) format("truetype");
@@ -23,22 +29,22 @@
   a {
     @apply transition duration-300 p-0.5 font-bold no-underline rounded
     bg-gray-300 hover:text-gray-100 hover:bg-primary 
-    dark:bg-gray-700 dark:hover:text-gray-100 dark:hover:bg-primary-light;
+    dark:text-gray-100 dark:bg-gray-700 dark:hover:text-gray-100 dark:hover:bg-primary-light;
   }
   h1 {
-    @apply mt-4 mb-8 md:mb-12 text-4xl md:text-5xl font-extrabold;
+    @apply mt-4 mb-8 md:mb-12 text-4xl md:text-5xl font-extrabold dark:text-white;
   }
   h2 {
-    @apply mt-12 mb-6 md:mt-14 md:mb-8 text-2xl md:text-3xl font-bold;
+    @apply mt-10 mb-5 md:mt-12 md:mb-6 text-2xl md:text-3xl font-bold dark:text-white;
   }
   h3 {
-    @apply mb-3 md:mb-5 text-xl md:text-2xl font-bold;
+    @apply mt-6 mb-3 md:mt-10 md:mb-5 text-xl md:text-2xl font-bold dark:text-white;
   }
   h4 {
-    @apply mb-2 md:mb-3 text-base md:text-lg text-gray-500 dark:text-gray-400;
+    @apply mb-2 md:mb-3 text-base md:text-lg text-gray-500 dark:text-gray-300;
   }
   p {
-    @apply my-4 xs:my-5 md:my-6 whitespace-pre-wrap;
+    @apply my-3 xs:my-4 md:my-5 whitespace-pre-wrap;
   }
   hr {
     @apply block my-12 md:my-14 border-2 border-gray-500 dark:border-gray-400;
@@ -49,9 +55,6 @@
 }
 
 @layer components {
-  /* .anchor {
-    @apply no-link absolute opacity-0 hover:opacity-100 transform -translate-x-4;
-  } */
   .brand-gradient {
     @apply bg-gradient-to-r from-primary-dark to-primary dark:from-primary dark:to-primary-light;
   }

@@ -48,7 +48,7 @@ export async function getStaticProps() {
 
   posts.map((post) => {
     const year = post.date.split("-")[0]
-    postsByYear[year] = [...(postsByYear[year] ?? []), post]
+    postsByYear[year] = [...(postsByYear[year] ?? []), post].reverse()
   })
 
   const years = Object.keys(postsByYear).sort().reverse()
@@ -59,7 +59,7 @@ export async function getStaticProps() {
 }
 
 export function getFeaturedPosts(posts) {
-  const featured = ["lorem-ipsum", "airpods-max", "hotdox", "tech-stack"]
+  const featured = ["hello-world", "tech-stack"]
 
   const sorted = posts
     .filter((post) => featured.includes(post.slug))

@@ -98,7 +98,7 @@ export default function About() {
           </p>
         </section>
         <section>
-          <h2>Inspiration</h2>
+          <h3>Inspiration</h3>
           <p>
             I'd like to give credit to a few people who inspired the design of
             this site:

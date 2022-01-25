@@ -67,7 +67,7 @@ export default function Layout(props) {
       </Head>
       <div className="brand-gradient fixed top-0 w-full h-full -z-10" />
       <div className="flex min-h-screen p-2 md:p-6">
-        <div className="flex-1 w-full p-3 rounded-2xl text-gray-900 bg-white dark:text-gray-200 dark:bg-gray-900">
+        <div className="flex-1 w-full p-3 rounded-2xl text-gray-900 bg-white dark:text-gray-300 dark:bg-gray-900">
           <div className="max-w-4xl mx-auto">
             <Header />
             <MDXProvider components={components}>
