@@ -22,7 +22,7 @@ export default function TabBar({ sections }) {
 
   return (
     <div
-      className="relative flex flex-1 md:w-96 h-8 ml-0 xs:ml-2 text-sm md:text-lg rounded-lg bg-gray-400 dark:bg-gray-700 border-3 border-gray-400 dark:border-gray-700"
+      className="relative ml-0 flex h-8 flex-1 rounded-lg border-3 border-gray-400 bg-gray-400 text-sm dark:border-gray-700 dark:bg-gray-700 xs:ml-2 md:w-96 md:text-lg"
       onClick={() => {
         var selector = document.getElementById("selector")
         selector.classList.remove(...classes)
@@ -34,7 +34,7 @@ export default function TabBar({ sections }) {
     >
       <div
         className={
-          "transition-transform duration-300 absolute inset-x-0 inset-y-0 rounded-md shadow-md transform translate-x-0 bg-white dark:bg-gray-500 " +
+          "absolute inset-x-0 inset-y-0 translate-x-0 transform rounded-md bg-white shadow-md transition-transform duration-300 dark:bg-gray-500 " +
           tabWidth
         }
         id="selector"
@@ -42,7 +42,7 @@ export default function TabBar({ sections }) {
       {tabs.map((tab) => {
         return (
           <label
-            className="flex-1 flex items-center justify-center cursor-pointer"
+            className="flex flex-1 cursor-pointer items-center justify-center"
             key={tab.section.toLowerCase()}
             onClick={() => {
               current = tab
@@ -54,7 +54,7 @@ export default function TabBar({ sections }) {
               name="tabs"
             />
             <a
-              className="no-link relative w-full z-10 text-center font-bold leading-none"
+              className="no-link relative z-10 w-full text-center font-bold leading-none"
               href={"#" + tab.section.toLowerCase()}
             >
               {tab.section}

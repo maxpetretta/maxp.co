@@ -65,13 +65,13 @@ export default function Layout(props) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <div className="brand-gradient fixed top-0 w-full h-full -z-10" />
+      <div className="brand-gradient fixed top-0 -z-10 h-full w-full" />
       <div className="flex min-h-screen p-2 md:p-6">
-        <div className="flex-1 w-full p-3 rounded-2xl text-gray-900 bg-white dark:text-gray-300 dark:bg-gray-900">
-          <div className="max-w-4xl mx-auto">
+        <div className="w-full flex-1 rounded-2xl bg-white p-3 text-gray-900 dark:bg-gray-900 dark:text-gray-300">
+          <div className="mx-auto max-w-4xl">
             <Header />
             <MDXProvider components={components}>
-              <main className="max-w-3xl mx-auto text-sm xs:text-base md:text-lg">
+              <main className="mx-auto max-w-3xl text-sm xs:text-base md:text-lg">
                 {children}
               </main>
             </MDXProvider>
@@ -79,7 +79,7 @@ export default function Layout(props) {
           </div>
         </div>
       </div>
-      <div className="brand-gradient fixed bottom-0 w-full h-full -z-10" />
+      <div className="brand-gradient fixed bottom-0 -z-10 h-full w-full" />
     </>
   )
 }

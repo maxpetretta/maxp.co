@@ -9,9 +9,9 @@ export default function About() {
       <Layout title="About | Max Petretta">
         <section>
           <h1>About</h1>
-          <div className="flex justify-center items-center my-8">
-            <div className="brand-gradient animate-spin-slow absolute w-56 h-56 md:w-96 md:h-96 z-0 rounded-full shadow-2xl overflow-hidden" />
-            <div className="w-48 h-48 md:w-80 md:h-80">
+          <div className="my-8 flex items-center justify-center">
+            <div className="brand-gradient absolute z-0 h-56 w-56 animate-spin-slow overflow-hidden rounded-full shadow-2xl md:h-96 md:w-96" />
+            <div className="h-48 w-48 md:h-80 md:w-80">
               <Image
                 width={256}
                 height={256}
@@ -103,7 +103,7 @@ export default function About() {
             I'd like to give credit to a few people who inspired the design of
             this site:
           </p>
-          <ul className="list-disc ml-4">
+          <ul className="ml-4 list-disc">
             <li>
               <a href="https://leerob.io/">Lee Robinson</a>, who{" "}
               <a href="https://leerob.io/blog/mdx">wrote extensively</a> about
@@ -121,7 +121,7 @@ export default function About() {
               <a href="https://miguelpiedrafita.com/">Miguel Piedrafita</a>, and
               his article on
               <a href="https://miguelpiedrafita.com/vscode-highlighting">
-                VSCode syntax highlighting for MDX sites
+                VSCode syntax highlighting for MDX
               </a>
             </li>
             <li>

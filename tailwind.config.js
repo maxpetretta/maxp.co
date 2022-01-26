@@ -2,10 +2,8 @@ const defaultTheme = require("tailwindcss/defaultTheme")
 
 module.exports = {
   mode: "jit",
-  purge: {
-    content: ["./pages/**/*.js", "./pages/**/*.mdx", "./components/**/*.jsx"],
-    safelist: ["opacity-0", "animate-fade-in"],
-  },
+  content: ["./pages/**/*.js", "./pages/**/*.mdx", "./components/**/*.jsx"],
+  safelist: ["opacity-0", "animate-fade-in"],
   darkMode: "class",
   theme: {
     screens: {

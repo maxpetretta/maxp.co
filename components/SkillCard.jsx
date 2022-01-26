@@ -1,10 +1,10 @@
 export default function SkillCard() {
   return (
-    <div className="card flex-col md:flex-row max-w-md md:max-w-4xl my-8 mx-auto md:mx-6 divide-y-2 md:divide-y-0 md:divide-x-2 divide-gray-300 dark:divide-gray-700">
-      <div className="flex flex-col items-center md:w-1/3 p-4">
+    <div className="card my-8 mx-auto max-w-md flex-col divide-y-2 divide-gray-300 dark:divide-gray-700 md:mx-6 md:max-w-4xl md:flex-row md:divide-y-0 md:divide-x-2">
+      <div className="flex flex-col items-center p-4 md:w-1/3">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="w-28 h-28 md:w-36 md:h-36"
+          className="h-28 w-28 md:h-36 md:w-36"
           viewBox="0 0 512 512"
           strokeWidth="2"
           stroke="currentColor"
@@ -30,15 +30,15 @@ export default function SkillCard() {
           <path d="M275.763,128.435c-4.446-1.485-9.301,0.93-10.795,5.393l-34.133,102.4c-1.485,4.471,0.93,9.301,5.402,10.795 c0.887,0.299,1.801,0.444,2.697,0.444c3.575,0,6.903-2.261,8.098-5.837l34.133-102.4 C282.65,134.758,280.235,129.929,275.763,128.435z" />
         </svg>
         <h3 className="mt-6 mb-2">Full Stack</h3>
-        <p className="md:text-base m-0">
+        <p className="m-0 md:text-base">
           Experienced in developing responsive, customer-facing sites, and
           collecting feedback from users.
         </p>
       </div>
-      <div className="flex flex-col items-center md:w-1/3 p-4">
+      <div className="flex flex-col items-center p-4 md:w-1/3">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="w-28 h-28 md:w-36 md:h-36"
+          className="h-28 w-28 md:h-36 md:w-36"
           viewBox="0 0 512 512"
           strokeWidth="2"
           stroke="currentColor"
@@ -59,15 +59,15 @@ export default function SkillCard() {
           <path d="m323.427 341.98h-78.761c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h75.813v25.517h-128.958v-25.517h18.49c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-21.438c-6.646 0-12.052 5.406-12.052 12.052v31.413c0 6.646 5.406 12.052 12.052 12.052h134.854c6.646 0 12.052-5.406 12.052-12.052v-31.413c0-6.646-5.407-12.052-12.052-12.052z" />
         </svg>
         <h3 className="mt-6 mb-2">Mobile</h3>
-        <p className="md:text-base m-0">
+        <p className="m-0 md:text-base">
           Served as tech-lead for iOS-based volunteer project, involving
           SwiftUI, UIKit, HealthKit, and MapKit.
         </p>
       </div>
-      <div className="flex flex-col items-center md:w-1/3 p-4">
+      <div className="flex flex-col items-center p-4 md:w-1/3">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="w-28 h-28 md:w-36 md:h-36"
+          className="h-28 w-28 md:h-36 md:w-36"
           viewBox="0 0 512 512"
           strokeWidth="2"
           stroke="currentColor"
@@ -85,7 +85,7 @@ export default function SkillCard() {
           <path d="M381.924,83.675c-25.585,0-46.401,20.815-46.401,46.401c0,25.587,20.815,46.402,46.401,46.402 s46.401-20.815,46.401-46.402C428.325,104.49,407.51,83.675,381.924,83.675z M381.924,155.851 c-14.211,0-25.775-11.563-25.775-25.776c0-14.213,11.563-25.775,25.775-25.775c14.212,0,25.774,11.563,25.775,25.775 C407.699,144.288,396.136,155.851,381.924,155.851z" />
         </svg>
         <h3 className="mt-6 mb-2">DevOps</h3>
-        <p className="md:text-base m-0">
+        <p className="m-0 md:text-base">
           Designed and delivered key automated systems used by dozens of
           independent application teams.
         </p>

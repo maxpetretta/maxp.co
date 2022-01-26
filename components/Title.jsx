@@ -2,8 +2,8 @@ export default function Title({ meta }) {
   return (
     <>
       <h1 className="mb-3 md:mb-4">{meta.title}</h1>
-      <div className="flex flex-col md:flex-row md:items-center justify-between mb-8">
-        <time className="faint text-lg mb-2 md:mb-0">
+      <div className="mb-8 flex flex-col justify-between md:flex-row md:items-center">
+        <time className="faint mb-2 text-lg md:mb-0">
           {new Date(meta.date).toLocaleDateString("en-US", {
             year: "numeric",
             month: "long",

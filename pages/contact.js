@@ -34,7 +34,7 @@ export default function Contact() {
               required
             />
             <input
-              className="button block mt-4 ml-auto mr-0 outline-none"
+              className="button mt-4 ml-auto mr-0 block outline-none"
               type="submit"
               tabIndex="3"
               value="Send"

@@ -2,8 +2,8 @@ import Image from "next/image"
 
 export default function Badge({ logo }) {
   return (
-    <div className="transition-transform duration-300 flex items-center max-w-1/3 md:max-w-1/4 m-1 rounded-lg shadow-md transform hover:-translate-y-2 bg-gray-300 dark:bg-gray-700">
-      <div className="flex items-center justify-center w-6 h-6 md:w-14 md:h-14 m-1 p-0.5 md:m-2 md:p-2 rounded md:rounded-lg bg-white dark:bg-gray-300">
+    <div className="max-w-1/3 md:max-w-1/4 m-1 flex transform items-center rounded-lg bg-gray-300 shadow-md transition-transform duration-300 hover:-translate-y-2 dark:bg-gray-700">
+      <div className="m-1 flex h-6 w-6 items-center justify-center rounded bg-white p-0.5 dark:bg-gray-300 md:m-2 md:h-14 md:w-14 md:rounded-lg md:p-2">
         <Image
           width={38}
           height={38}
@@ -12,7 +12,7 @@ export default function Badge({ logo }) {
           alt={"A logo representing " + logo}
         />
       </div>
-      <span className="mx-auto text-xs xs:text-sm md:text-lg font-bold">
+      <span className="mx-auto text-xs font-bold xs:text-sm md:text-lg">
         {logo}
       </span>
     </div>

@@ -28,7 +28,7 @@ export default function Header() {
   }
 
   return (
-    <header className="flex justify-between sticky top-0 z-20 py-2 bg-white dark:bg-gray-900">
+    <header className="sticky top-0 z-20 flex justify-between bg-white py-2 dark:bg-gray-900">
       <Link href="/">
         <a
           className="no-link hidden xs:inline"
@@ -41,12 +41,12 @@ export default function Header() {
             alt="Max's personal logo"
             className="hidden xs:inline"
           />
-          <span className="link hidden md:inline rounded-lg align-middle">
+          <span className="link hidden rounded-lg align-middle md:inline">
             Max Petretta
           </span>
         </a>
       </Link>
-      <nav className="flex flex-grow max-w-lg items-center justify-end">
+      <nav className="flex max-w-lg flex-grow items-center justify-end">
         {navigation}
         <Toggle
           id="toggleTheme"

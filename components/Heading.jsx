@@ -5,8 +5,8 @@ export default function Heading({ tag, children }) {
   return (
     <HTag className="group flex items-center" id={anchor}>
       <a
-        className="no-link absolute text-accent hover:text-accent dark:text-accent-light
-      dark:hover:text-accent-light font-medium opacity-0 group-hover:opacity-100 -translate-x-6"
+        className="no-link absolute -translate-x-6 font-medium text-accent
+      opacity-0 hover:text-accent group-hover:opacity-100 dark:text-accent-light dark:hover:text-accent-light"
         href={link}
       >
         §
