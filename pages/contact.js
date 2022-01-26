@@ -7,9 +7,10 @@ export default function Contact() {
         <section>
           <h1 className="mb-0">Contact</h1>
           <p>
-            Do you have a question on one of my articles? A comment you'd like
-            to share? Or maybe you just want to talk; The easiest way to reach
-            me is <a href="https://twitter.com/maxpetretta">via Twitter</a>. You
+            Do you have a question on one of my articles?{"  "}A comment you'd
+            like to share?{"  "}Or maybe you just want to talk; The easiest way
+            to reach me is{" "}
+            <a href="https://twitter.com/maxpetretta">via Twitter</a>.{"  "}You
             can also send me an email if you'd like:
           </p>
         </section>

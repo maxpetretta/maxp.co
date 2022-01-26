@@ -11,7 +11,7 @@ export default function Blog({ posts, postCount, postsByYear, years }) {
           <h1 className="mb-0">Blog</h1>
           <p>
             A healthy mix of articles, reviews, and random thoughts.{" "}
-            <strong>{postCount}</strong> posts published since 2020.
+            <strong>{postCount}</strong> posts published since 2021.
           </p>
         </section>
         <section>

@@ -17,8 +17,8 @@ export default function Home({ jobs }) {
           <p className="animate-fade-in fade-lg">
             A <a href="https://github.com/maxpetretta">software engineer</a>{" "}
             with a passion for building intuitive applications, reliable
-            services, and systems that scale. Currently, I'm building the future
-            of cloud infrastructure at{" "}
+            services, and systems that scale.{"  "}Currently, I'm building the
+            future of cloud infrastructure at{" "}
             <a href="https://www.gehealthcare.com/">GE Healthcare</a>.
           </p>
           <ul className="animate-fade-in fade-lg">
@@ -133,13 +133,13 @@ export default function Home({ jobs }) {
             front of a keyboard since{" "}
             <a href="https://98.js.org/">Windows 98</a> and{" "}
             <a href="https://www.dialupsound.com/">AOL</a> were the hot new
-            things. I discovered programming much later, while looking for fun
-            electives to distract from my college engineering courses.
+            things.{"  "}I discovered programming much later, while looking for
+            fun electives to distract from my college engineering courses.
           </p>
           <p>
-            One major change later, and the rest is history. I graduated with a
-            B.S. in Computer Science from the University of Michigan-Dearborn.
-            Afterwards, I joined GE's{" "}
+            One major change later, and the rest is history.{"  "}I graduated
+            with a B.S. in Computer Science from the University of
+            Michigan-Dearborn.{"  "}Afterwards, I joined GE's{" "}
             <a href="https://jobs.gecareers.com/global/en/leadership-dtlp-page">
               Digital Technology Leadership Program
             </a>
@@ -221,7 +221,8 @@ export default function Home({ jobs }) {
             Keep In Touch
           </h2>
           <p>
-            I'm always open to hearing about new opportunities. Let's connect!
+            I'm always open to hearing about new opportunities.{"  "}Let's
+            connect!
           </p>
           <span className="flex justify-center">
             <a
