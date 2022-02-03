@@ -46,6 +46,9 @@
   img {
     @apply transition duration-500;
   }
+  strong {
+    @apply text-black dark:text-white;
+  }
 }
 
 @layer components {
