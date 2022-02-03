@@ -9,23 +9,23 @@ export default function Home({ jobs }) {
   return (
     <>
       <Layout>
-        <section className="animate-fade-in flex flex-col justify-center min-h-screen md:min-h-3/4">
-          <h4 className="animate-fade-in fade-lg">👋 Hey there!</h4>
-          <h1 className="animate-fade-in fade-lg text-3xl xs:text-4xl md:text-6xl my-0">
+        <section className="flex min-h-screen animate-fade-in flex-col justify-center md:min-h-3/4">
+          <h4 className="fade-lg animate-fade-in">👋 Hey there!</h4>
+          <h1 className="fade-lg my-0 animate-fade-in text-3xl xs:text-4xl md:text-6xl">
             I'm Max Petretta,
           </h1>
-          <p className="animate-fade-in fade-lg">
+          <p className="fade-lg animate-fade-in">
             A <a href="https://github.com/maxpetretta">software engineer</a>{" "}
             with a passion for building intuitive applications, reliable
-            services, and systems that scale. Currently, I'm building the future
-            of cloud infrastructure at{" "}
+            services, and systems that scale.{"  "}Currently, I'm building the
+            future of cloud infrastructure at{" "}
             <a href="https://www.gehealthcare.com/">GE Healthcare</a>.
           </p>
-          <ul className="animate-fade-in fade-lg">
+          <ul className="fade-lg animate-fade-in">
             <li>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="inline mr-2 md:mr-3 w-7 h-7 md:w-10 md:h-10"
+                className="mr-2 inline h-7 w-7 md:mr-3 md:h-10 md:w-10"
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
@@ -42,7 +42,7 @@ export default function Home({ jobs }) {
             <li>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="inline mr-2 md:mr-3 w-7 h-7 md:w-10 md:h-10"
+                className="mr-2 inline h-7 w-7 md:mr-3 md:h-10 md:w-10"
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
@@ -61,7 +61,7 @@ export default function Home({ jobs }) {
             <li>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="inline mr-2 md:mr-3 w-7 h-7 md:w-10 md:h-10"
+                className="mr-2 inline h-7 w-7 md:mr-3 md:h-10 md:w-10"
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
@@ -76,18 +76,18 @@ export default function Home({ jobs }) {
                 <path d="M3 13a20 20 0 0 0 18 0" />
               </svg>
               <span className="align-middle">
-                Over 4 years of work experience
+                Over 5 years of work experience
               </span>
             </li>
           </ul>
-          <span className="animate-fade-in fade-lg flex justify-end mt-6">
+          <span className="fade-lg mt-6 flex animate-fade-in justify-end">
             <a
               className="button flex items-center"
               href="https://raw.githubusercontent.com/maxpetretta/resume/master/Maximilian%20Petretta%20Resume.pdf"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="inline mr-2 md:mr-3 w-7 h-7 md:w-10 md:h-10"
+                className="mr-2 inline h-7 w-7 md:mr-3 md:h-10 md:w-10"
                 viewBox="4 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
@@ -105,10 +105,10 @@ export default function Home({ jobs }) {
               Resume
             </a>
           </span>
-          <span className="animate-fade-in fade-lg mx-auto mt-10">
+          <span className="fade-lg mx-auto mt-10 animate-fade-in">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="animate-bounce w-14 h-14"
+              className="h-14 w-14 animate-bounce"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
@@ -133,21 +133,21 @@ export default function Home({ jobs }) {
             front of a keyboard since{" "}
             <a href="https://98.js.org/">Windows 98</a> and{" "}
             <a href="https://www.dialupsound.com/">AOL</a> were the hot new
-            things. I discovered programming much later, while looking for fun
-            electives to distract from my college engineering courses.
+            things.{"  "}I discovered programming much later, while looking for
+            fun electives to distract from my college engineering courses.
           </p>
           <p>
-            One major change later, and the rest is history. I graduated with a
-            B.S. in Computer Science from the University of Michigan-Dearborn.
-            Afterwards, I joined GE's{" "}
+            One major change later, and the rest is history.{"  "}I graduated
+            with a B.S. in Computer Science from the University of
+            Michigan-Dearborn.{"  "}Afterwards, I joined GE's{" "}
             <a href="https://jobs.gecareers.com/global/en/leadership-dtlp-page">
               Digital Technology Leadership Program
             </a>
             , and spent two years honing my technical and leadership abilities.
           </p>
           <p>
-            If I'm not coding, you can probably find me: golfing, woodworking
-            (poorly 😅), building mechanical keyboards, or watching Premier
+            If I'm not coding, you can probably find me: golfing (poorly 😅),
+            woodworking, building mechanical keyboards, or watching Premier
             League <strong>#COYS</strong>
           </p>
           <span className="flex justify-end">
@@ -216,12 +216,13 @@ export default function Home({ jobs }) {
             })}
           </ul>
         </section>
-        <section className="fade flex flex-col justify-center min-h-1/3 text-center">
+        <section className="fade flex min-h-1/3 flex-col justify-center text-center">
           <h2 className="heading my-0 text-3xl md:text-4xl" id="contact">
             Keep In Touch
           </h2>
           <p>
-            I'm always open to hearing about new opportunities. Let's connect!
+            I'm always open to hearing about new opportunities.{"  "}Let's
+            connect!
           </p>
           <span className="flex justify-center">
             <a

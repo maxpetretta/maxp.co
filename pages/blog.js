@@ -1,7 +1,7 @@
 import Layout from "../components/Layout"
 import PostCard from "../components/PostCard"
 import Entry from "../components/Entry"
-import { getPosts } from "../lib/posts"
+import { getAllPosts } from "../lib/posts"
 
 export default function Blog({ posts, postCount, postsByYear, years }) {
   return (
@@ -11,7 +11,7 @@ export default function Blog({ posts, postCount, postsByYear, years }) {
           <h1 className="mb-0">Blog</h1>
           <p>
             A healthy mix of articles, reviews, and random thoughts.{" "}
-            <strong>{postCount}</strong> posts published since 2020.
+            <strong>{postCount}</strong> posts published since 2021.
           </p>
         </section>
         <section>
@@ -42,13 +42,13 @@ export default function Blog({ posts, postCount, postsByYear, years }) {
 }
 
 export async function getStaticProps() {
-  const posts = getPosts()
+  const posts = getAllPosts()
   const postCount = posts.length
   let postsByYear = {}
 
   posts.map((post) => {
     const year = post.date.split("-")[0]
-    postsByYear[year] = [...(postsByYear[year] ?? []), post]
+    postsByYear[year] = [...(postsByYear[year] ?? []), post].reverse()
   })
 
   const years = Object.keys(postsByYear).sort().reverse()
@@ -59,7 +59,7 @@ export async function getStaticProps() {
 }
 
 export function getFeaturedPosts(posts) {
-  const featured = ["lorem-ipsum", "airpods-max", "hotdox", "tech-stack"]
+  const featured = ["hello-world", "tech-stack"]
 
   const sorted = posts
     .filter((post) => featured.includes(post.slug))

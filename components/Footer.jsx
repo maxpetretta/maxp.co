@@ -5,12 +5,12 @@ export default function Footer() {
     <footer className="mt-28">
       <address className="flex justify-center">
         <a
-          className="link rounded-full hover:text-gray-100 hover:bg-black dark:hover:text-black dark:hover:bg-white"
+          className="link rounded-full hover:bg-black hover:text-gray-100 dark:hover:bg-white dark:hover:text-black"
           href="https://github.com/maxpetretta"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-8 h-8 md:w-10 md:h-10"
+            className="h-8 w-8 md:h-10 md:w-10"
             viewBox="0 0 24 24"
             strokeWidth="2"
             stroke="currentColor"
@@ -27,12 +27,12 @@ export default function Footer() {
           </svg>
         </a>
         <a
-          className="link rounded-full hover:text-gray-100 hover:bg-blue-400 dark:hover:bg-blue-400"
+          className="link rounded-full hover:bg-blue-400 hover:text-gray-100 dark:hover:bg-blue-400"
           href="https://twitter.com/maxpetretta"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-8 h-8 md:w-10 md:h-10"
+            className="h-8 w-8 md:h-10 md:w-10"
             viewBox="0 0 24 24"
             strokeWidth="2"
             stroke="currentColor"
@@ -49,12 +49,12 @@ export default function Footer() {
           </svg>
         </a>
         <a
-          className="link rounded-full hover:text-gray-100 hover:bg-blue-800 dark:hover:bg-blue-800"
+          className="link rounded-full hover:bg-blue-800 hover:text-gray-100 dark:hover:bg-blue-800"
           href="https://www.linkedin.com/in/maxpetretta/"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-8 h-8 md:w-10 md:h-10"
+            className="h-8 w-8 md:h-10 md:w-10"
             viewBox="0 0 24 24"
             strokeWidth="2"
             stroke="currentColor"
@@ -75,10 +75,10 @@ export default function Footer() {
           </svg>
         </a>
         <Link href="/contact">
-          <a className="link rounded-full hover:text-gray-100 hover:bg-accent dark:hover:bg-accent">
+          <a className="link rounded-full hover:bg-accent hover:text-gray-100 dark:hover:bg-accent">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-8 h-8 md:w-10 md:h-10"
+              className="h-8 w-8 md:h-10 md:w-10"
               viewBox="0 0 24 24"
               strokeWidth="2"
               stroke="currentColor"
@@ -97,7 +97,7 @@ export default function Footer() {
           </a>
         </Link>
       </address>
-      <nav className="flex justify-center gap-6 mt-3">
+      <nav className="mt-3 flex justify-center gap-6">
         <Link href="/">
           <a className="no-link faint">/home</a>
         </Link>
@@ -111,7 +111,7 @@ export default function Footer() {
           <a className="no-link faint">/contact</a>
         </Link>
       </nav>
-      <p className="my-4 text-sm text-center text-gray-400">
+      <p className="my-4 text-center text-sm text-gray-400">
         &copy; 2020 - {new Date().getFullYear()} Max Petretta
       </p>
     </footer>

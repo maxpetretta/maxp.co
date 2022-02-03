@@ -1,11 +1,7 @@
-const defaultTheme = require("tailwindcss/defaultTheme")
-
 module.exports = {
   mode: "jit",
-  purge: {
-    content: ["./pages/**/*.js", "./pages/**/*.mdx", "./components/**/*.jsx"],
-    safelist: ["opacity-0", "animate-fade-in"],
-  },
+  content: ["./pages/**/*.js", "./pages/**/*.mdx", "./components/**/*.jsx"],
+  safelist: ["opacity-0", "animate-fade-in"],
   darkMode: "class",
   theme: {
     screens: {
@@ -105,6 +101,7 @@ module.exports = {
               borderColor: theme("colors.gray.500"),
             },
             blockquote: {
+              fontWeight: 400,
               borderLeftColor: theme("colors.gray.500"),
             },
             "ol > li::before": {
@@ -116,44 +113,51 @@ module.exports = {
             h1: {
               fontSize: null,
             },
+            h3: {
+              fontWeight: 700,
+            },
           },
         },
         dark: {
           css: {
-            a: null,
+            a: {
+              color: theme("colors.gray.100"),
+            },
             strong: {
-              color: theme("colors.gray.200"),
+              color: theme("colors.white"),
             },
             hr: {
               borderColor: theme("colors.gray.400"),
             },
             blockquote: {
-              color: theme("colors.gray.200"),
+              fontWeight: 400,
+              color: theme("colors.white"),
               borderLeftColor: theme("colors.gray.400"),
             },
             li: {
-              color: theme("colors.gray.200"),
+              color: theme("colors.gray.300"),
             },
             "ol > li::before": {
-              color: theme("colors.gray.200"),
-            },
-            "ul > li::before": {
-              backgroundColor: theme("colors.gray.200"),
-            },
-            h1: {
-              color: theme("colors.gray.200"),
-            },
-            h2: {
-              color: theme("colors.gray.200"),
-            },
-            h3: {
-              color: theme("colors.gray.200"),
-            },
-            h4: {
               color: theme("colors.gray.400"),
             },
+            "ul > li::before": {
+              backgroundColor: theme("colors.gray.400"),
+            },
+            h1: {
+              color: theme("colors.white"),
+            },
+            h2: {
+              color: theme("colors.white"),
+            },
+            h3: {
+              fontWeight: 700,
+              color: theme("colors.white"),
+            },
+            h4: {
+              color: theme("colors.gray.300"),
+            },
             p: {
-              color: theme("colors.gray.200"),
+              color: theme("colors.gray.300"),
             },
           },
         },
