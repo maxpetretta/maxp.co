@@ -8,7 +8,7 @@ import Badge from "../../components/Badge.jsx"
 export const meta = {
   title: "Building This Blog",
   description: "How I built this blog using Next.js, TailwindCSS, and MDX",
-  date: "2022-02-10",
+  date: "2022-02-11",
   tags: ["Development", "Webdev"],
   image: "/images/stack.png",
   alt: "An image of the Next.js and TailwindCSS logos",
@@ -46,9 +46,9 @@ When I set out to make this site, I had a couple of goals in mind.  I wanted to 
 
 After all, why generate a page literally everytime it's served?  Instead you can do that just once, right at deploy-time, and pass the savings on to the ~~consumer~~ reader!  The two frameworks I considered here were [Gatsby](https://www.gatsbyjs.com/) and [Next.js](https://nextjs.org/).  Gatsby seemed to have the advantage of being ready right out-of-the-box, with a huge system of add-ons available and [GraphQL](https://graphql.org/) underpinning everything.
 
-Next.js was a bit different, only adding static generation in [v9.3](https://nextjs.org/blog/next-9-3) and not really nailing things down until [v10.0](https://nextjs.org/blog/next-10).  Plug-ins also don't really exist in the same sense as Gatsby, it's more of a do-it-yourself with the typical gamut of `npm` packages.
+Next.js was a bit different, only adding static generation in [v9.3](https://nextjs.org/blog/next-9-3) and not really nailing things down until [v10.0](https://nextjs.org/blog/next-10).  Plug-ins also don't really exist in the same sense as Gatsby, it's more of a do-it-yourself with the typical gamut of **npm** packages.
 
-I was more interested in having full control, and I didn't really like the idea of a weird data engine sitting beneath everything, out of sight, that I wasn't totally familiar with.  The concept of [getStaticProps](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) in Next was more comfortable to me.  AKA fetch your data here, then weave it into your content with `props`.
+I was more interested in having full control, and I didn't really like the idea of a weird data engine sitting beneath everything, out of sight, that I wasn't totally familiar with.  The concept of [getStaticProps](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) in Next was more comfortable to me.  AKA fetch your data here, then weave it into your content with **props**.
 
 Another bonus of Next.js was the dead-simple file router.  Here's what the directory structure of this website looks like:
 
@@ -66,7 +66,7 @@ Another bonus of Next.js was the dead-simple file router.  Here's what the direc
 └── styles/
 ```
 
-Want to add another page?  Just drop a `.js/.jsx/.mdx` file anywhere in the `pages` directory and it will get generated.  Simple as that.  The website path mirrors the folder structure exactly.  This allows me to customize the structure surrounding my content (the .mdx files, more on that later), and my blog posts separately.
+Want to add another page?  Just drop a **.js/.jsx/.mdx** file anywhere in the **pages** directory and it will get generated.  Simple as that.  The website path mirrors the folder structure exactly.  This allows me to customize the structure surrounding my content (the .mdx files, more on that later), and my blog posts separately.
 
 If you'd like to read more about Next.js, I'd recommend [this post](https://leerob.io/blog/things-ive-learned-building-nextjs-apps) and [this post](https://leerob.io/blog/mdx) by Lee Robinson.  Lee is the Head of Developer Relations at Vercel, and pretty much the 🐐 when it comes to Next.js.  I've learned a ton from his [personal site's repo](https://github.com/leerob/leerob.io).
 
