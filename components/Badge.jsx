@@ -12,7 +12,7 @@ export default function Badge({ logo }) {
           alt={"A logo representing " + logo}
         />
       </div>
-      <span className="mx-auto text-xs font-bold xs:text-sm md:text-lg">
+      <span className="mx-auto text-xs font-bold text-gray-900 dark:text-gray-300 xs:text-sm md:text-lg">
         {logo}
       </span>
     </div>
