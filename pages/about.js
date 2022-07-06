@@ -1,5 +1,5 @@
-import Link from "next/link"
 import Image from "next/image"
+import Link from "next/link"
 import Layout from "../components/Layout"
 import profilePic from "../public/images/max.jpeg"
 
@@ -70,7 +70,7 @@ export default function About() {
           </p>
           <p>
             I work for <a href="https://www.gehealthcare.com/">GE Healthcare</a>{" "}
-            now, and live in Milwaukee, Wisconsin.{"  "}My role is in the cloud
+            now, and live in Detroit, Michigan.{"  "}My role is in the cloud
             space, where I work to modernize our applications and processes by
             delivering reliable services, advanced automation, and
             infrastructure-as-code.

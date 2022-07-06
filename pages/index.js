@@ -1,7 +1,7 @@
 import Link from "next/link"
-import Layout from "../components/Layout"
 import Accordion from "../components/Accordion"
 import Badge from "../components/Badge"
+import Layout from "../components/Layout"
 import SkillCard from "../components/SkillCard"
 import { getJobs } from "../lib/jobs"
 
@@ -37,7 +37,7 @@ export default function Home({ jobs }) {
                 <circle cx="12" cy="11" r="3" />
                 <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
               </svg>
-              <span className="align-middle">Based out of Milwaukee, WI</span>
+              <span className="align-middle">Based out of Detroit, MI</span>
             </li>
             <li>
               <svg
@@ -164,13 +164,13 @@ export default function Home({ jobs }) {
           <div className="px-4 md:px-0">
             <SkillCard />
           </div>
-          <p className="mt-14">Languages that I know:</p>
+          <p className="mt-14">Languages I know:</p>
           <ul className="fade grid grid-cols-3 md:grid-cols-4 md:gap-2">
             {[
+              "Solidity",
               "Python",
-              "Swift",
-              "Java",
               "Terraform",
+              "Java",
               "HTML",
               "CSS",
               "JavaScript",
@@ -183,17 +183,19 @@ export default function Home({ jobs }) {
               )
             })}
           </ul>
-          <p className="mt-14">Technologies I have used:</p>
+          <p className="mt-14">Technologies I've used:</p>
           <ul className="fade grid grid-cols-3 md:grid-cols-4 md:gap-2">
             {[
+              "Ethereum",
+              "Hardhat",
               "AWS",
               "Azure",
-              "DevOps",
-              "Docker",
               "React",
               "Next.js",
               "Node.js",
               "Tailwind",
+              "DevOps",
+              "Docker",
               "Linux",
               "git",
             ].map((skill) => {

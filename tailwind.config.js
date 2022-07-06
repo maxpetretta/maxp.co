@@ -50,8 +50,15 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["Public Sans", "-apple-system", "sans-serif"],
-        mono: ["Fira Code", "mono"],
+        sans: [
+          "Public Sans",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "system-ui",
+          "sans-serif",
+        ],
+        serif: ["-apple-system-ui-serif", "ui-serif", "serif"],
+        mono: ["Fira Code", "ui-monospace", "mono"],
       },
       height: {
         76: "19rem",
