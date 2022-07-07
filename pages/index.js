@@ -76,7 +76,7 @@ export default function Home({ jobs }) {
                 <path d="M3 13a20 20 0 0 0 18 0" />
               </svg>
               <span className="align-middle">
-                Over 5 years of work experience
+                Over 4 years of work experience
               </span>
             </li>
           </ul>

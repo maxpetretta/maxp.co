@@ -8,7 +8,7 @@
     "location": "Detroit, MI",
     "image": "/logos/ge_blue.png",
     "skills": ["AWS", "Azure", "GitHub Actions"],
-    "description": "<ul><li>Led elements of critical corporate spin-off preparations, taking on additional responsibilities in overseeing team's deliverables and 6-month direction</li><li>Designed transition plan to full GitOps infrastructure model, accounting for existing cloud resources and ongoing migrations, to ensure uninterrupted service for 100+ applications</li><li>Onboarded new engineers to team, and mentored several junior developers new to cloud technologies</li></ul>"
+    "description": "<ul><li>Led elements of critical corporate spin-off preparations, taking on additional responsibilities in overseeing team's deliverables and 6-month direction</li><li>Designed transition plan to full GitOps infrastructure model, accounting for existing cloud resources and ongoing migrations</li><li>Onboarded new engineers to team, and mentored several junior developers</li></ul>"
   },
   {
     "id": 2,
