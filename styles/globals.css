@@ -49,6 +49,9 @@
   strong {
     @apply text-black dark:text-white;
   }
+  pre > code {
+    @apply grid;
+  }
 }
 
 @layer components {

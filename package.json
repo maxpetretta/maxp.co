@@ -21,7 +21,8 @@
     "next-themes": "^0.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "rehype-shiki": "0.0.9"
+    "rehype-pretty-code": "^0.3.2",
+    "shiki": "^0.10.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",
