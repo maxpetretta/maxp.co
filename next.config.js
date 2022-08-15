@@ -3,7 +3,7 @@ const fs = require("fs")
 
 const config = {
   images: {
-    domains: ["github.com"],
+    domains: ["github.com", "raw.githubusercontent.com"],
   },
 }
 
