@@ -1,4 +1,7 @@
 # maxpetretta.com
+
+[![A screenshot of the maxpetretta.com homepage](./public/images/site.png)](https://maxpetretta.com)
+
 This repo contains the source code for my website, which serves as both a [portfolio](https://maxpetretta.com/) and a [blog](https://maxpetretta.com/blog).  A detailed writeup of how I built this can be found in this [blog post](https://maxpetretta.com/blog/tech-stack).
 
 ## Installation
