@@ -2,16 +2,27 @@
   {
     "id": 1,
     "company": "GE Healthcare",
-    "title": "Software Engineer",
-    "startDate": "2020-08-02",
+    "title": "Staff Software Engineer",
+    "startDate": "2022-02-02",
     "endDate": "Current",
+    "location": "Detroit, MI",
+    "image": "/logos/ge_blue.png",
+    "skills": ["AWS", "Azure", "GitHub Actions"],
+    "description": "<ul><li>Led elements of critical corporate spin-off preparations, taking on additional responsibilities in overseeing team's deliverables and 6-month direction</li><li>Designed transition plan to full GitOps infrastructure model, accounting for existing cloud resources and ongoing migrations</li><li>Onboarded new engineers to team, and mentored several junior developers</li></ul>"
+  },
+  {
+    "id": 2,
+    "company": "GE Healthcare",
+    "title": "Senior Software Engineer",
+    "startDate": "2020-08-02",
+    "endDate": "2022-02-02",
     "location": "Milwaukee, WI",
     "image": "/logos/ge_blue.png",
     "skills": ["Azure", "Terraform", "DevOps"],
     "description": "<ul><li>Designed and implemented an infrastructure-as-code templating system, reducing development time from weeks to days</li><li>Fully automated the deployment process for new applications, eliminating manual efforts and reducing turnaround times by 75%</li><li>Directed operations team in migration efforts, moving over 80 business applications to the cloud</li></ul>"
   },
   {
-    "id": 2,
+    "id": 3,
     "company": "GE Healthcare",
     "title": "Digital Technology Leadership Program",
     "startDate": "2018-06-02",
@@ -22,7 +33,7 @@
     "description": "<ul><li>GE’s premier talent development program focusing on technical skills and project management</li><li>Developed API for dynamically starting EC2 instances to process large-scale compute jobs, involving millions of technician records and machine sensor data</li><li>Completed 4 rotations including full stack development, data analysis, and worldwide product deployments</li></ul>"
   },
   {
-    "id": 3,
+    "id": 4,
     "company": "GE Digital",
     "title": "Software Developer (Co-op)",
     "startDate": "2016-05-02",
@@ -33,7 +44,7 @@
     "description": "<ul><li>Led team for Alexa voice integration MVP for monitoring agile sprints/task events from planning tool</li><li>Built backend REST API for interfacing between personnel management application and HR databases</li><li>Took initiative in proposing, organizing, and leading site-wide engagement events with 100+ participants</li></ul>"
   },
   {
-    "id": 4,
+    "id": 5,
     "company": "Urban Science",
     "title": "Full Stack Developer (Co-op)",
     "startDate": "2016-01-02",

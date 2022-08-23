@@ -50,8 +50,15 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["Public Sans", "-apple-system", "sans-serif"],
-        mono: ["Fira Code", "mono"],
+        sans: [
+          "Public Sans",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "system-ui",
+          "sans-serif",
+        ],
+        serif: ["-apple-system-ui-serif", "ui-serif", "serif"],
+        mono: ["Fira Code", "ui-monospace", "mono"],
       },
       height: {
         76: "19rem",
@@ -116,6 +123,20 @@ module.exports = {
             h3: {
               fontWeight: 700,
             },
+            ":not(pre) > code": {
+              color: theme("colors.gray.900"),
+              backgroundColor: theme("colors.gray.200"),
+              padding: 3,
+              borderRadius: 4,
+              margin: 0,
+              fontWeight: 400,
+            },
+            "code::before": {
+              content: "none",
+            },
+            "code::after": {
+              content: "none",
+            },
           },
         },
         dark: {
@@ -158,6 +179,20 @@ module.exports = {
             },
             p: {
               color: theme("colors.gray.300"),
+            },
+            ":not(pre) > code": {
+              color: theme("colors.gray.300"),
+              backgroundColor: theme("colors.gray.700"),
+              padding: 4,
+              borderRadius: 6,
+              margin: 0,
+              fontWeight: 400,
+            },
+            "code::before": {
+              content: "none",
+            },
+            "code::after": {
+              content: "none",
             },
           },
         },

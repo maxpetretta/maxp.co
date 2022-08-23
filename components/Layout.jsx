@@ -1,10 +1,10 @@
-import Head from "next/head"
-import Header from "./Header"
-import Footer from "./Footer"
-import Heading from "./Heading"
-import { useRouter } from "next/router"
 import { MDXProvider } from "@mdx-js/react"
 import { Tweet } from "mdx-embed"
+import Head from "next/head"
+import { useRouter } from "next/router"
+import Footer from "./Footer"
+import Header from "./Header"
+import Heading from "./Heading"
 
 const H2 = (props) => <Heading tag="h2" {...props} />
 const H3 = (props) => <Heading tag="h3" {...props} />
@@ -17,11 +17,7 @@ const components = {
   h4: H4,
   h5: H5,
   Tweet,
-  pre: (props) => (
-    <pre style={{ background: props.style[0].split(":")[1] }}>
-      {props.children}
-    </pre>
-  ),
+  pre: (props) => <pre style={{ background: "#2d2a2e" }}>{props.children}</pre>,
 }
 
 export default function Layout(props) {
