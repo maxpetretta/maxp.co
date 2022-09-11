@@ -20,23 +20,22 @@ export default function Contact() {
               className="form"
               type="email"
               name="_replyto"
-              tabIndex="1"
+              tabIndex={1}
               placeholder="Email address"
               required
             />
             <input type="hidden" name="_subject" value="Contact Form" />
             <textarea
               className="form"
-              rows="8"
-              type="text"
-              tabIndex="2"
+              rows={8}
+              tabIndex={2}
               placeholder="Message"
               required
             />
             <input
               className="button mt-4 ml-auto mr-0 block outline-none"
               type="submit"
-              tabIndex="3"
+              tabIndex={3}
               value="Send"
             />
           </form>

@@ -42,8 +42,8 @@ export default function App({ Component, pageProps }: AppProps) {
       <ThemeProvider attribute="class" defaultTheme="light">
         <Component {...pageProps} />
       </ThemeProvider>
-      <Script src="/scripts/fade-in.js" strategy="beforeInteractive" />
-      <Script src="/scripts/update-selector.js" />
+      <Script src="/scripts/fade-in.ts" strategy="beforeInteractive" />
+      <Script src="/scripts/update-selector.ts" />
       <Script src="/scripts/smoothscroll.min.js" />
       <Script src="/scripts/smoothscroll-anchor.min.js" />
       <Script

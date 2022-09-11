@@ -1,5 +1,5 @@
 export default function Heading({ tag, children }) {
-  const HTag = `${tag}`
+  const HTag = `${tag}` as keyof JSX.IntrinsicElements
   const anchor = getAnchor(children)
   const link = `#${anchor}`
   return (

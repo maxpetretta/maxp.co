@@ -4,7 +4,7 @@ import path from "path"
 const dataDirectory = path.join(process.cwd(), "/public/data")
 
 export function getJobs() {
-  const file = fs.readFileSync(dataDirectory + "/jobs.json")
+  const file = fs.readFileSync(dataDirectory + "/jobs.json").toString()
   const jobs = JSON.parse(file)
 
   return jobs

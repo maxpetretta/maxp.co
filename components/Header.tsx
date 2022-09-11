@@ -1,8 +1,8 @@
-import Link from "next/link"
-import Toggle from "./Toggle"
-import TabBar from "./TabBar"
 import { useTheme } from "next-themes"
+import Link from "next/link"
 import { useRouter } from "next/router"
+import TabBar from "./TabBar"
+import Toggle from "./Toggle"
 
 export default function Header() {
   const router = useRouter()
@@ -47,18 +47,20 @@ export default function Header() {
         </a>
       </Link>
       <nav className="flex max-w-lg flex-grow items-center justify-end">
-        {navigation}
-        <Toggle
-          id="toggleTheme"
-          alt="Toggle dark mode"
-          onClick={() => {
-            document.body.classList.add("transition-stop")
-            setTheme(theme === "dark" ? "light" : "dark")
-            setTimeout(() => {
-              document.body.classList.remove("transition-stop")
-            }, 1000)
-          }}
-        />
+        <>
+          {navigation}
+          <Toggle
+            id="toggleTheme"
+            alt="Toggle dark mode"
+            onClick={() => {
+              document.body.classList.add("transition-stop")
+              setTheme(theme === "dark" ? "light" : "dark")
+              setTimeout(() => {
+                document.body.classList.remove("transition-stop")
+              }, 1000)
+            }}
+          />
+        </>
       </nav>
     </header>
   )

@@ -1,4 +1,4 @@
-async function fadeIn() {
+export async function fadeIn() {
   const entries = document.querySelectorAll(".fade, .animate-fade-in")
   const options = {
     root: null,
