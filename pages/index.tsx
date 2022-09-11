@@ -172,10 +172,10 @@ export default function Home({ jobs }) {
               "TypeScript",
               "Python",
               "Terraform",
+              "Java",
               "HTML",
               "CSS",
               "JavaScript",
-              "Java",
               "SQL",
             ].map((skill) => {
               return (
