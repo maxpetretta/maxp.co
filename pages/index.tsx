@@ -169,12 +169,13 @@ export default function Home({ jobs }) {
           <ul className="fade grid grid-cols-3 md:grid-cols-4 md:gap-2">
             {[
               "Solidity",
+              "TypeScript",
               "Python",
               "Terraform",
-              "Java",
               "HTML",
               "CSS",
               "JavaScript",
+              "Java",
               "SQL",
             ].map((skill) => {
               return (
