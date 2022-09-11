@@ -1,3 +1,4 @@
+import type { GetStaticProps } from "next"
 import Link from "next/link"
 import Accordion from "../components/Accordion"
 import Badge from "../components/Badge"
@@ -240,7 +241,8 @@ export default function Home({ jobs }) {
   )
 }
 
-export async function getStaticProps() {
+// export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
   const jobs = getJobs()
 
   return {

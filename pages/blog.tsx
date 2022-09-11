@@ -1,3 +1,4 @@
+import type { GetStaticProps } from "next"
 import Entry from "../components/Entry"
 import Layout from "../components/Layout"
 import PostCard from "../components/PostCard"
@@ -41,7 +42,8 @@ export default function Blog({ posts, postCount, postsByYear, years }) {
   )
 }
 
-export async function getStaticProps() {
+// export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
   const posts = getAllPosts().reverse()
   const postCount = posts.length
   let postsByYear = {}

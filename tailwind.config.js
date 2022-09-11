@@ -1,6 +1,6 @@
 module.exports = {
   mode: "jit",
-  content: ["./pages/**/*.js", "./pages/**/*.mdx", "./components/**/*.jsx"],
+  content: ["./pages/**/*{.ts,tsx,mdx}", "./components/**/*.tsx"],
   safelist: ["opacity-0", "animate-fade-in"],
   darkMode: "class",
   theme: {

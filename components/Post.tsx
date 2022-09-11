@@ -1,6 +1,6 @@
-import Title from "../components/Title"
-import Layout from "../components/Layout"
-import PostCard from "../components/PostCard"
+import Layout from "./Layout"
+import PostCard from "./PostCard"
+import Title from "./Title"
 
 export default function Post({ meta, children }) {
   return (
