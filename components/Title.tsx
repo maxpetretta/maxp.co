@@ -11,7 +11,7 @@ export default function Title({ meta }) {
           })}
         </time>
         <div className="flex">
-          {meta.tags.map((tag) => {
+          {meta.tags.map((tag: string) => {
             return (
               <span className="chip my-1 first:ml-0" key={tag}>
                 {tag}

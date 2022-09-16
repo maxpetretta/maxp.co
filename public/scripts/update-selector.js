@@ -1,4 +1,4 @@
-export async function updateSelector() {
+async function updateSelector() {
   const classes = [
     "translate-x-0",
     "translate-x-full",

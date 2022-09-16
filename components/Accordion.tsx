@@ -60,7 +60,7 @@ export default function Accordion({ job }) {
             dangerouslySetInnerHTML={{ __html: job.description }}
           />
           <ul className="grid grid-cols-3 xs:m-2 md:w-1/3 md:grid-cols-1 md:grid-rows-3">
-            {job.skills.map((skill) => {
+            {job.skills.map((skill: string) => {
               return (
                 <li className=" md:ml-6" key={skill}>
                   <Badge logo={skill} />

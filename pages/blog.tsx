@@ -3,6 +3,7 @@ import Entry from "../components/Entry"
 import Layout from "../components/Layout"
 import PostCard from "../components/PostCard"
 import { getAllPosts } from "../lib/posts"
+import { Post } from "../lib/types"
 
 export default function Blog({ posts, postCount, postsByYear, years }) {
   return (
@@ -24,13 +25,13 @@ export default function Blog({ posts, postCount, postsByYear, years }) {
             })}
           </div>
         </section>
-        {years.map((year) => {
+        {years.map((year: string) => {
           return (
             <section key={year}>
               <h2 className="mb-0">{year}</h2>
               <hr className="mt-2 mb-8 md:mt-3 md:mb-10" />
               <ul className="list">
-                {postsByYear[year].map((post) => {
+                {postsByYear[year].map((post: Post) => {
                   return <Entry key={post.slug} post={post} />
                 })}
               </ul>
@@ -60,7 +61,7 @@ export const getStaticProps: GetStaticProps = async () => {
   }
 }
 
-export function getFeaturedPosts(posts) {
+export function getFeaturedPosts(posts: Post[]): Post[] {
   const featured = ["twitt3r", "tech-stack"]
 
   const sorted = posts
