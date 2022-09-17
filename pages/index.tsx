@@ -1,9 +1,11 @@
+import type { GetStaticProps } from "next"
 import Link from "next/link"
 import Accordion from "../components/Accordion"
 import Badge from "../components/Badge"
 import Layout from "../components/Layout"
 import SkillCard from "../components/SkillCard"
 import { getJobs } from "../lib/jobs"
+import { Job } from "../lib/types"
 
 export default function Home({ jobs }) {
   return (
@@ -167,6 +169,7 @@ export default function Home({ jobs }) {
           <p className="mt-14">Languages I know:</p>
           <ul className="fade grid grid-cols-3 md:grid-cols-4 md:gap-2">
             {[
+              "TypeScript",
               "Solidity",
               "Python",
               "Terraform",
@@ -213,7 +216,7 @@ export default function Home({ jobs }) {
           </h2>
           <hr className="mt-2 mb-8 md:mt-3 md:mb-10" />
           <ul className="list">
-            {jobs.map((job) => {
+            {jobs.map((job: Job) => {
               return <Accordion key={job.title} job={job} />
             })}
           </ul>
@@ -240,7 +243,8 @@ export default function Home({ jobs }) {
   )
 }
 
-export async function getStaticProps() {
+// export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
   const jobs = getJobs()
 
   return {

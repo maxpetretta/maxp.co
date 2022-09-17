@@ -11,4 +11,12 @@ module.exports = {
   rules: {
     "react/no-unescaped-entities": "off",
   },
+  overrides: [
+    {
+      files: ["*.ts", "*.tsx"],
+      rules: {
+        "no-undef": "off",
+      },
+    },
+  ],
 }

@@ -1,6 +1,7 @@
-import Title from "../components/Title"
-import Layout from "../components/Layout"
-import PostCard from "../components/PostCard"
+import { Post as PostType } from "../lib/types"
+import Layout from "./Layout"
+import PostCard from "./PostCard"
+import Title from "./Title"
 
 export default function Post({ meta, children }) {
   return (
@@ -32,7 +33,7 @@ export default function Post({ meta, children }) {
   )
 }
 
-export function getPostBySlug(slug) {
+export function getPostBySlug(slug: string): PostType {
   const post = require(`../pages/blog/${slug}.mdx`)
 
   return {
