@@ -1,5 +1,7 @@
-export default function TabBar({ sections }) {
-  var tabs = []
+import { Tabs } from "../lib/types"
+
+export default function TabBar({ sections }: { sections: string[] }) {
+  var tabs: Tabs[] = []
   const widths = ["w-full", "w-1/2", "w-1/3", "w-1/4", "w-1/5", "w-1/6"]
   const classes = [
     "translate-x-0",
@@ -24,12 +26,14 @@ export default function TabBar({ sections }) {
     <div
       className="relative ml-0 flex h-8 flex-1 rounded-lg border-3 border-gray-400 bg-gray-400 text-sm dark:border-gray-700 dark:bg-gray-700 xs:ml-2 md:w-96 md:text-lg"
       onClick={() => {
-        var selector = document.getElementById("selector")
-        selector.classList.remove(...classes)
-        selector.classList.add(current.class, "clicked")
-        setTimeout(() => {
-          selector.classList.remove("clicked")
-        }, 1000)
+        if (document.getElementById("selector")) {
+          var selector = document.getElementById("selector")!
+          selector.classList.remove(...classes)
+          selector.classList.add(current.class, "clicked")
+          setTimeout(() => {
+            selector.classList.remove("clicked")
+          }, 1000)
+        }
       }}
     >
       <div

@@ -7,7 +7,7 @@ import SkillCard from "../components/SkillCard"
 import { getJobs } from "../lib/jobs"
 import { Job } from "../lib/types"
 
-export default function Home({ jobs }) {
+export default function Home({ jobs }: { jobs: Job[] }) {
   return (
     <>
       <Layout>

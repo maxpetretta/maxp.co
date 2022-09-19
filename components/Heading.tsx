@@ -1,6 +1,14 @@
-export default function Heading({ tag, children }) {
+import { ReactNode } from "react"
+
+export default function Heading({
+  tag,
+  children,
+}: {
+  tag: string
+  children: ReactNode
+}) {
   const HTag = `${tag}` as keyof JSX.IntrinsicElements
-  const anchor = getAnchor(children)
+  const anchor = getAnchor(children as string)
   const link = `#${anchor}`
   return (
     <HTag className="group flex items-center" id={anchor}>

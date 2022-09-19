@@ -1,7 +1,8 @@
 import Image from "next/image"
+import { Job } from "../lib/types"
 import Badge from "./Badge"
 
-export default function Accordion({ job }) {
+export default function Accordion({ job }: { job: Job }) {
   return (
     <li className="link m-0 list-none rounded-none p-0" key={job.id}>
       <label className="flex flex-wrap items-center">

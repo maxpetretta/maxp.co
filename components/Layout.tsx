@@ -2,14 +2,16 @@ import { MDXProvider } from "@mdx-js/react"
 import { Tweet } from "mdx-embed"
 import Head from "next/head"
 import { useRouter } from "next/router"
+import { ReactNode } from "react"
+import { HeadingProps, LayoutProps } from "../lib/types"
 import Footer from "./Footer"
 import Header from "./Header"
 import Heading from "./Heading"
 
-const H2 = (props) => <Heading tag="h2" {...props} />
-const H3 = (props) => <Heading tag="h3" {...props} />
-const H4 = (props) => <Heading tag="h4" {...props} />
-const H5 = (props) => <Heading tag="h5" {...props} />
+const H2 = (props: HeadingProps) => <Heading tag="h2" {...props} />
+const H3 = (props: HeadingProps) => <Heading tag="h3" {...props} />
+const H4 = (props: HeadingProps) => <Heading tag="h4" {...props} />
+const H5 = (props: HeadingProps) => <Heading tag="h5" {...props} />
 
 const components = {
   h2: H2,
@@ -17,10 +19,12 @@ const components = {
   h4: H4,
   h5: H5,
   Tweet,
-  pre: (props) => <pre style={{ background: "#2d2a2e" }}>{props.children}</pre>,
+  pre: (props: { children: ReactNode }) => (
+    <pre style={{ background: "#2d2a2e" }}>{props.children}</pre>
+  ),
 }
 
-export default function Layout(props) {
+export default function Layout(props: LayoutProps) {
   const { children, ...pageMeta } = props
   const router = useRouter()
   const meta = {

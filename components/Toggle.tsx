@@ -1,4 +1,12 @@
-export default function Toggle({ id, alt, onClick }) {
+export default function Toggle({
+  id,
+  alt,
+  onClick,
+}: {
+  id: string
+  alt: string
+  onClick: React.MouseEventHandler
+}) {
   return (
     <label
       className="ml-2 inline-flex h-6 w-10 flex-shrink-0 cursor-pointer rounded-full bg-gray-400 align-middle shadow-inner dark:bg-gray-500 xs:h-7 xs:w-12 md:ml-5"
