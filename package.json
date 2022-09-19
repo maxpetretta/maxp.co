@@ -25,6 +25,7 @@
     "shiki": "^0.10.1"
   },
   "devDependencies": {
+    "@types/mdx-js__react": "^1.5.5",
     "@types/node": "^18.7.16",
     "@types/react": "^18.0.19",
     "autoprefixer": "^10.4.2",

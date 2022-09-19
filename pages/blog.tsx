@@ -3,9 +3,19 @@ import Entry from "../components/Entry"
 import Layout from "../components/Layout"
 import PostCard from "../components/PostCard"
 import { getAllPosts } from "../lib/posts"
-import { Post } from "../lib/types"
+import { PostMeta } from "../lib/types"
 
-export default function Blog({ posts, postCount, postsByYear, years }) {
+export default function Blog({
+  posts,
+  postCount,
+  postsByYear,
+  years,
+}: {
+  posts: PostMeta[]
+  postCount: number
+  postsByYear: any
+  years: string[]
+}) {
   return (
     <>
       <Layout title="Blog | Max Petretta">
@@ -31,7 +41,7 @@ export default function Blog({ posts, postCount, postsByYear, years }) {
               <h2 className="mb-0">{year}</h2>
               <hr className="mt-2 mb-8 md:mt-3 md:mb-10" />
               <ul className="list">
-                {postsByYear[year].map((post: Post) => {
+                {postsByYear[year].map((post: PostMeta) => {
                   return <Entry key={post.slug} post={post} />
                 })}
               </ul>
@@ -47,7 +57,7 @@ export default function Blog({ posts, postCount, postsByYear, years }) {
 export const getStaticProps: GetStaticProps = async () => {
   const posts = getAllPosts().reverse()
   const postCount = posts.length
-  let postsByYear = {}
+  let postsByYear: any = {}
 
   posts.map((post) => {
     const year = post.date.split("-")[0]
@@ -61,7 +71,7 @@ export const getStaticProps: GetStaticProps = async () => {
   }
 }
 
-export function getFeaturedPosts(posts: Post[]): Post[] {
+export function getFeaturedPosts(posts: PostMeta[]): PostMeta[] {
   const featured = ["twitt3r", "tech-stack"]
 
   const sorted = posts

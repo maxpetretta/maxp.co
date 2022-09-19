@@ -1,10 +1,10 @@
 import fs from "fs"
 import path from "path"
-import { Post } from "./types"
+import { PostMeta } from "../lib/types"
 
 const postDirectory = path.join(process.cwd(), "/pages/blog")
 
-export function getAllPosts(): Post[] {
+export function getAllPosts(): PostMeta[] {
   const files = fs.readdirSync(postDirectory)
   const posts = files.map((file) => {
     const post = require(`../pages/blog/${file}`)
@@ -14,6 +14,5 @@ export function getAllPosts(): Post[] {
       ...post.meta,
     }
   })
-  console.log(posts)
   return posts
 }

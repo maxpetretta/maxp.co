@@ -1,7 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
+import { PostMeta } from "../lib/types"
 
-export default function PostCard({ post }) {
+export default function PostCard({ post }: { post: PostMeta }) {
   return (
     <Link href={"/blog/" + post.slug}>
       <a className="no-link card max-w-md transform flex-col transition duration-300 hover:scale-105 hover:shadow-xl md:w-5/12">

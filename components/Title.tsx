@@ -1,4 +1,6 @@
-export default function Title({ meta }) {
+import { PostMeta } from "../lib/types"
+
+export default function Title({ meta }: { meta: PostMeta }) {
   return (
     <>
       <h1 className="mb-3 md:mb-4">{meta.title}</h1>

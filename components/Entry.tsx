@@ -1,6 +1,7 @@
 import Link from "next/link"
+import { PostMeta } from "../lib/types"
 
-export default function Entry({ post }) {
+export default function Entry({ post }: { post: PostMeta }) {
   return (
     <li className="list-none" key={post.slug}>
       <Link href={"/blog/" + post.slug}>

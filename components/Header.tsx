@@ -34,6 +34,9 @@ export default function Header() {
           className="no-link hidden xs:inline"
           aria-label="A link to the homepage"
         >
+          {
+            // eslint-disable-next-line
+          }
           <img
             width={48}
             height={48}
