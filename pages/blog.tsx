@@ -59,6 +59,9 @@ export const getStaticProps: GetStaticProps = async () => {
   const postCount = posts.length
   let postsByYear: any = {}
 
+  posts
+    .sort((a, b) => (a.date > b.date ? 1 : b.date > a.date ? -1 : 0))
+    .reverse()
   posts.map((post) => {
     const year = post.date.split("-")[0]
     postsByYear[year] = [...(postsByYear[year] ?? []), post]
