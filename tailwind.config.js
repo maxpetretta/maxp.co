@@ -1,7 +1,7 @@
 module.exports = {
   mode: "jit",
   content: ["./pages/**/*{.ts,tsx,mdx}", "./components/**/*.tsx"],
-  safelist: ["opacity-0", "animate-fade-in"],
+  safelist: ["opacity-0", "animate-fade-in", "animate-slide-in"],
   darkMode: "class",
   theme: {
     screens: {
@@ -17,6 +17,7 @@ module.exports = {
       animation: {
         "spin-slow": "spin 4s linear infinite",
         "fade-in": "fade-in 0.5s ease-in-out forwards",
+        "slide-in": "slide-in 0.5s ease-in-out forwards",
       },
       borderWidth: {
         DEFAULT: "1px",
@@ -69,6 +70,10 @@ module.exports = {
           "0%": { opacity: 0, transform: "translateY(50px)" },
           "100%": { opacity: 1 },
         },
+        "slide-in": {
+          "0%": { opacity: 0, transform: "translateY(-50px)" },
+          "100%": { opacity: 1 },
+        },
       },
       minHeight: {
         "1/5": "20vh",
@@ -80,6 +85,7 @@ module.exports = {
         "2/3": "66vh",
         "3/4": "75vh",
         "4/5": "80vh",
+        "9/10": "90vh",
       },
       spacing: {
         13: "3.25rem",

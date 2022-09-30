@@ -2,6 +2,7 @@ import type { GetStaticProps } from "next"
 import Link from "next/link"
 import Accordion from "../components/Accordion"
 import Badge from "../components/Badge"
+import Banner from "../components/Banner"
 import Layout from "../components/Layout"
 import SkillCard from "../components/SkillCard"
 import { getJobs } from "../lib/jobs"
@@ -11,7 +12,12 @@ export default function Home({ jobs }: { jobs: Job[] }) {
   return (
     <>
       <Layout>
-        <section className="flex min-h-screen animate-fade-in flex-col justify-center md:min-h-3/4">
+        <Banner
+          link="/blog/twitt3r"
+          message="Check out my latest project: Twitt3r.xyz"
+          detail=", a Twitter clone built on Ethereum"
+        />
+        <section className="flex min-h-9/10 animate-fade-in flex-col justify-center md:min-h-3/4">
           <h4 className="fade-lg animate-fade-in">👋 Hey there!</h4>
           <h1 className="fade-lg my-0 animate-fade-in text-3xl xs:text-4xl md:text-6xl">
             I'm Max Petretta,
