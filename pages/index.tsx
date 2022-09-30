@@ -177,6 +177,7 @@ export default function Home({ jobs }: { jobs: Job[] }) {
               "HTML",
               "CSS",
               "JavaScript",
+              "GraphQL",
               "SQL",
             ].map((skill) => {
               return (
@@ -196,6 +197,7 @@ export default function Home({ jobs }: { jobs: Job[] }) {
               "React",
               "Next.js",
               "Node.js",
+              "Apollo",
               "Tailwind",
               "DevOps",
               "Docker",
