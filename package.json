@@ -15,9 +15,9 @@
     "postinstall": "bunx simple-git-hooks",
     "lint": "bun run lint:eslint && bun run lint:prettier && bun run lint:spellcheck && bun run lint:svelte",
     "lint:eslint": "eslint . --ext js,ts,svelte --cache --report-unused-disable-directives --max-warnings 0 --ignore-path .gitignore",
-    "lint:prettier": "prettier \"./**/*.{js,ts,svelte,css,json}\" --check --cache --ignore-path .gitignore",
-    "lint:spellcheck": "cspell \"./**/*.{js,ts,svelte,css}\" --cache --gitignore",
-    "lint:svelte": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "lint:prettier": "prettier \"./**/*.{html,css,js,ts,svelte,json}\" --check --cache --ignore-path .gitignore",
+    "lint:spellcheck": "cspell \"./**/*.{html,css,js,ts,svelte}\" --cache --gitignore",
+    "lint:svelte": "svelte-kit sync && svelte-check",
     "preview": "bun run build && vite preview"
   },
   "simple-git-hooks": {
@@ -27,7 +27,7 @@
   },
   "lint-staged": {
     "*.{js,ts,svelte}": "eslint --fix --cache --report-unused-disable-directives --max-warnings 0",
-    "*.{js,ts,svelte,css,json}": "prettier --write --cache",
+    "*.{html,css,js,ts,svelte,json}": "prettier --write --cache",
     "package.json": "sort-package-json"
   },
   "browserslist": [
@@ -96,6 +96,8 @@
       "javascript",
       "typescript",
       "tailwindcss",
+      "svelte",
+      "!json",
       "!svg"
     ]
   },
