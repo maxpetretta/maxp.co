@@ -1,35 +1,27 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Packages
+node_modules
+/package
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-next-env.d.ts
-
-# production
+# Builds
+/.svelte-kit
+/.vercel
 /build
 
-# misc
+# Caches
+.eslintcache
+.prettier-cache
+.cspellcache
+
+# Logs
+*.log*
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Secrets
+.env
+.env*
+!.env.example
+
+# Misc
 .DS_Store
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# local env files
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# vercel
-.vercel
+temp

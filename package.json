@@ -1,46 +1,108 @@
 {
+  "name": "maxpetretta.com",
+  "version": "2.0.0",
   "private": true,
   "license": "MIT",
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "format": "prettier --write .",
-    "prepare": "husky install"
+    "build": "vite build",
+    "clean": "rimraf node_modules .svelte-kit .vercel .cspellcache .eslintcache",
+    "dev": "vite dev",
+    "fix": "bun run fix:eslint && bun run fix:prettier",
+    "fix:eslint": "eslint . --ext js,ts,svelte --fix --cache --report-unused-disable-directives --max-warnings 0 --ignore-path .gitignore",
+    "fix:prettier": "prettier \"./**/*.{js,ts,svelte,css,json}\" --write --cache --ignore-path .gitignore",
+    "preinstall": "npx only-allow bun",
+    "postinstall": "bunx simple-git-hooks",
+    "lint": "bun run lint:eslint && bun run lint:prettier && bun run lint:spellcheck && bun run lint:svelte",
+    "lint:eslint": "eslint . --ext js,ts,svelte --cache --report-unused-disable-directives --max-warnings 0 --ignore-path .gitignore",
+    "lint:prettier": "prettier \"./**/*.{js,ts,svelte,css,json}\" --check --cache --ignore-path .gitignore",
+    "lint:spellcheck": "cspell \"./**/*.{js,ts,svelte,css}\" --cache --gitignore",
+    "lint:svelte": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "preview": "bun run build && vite preview"
   },
-  "dependencies": {
-    "@mdx-js/loader": "^1.6.22",
-    "@mdx-js/mdx": "^1.6.22",
-    "@next/mdx": "^12.0.7",
-    "@tailwindcss/forms": "^0.5.2",
-    "@tailwindcss/typography": "^0.5.3",
-    "gray-matter": "^4.0.3",
-    "mdx-embed": "^1.0.0",
-    "next": "^12.1.0",
-    "next-themes": "^0.2.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "rehype-pretty-code": "^0.3.2",
-    "shiki": "^0.10.1"
-  },
-  "devDependencies": {
-    "@types/mdx-js__react": "^1.5.5",
-    "@types/node": "^18.7.16",
-    "@types/react": "^18.0.19",
-    "autoprefixer": "^10.4.2",
-    "eslint": "^8.6.0",
-    "eslint-config-next": "^12.0.7",
-    "eslint-config-prettier": "^8.3.0",
-    "husky": "^8.0.1",
-    "lint-staged": "^13.0.3",
-    "postcss": "^8.4.5",
-    "prettier": "^2.5.1",
-    "prettier-plugin-tailwindcss": "^0.1.4",
-    "tailwindcss": "^3.0.13",
-    "typescript": "^4.8.3"
+  "simple-git-hooks": {
+    "pre-commit": "bunx lint-staged && bun run lint:svelte",
+    "commit-msg": "bunx commitlint --edit --config=commitlint.config.cjs",
+    "pre-push": "bun run build"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "*.{js,ts,svelte}": "eslint --fix --cache --report-unused-disable-directives --max-warnings 0",
+    "*.{js,ts,svelte,css,json}": "prettier --write --cache",
+    "package.json": "sort-package-json"
+  },
+  "browserslist": [
+    "defaults and supports es6-module"
+  ],
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-svelte",
+      "prettier-plugin-tailwindcss"
+    ],
+    "semi": false,
+    "overrides": [
+      {
+        "files": "*.svelte",
+        "options": {
+          "parser": "svelte"
+        }
+      }
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@sveltejs/adapter-vercel": "^4.0.3",
+    "@sveltejs/kit": "^2.0.0",
+    "@sveltejs/vite-plugin-svelte": "^3.0.0",
+    "@types/eslint": "8.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "autoprefixer": "^10.4.16",
+    "cspell": "^8.3.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-custom-alias": "^1.3.2",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-compat": "^4.2.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-svelte": "^2.35.1",
+    "lint-staged": "^15.2.0",
+    "postcss": "^8.4.32",
+    "prettier": "^3.1.1",
+    "prettier-plugin-svelte": "^3.1.2",
+    "prettier-plugin-tailwindcss": "^0.5.10",
+    "rimraf": "^5.0.5",
+    "simple-git-hooks": "^2.9.0",
+    "sort-package-json": "^2.6.0",
+    "svelte": "^5.0.0-next.1",
+    "svelte-check": "^3.6.0",
+    "tailwindcss": "^3.4.0",
+    "tslib": "^2.4.1",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.3"
+  },
+  "cspell": {
+    "version": "0.2",
+    "language": "en",
+    "dictionaries": [
+      "typescript",
+      "html",
+      "css",
+      "npm"
+    ],
+    "enableFiletypes": [
+      "html",
+      "css",
+      "javascript",
+      "typescript",
+      "tailwindcss",
+      "!svg"
+    ]
+  },
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {},
+      "autoprefixer": {}
+    }
   }
 }

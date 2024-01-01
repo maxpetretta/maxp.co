@@ -1,33 +1,38 @@
-# maxpetretta.com
+# create-svelte
 
-[![A screenshot of the maxpetretta.com homepage](./public/images/site.png)](https://maxpetretta.com)
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
 
-This repo contains the source code for my website, which serves as both a [portfolio](https://maxpetretta.com/) and a [blog](https://maxpetretta.com/blog). 
+## Creating a project
 
-**Want to learn more?  Read all the details in [this blog post!](https://maxpetretta.com/blog/tech-stack)**
+If you're seeing this, you've probably already done this step. Congrats!
 
-## Installation
-To test this site locally, you can run the following:
+```bash
+# create a new project in the current directory
+npm create svelte@latest
+
+# create a new project in my-app
+npm create svelte@latest my-app
 ```
-git clone https://github.com/maxpetretta/maxpetretta.com
-cd maxpetretta.com
-npm install
+
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
 npm run dev
-open http://localhost:3000
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
 ```
 
-## Tech Stack
-Built with the following technologies:
-* [Next.js](https://nextjs.org/): Static site builds and routing
-* [Tailwind](https://tailwindcss.com/): Adaptive CSS page styling
-* [MDX](https://mdxjs.com/): Parsing markdown files to post content
-* [Shiki](https://shiki.matsu.io/): VSCode syntax highlighting for the web
-* [Vercel](https://vercel.com/): Web hosting and automated deployments
+## Building
 
-## Performance
-![An image of Google Chrome lighthouse scores](./public/images/lighthouse.png)
+To create a production version of your app:
 
-Thanks to the [JAMStack architecture](https://jamstack.org/), this site's performance is _blazing fast_ 🚀
+```bash
+npm run build
+```
 
-## Contributions
-PRs are always welcome, please tag me when you're ready for merge.
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
