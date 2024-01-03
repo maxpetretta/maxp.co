@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+const recommendedConfig = require("@typescript-eslint/eslint-plugin").configs["eslint-recommended"]
+
 /** @type { import("eslint").Linter.Config } */
 module.exports = {
   root: true,
@@ -9,8 +12,7 @@ module.exports = {
   plugins: ["@typescript-eslint"],
   extends: [
     "eslint:recommended",
-    "plugin:import/recommended",
-    "plugin:import/typescript",
+    "plugin:compat/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/stylistic",
     "plugin:svelte/recommended",
@@ -22,11 +24,6 @@ module.exports = {
     ecmaVersion: 2020,
     extraFileExtensions: [".svelte"],
   },
-  settings: {
-    "import/resolver": {
-      typescript: true,
-    },
-  },
   overrides: [
     {
       files: ["*.svelte"],
@@ -34,6 +31,8 @@ module.exports = {
       parserOptions: {
         parser: "@typescript-eslint/parser",
       },
+      // See: https://github.com/sveltejs/eslint-plugin-svelte/issues/632
+      rules: recommendedConfig.overrides[0].rules,
     },
   ],
 }

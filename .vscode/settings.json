@@ -2,6 +2,7 @@
   "eslint.options": {
     "ignorePath": ".gitignore"
   },
+  "eslint.validate": ["javascript", "typescript", "svelte"],
   "files.associations": {
     "*.css": "tailwindcss"
   },
