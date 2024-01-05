@@ -24,6 +24,9 @@ module.exports = {
     ecmaVersion: 2020,
     extraFileExtensions: [".svelte"],
   },
+  rules: {
+    "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+  },
   overrides: [
     {
       files: ["*.svelte"],
