@@ -100,3 +100,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .no-transition *:not(.switch) {
+    transition: none !important;
+  }
+}

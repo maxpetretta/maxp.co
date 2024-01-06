@@ -107,8 +107,10 @@
     "words": [
       "clsx",
       "farcaster",
+      "lucide",
       "maxpetretta",
-      "Petretta"
+      "Petretta",
+      "sonner"
     ]
   },
   "postcss": {
