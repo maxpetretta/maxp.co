@@ -71,7 +71,7 @@ const config = {
     },
   },
   plugins: [
-    // Source: https://github.com/tailwindlabs/tailwindcss/discussions/3378#discussioncomment-4177286
+    // source: https://github.com/tailwindlabs/tailwindcss/discussions/3378#discussioncomment-4177286
     plugin(({ matchUtilities, theme }) => {
       matchUtilities(
         {

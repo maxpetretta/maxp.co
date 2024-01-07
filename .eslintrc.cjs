@@ -34,7 +34,7 @@ module.exports = {
       parserOptions: {
         parser: "@typescript-eslint/parser",
       },
-      // See: https://github.com/sveltejs/eslint-plugin-svelte/issues/632
+      // see: https://github.com/sveltejs/eslint-plugin-svelte/issues/632
       rules: recommendedConfig.overrides[0].rules,
     },
   ],

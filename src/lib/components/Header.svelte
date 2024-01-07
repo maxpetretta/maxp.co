@@ -1,10 +1,14 @@
 <script lang="ts">
   import { Switch } from "$/lib/components/ui/switch"
+  import type { Opener } from "$/lib/opener.svelte"
   import { browser } from "$app/environment"
   import { goto } from "$app/navigation"
   import { page } from "$app/stores"
   import { Button } from "$lib/components/ui/button"
   import { Command } from "lucide-svelte"
+  import { getContext } from "svelte"
+
+  const opener = getContext<Opener>("opener")
 
   function toggleTheme() {
     if (!browser) return
@@ -24,7 +28,6 @@
   }
 
   async function sharePageUrl() {
-     
     const url = $page.url.href
 
     try {
@@ -49,7 +52,7 @@
         <Button onclick={sharePageUrl} variant="ghost">{$page.url.pathname}</Button>
       {/if}
       <Switch onCheckedChange={toggleTheme} />
-      <Button variant="outline" size="icon" class="transition-none">
+      <Button onclick={() => opener.toggle(true)} variant="outline" size="icon" class="transition-none">
         <Command />
       </Button>
     </div>
