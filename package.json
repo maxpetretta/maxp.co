@@ -109,8 +109,9 @@
       "farcaster",
       "lucide",
       "maxpetretta",
-      "Petretta",
-      "sonner"
+      "petretta",
+      "sonner",
+      "tailwindcss"
     ]
   },
   "postcss": {

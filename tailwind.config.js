@@ -1,3 +1,5 @@
+import plugin from "tailwindcss/plugin"
+
 /** @type {import('tailwindcss').Config} */
 const config = {
   darkMode: ["class"],
@@ -57,8 +59,30 @@ const config = {
         serif: ["-apple-system-ui-serif", "ui-serif", "serif"],
         mono: ["ui-monospace", "mono"],
       },
+      keyframes: {
+        "fade-in": {
+          "0%": { opacity: 0, transform: "translateY(1rem)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
+        },
+      },
+      animation: {
+        "fade-in": "fade-in 0.5s ease-in-out",
+      },
     },
   },
+  plugins: [
+    // Source: https://github.com/tailwindlabs/tailwindcss/discussions/3378#discussioncomment-4177286
+    plugin(({ matchUtilities, theme }) => {
+      matchUtilities(
+        {
+          "animation-delay": (value) => ({ "animation-delay": value }),
+        },
+        {
+          values: theme("transitionDelay"),
+        },
+      )
+    }),
+  ],
 }
 
 export default config

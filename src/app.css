@@ -99,6 +99,9 @@
   body {
     @apply bg-background text-foreground;
   }
+  ::selection {
+    @apply bg-[#8A63D2] text-white;
+  }
 }
 
 @layer utilities {

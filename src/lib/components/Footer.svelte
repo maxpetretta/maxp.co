@@ -26,9 +26,9 @@
 </script>
 
 <footer class="-mx-4 mb-8">
-  <address class="flex items-center justify-between not-italic">
+  <address class="flex items-center justify-center not-italic">
     {#each socials as social}
-      <Button href={social.href} target="_blank" variant="ghost" class="text-xs text-zinc-500 dark:text-zinc-400">
+      <Button href={social.href} target="_blank" variant="ghost" class="text-zinc-500 dark:text-zinc-400">
         {social.name}
       </Button>
     {/each}
