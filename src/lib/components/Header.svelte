@@ -1,7 +1,7 @@
 <script lang="ts">
+  import { sharePageUrl, toggleTheme } from "$/lib/commands"
   import { Switch } from "$/lib/components/ui/switch"
-  import type { Opener } from "$/lib/opener.svelte"
-  import { browser } from "$app/environment"
+  import type { Opener } from "$/lib/stores/opener.svelte"
   import { goto } from "$app/navigation"
   import { page } from "$app/stores"
   import { Button } from "$lib/components/ui/button"
@@ -10,34 +10,12 @@
 
   const opener = getContext<Opener>("opener")
 
-  function toggleTheme() {
-    if (!browser) return
-    document.documentElement.classList.add("no-transition")
-    const isDark = document.documentElement.classList.toggle("dark")
-    window.localStorage.setItem("theme", isDark ? "dark" : "light")
-    setTimeout(() => document.documentElement.classList.remove("no-transition"), 100)
-  }
-
   async function handleNameClick() {
     // eslint-disable-next-line svelte/valid-compile
     if ($page.url.pathname === "/") {
-      await sharePageUrl()
+      await sharePageUrl($page.url.href)
     } else {
       await goto("/")
-    }
-  }
-
-  async function sharePageUrl() {
-    const url = $page.url.href
-
-    try {
-      if (navigator.share) {
-        await navigator.share({ url })
-      } else {
-        await navigator.clipboard.writeText(url)
-      }
-    } catch (error) {
-      console.error(error)
     }
   }
 </script>
@@ -49,7 +27,7 @@
       <!-- eslint-disable-next-line svelte/valid-compile -->
       {#if $page.url.pathname !== "/"}
         <!-- eslint-disable-next-line svelte/valid-compile -->
-        <Button onclick={sharePageUrl} variant="ghost">{$page.url.pathname}</Button>
+        <Button onclick={() => sharePageUrl($page.url.href)} variant="ghost">{$page.url.pathname}</Button>
       {/if}
       <Switch onCheckedChange={toggleTheme} />
       <Button onclick={() => opener.toggle(true)} variant="outline" size="icon" class="transition-none">

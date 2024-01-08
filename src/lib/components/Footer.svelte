@@ -1,28 +1,8 @@
 <script>
   import { Button } from "$/lib/components/ui/button"
+  import { SOCIALS } from "$/lib/constants"
 
-  const socials = [
-    {
-      name: "email",
-      href: "mailto:hello@maxpetretta.com",
-    },
-    {
-      name: "github",
-      href: "https://github.com/maxpetretta",
-    },
-    {
-      name: "farcaster",
-      href: "https://warpcast.com/maxp.eth",
-    },
-    {
-      name: "twitter",
-      href: "https://twitter.com/maxpetretta",
-    },
-    {
-      name: "linkedin",
-      href: "https://linkedin.com/in/maxpetretta",
-    },
-  ]
+  const socials = Object.entries(SOCIALS).map(([name, href]) => ({ name, href }))
 </script>
 
 <footer class="-mx-4 mb-8">
