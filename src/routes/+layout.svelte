@@ -1,7 +1,7 @@
 <script lang="ts">
   import "$/app.css"
 
-  import CommandBar from "$/lib/components/CommandBar.svelte"
+  import CommandMenu from "$/lib/components/CommandMenu.svelte"
   import { createFlag } from "$/lib/stores/flag.svelte"
   import { browser } from "$app/environment"
   import Footer from "$lib/components/Footer.svelte"
@@ -23,5 +23,5 @@
   </main>
 
   <Footer />
-  <CommandBar />
+  <CommandMenu />
 </div>
