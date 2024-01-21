@@ -2,17 +2,18 @@
   import type { CommandType } from "$/lib/commands"
   import { runCommand } from "$/lib/commands"
   import * as Command from "$/lib/components/ui/command"
-  import type { Opener } from "$/lib/stores/opener.svelte"
+  import type { Flag } from "$/lib/stores/flag.svelte"
 
   type CommandItemProps = {
     command: CommandType
-    opener: Opener
+    opener: Flag
+    theme: Flag
   }
 
-  const { command, opener } = $props<CommandItemProps>()
+  const { command, opener, theme } = $props<CommandItemProps>()
 </script>
 
-<Command.Item onSelect={() => runCommand(command.id, opener)}>
+<Command.Item onSelect={() => runCommand(command.id, opener, theme)}>
   <span>{command.name}</span>
   {#if command.shortcut}
     <Command.Shortcut>

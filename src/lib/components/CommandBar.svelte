@@ -1,13 +1,14 @@
 <script lang="ts">
   import { COMMANDS, runCommand, type CommandType } from "$/lib/commands"
   import CommandItem from "$/lib/components/CommandItem.svelte"
-  import type { Opener } from "$/lib/stores/opener.svelte"
+  import type { Flag } from "$/lib/stores/flag.svelte"
   import { browser } from "$app/environment"
   import * as Command from "$lib/components/ui/command"
   import { getContext } from "svelte"
 
-  const opener = getContext<Opener>("opener")
-  const isOpen = $derived(opener.isOpen)
+  const theme = getContext<Flag>("theme")
+  const opener = getContext<Flag>("opener")
+  const isOpen = $derived(opener.value)
   let lastKey = $state("")
 
   // split commands into their respective groups
@@ -42,7 +43,7 @@
     if (!isOpen) {
       const chord = `${lastKey}${e.key}`.trim().toUpperCase()
       const command = shortcuts[chord]
-      if (command) runCommand(command.id, opener)
+      if (command) runCommand(command.id, opener, theme)
     }
 
     // save the keypress for chords
@@ -74,7 +75,7 @@
       {#each Object.entries(groups) as [group, commands]}
         <Command.Group heading={group}>
           {#each commands as command}
-            <CommandItem {command} {opener} />
+            <CommandItem {command} {opener} {theme} />
           {/each}
         </Command.Group>
         <Command.Separator />

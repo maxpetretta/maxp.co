@@ -1,5 +1,5 @@
 import { SOCIALS } from "$/lib/constants"
-import type { Opener } from "$/lib/stores/opener.svelte"
+import type { Flag } from "$/lib/stores/flag.svelte"
 import { browser } from "$app/environment"
 import { goto } from "$app/navigation"
 
@@ -9,7 +9,7 @@ export type CommandType = {
   group: string
   icon?: string
   shortcut?: string[]
-  action: () => void
+  action: (theme?: Flag) => void // TODO: should flags be passed somewhere else?
 }
 
 export async function gotoPage(path: string) {
@@ -20,11 +20,14 @@ export async function gotoSocial(platform: keyof typeof SOCIALS) {
   window.open(SOCIALS[platform], "_blank")
 }
 
-export function toggleTheme() {
-  if (!browser) return
+export function toggleTheme(theme?: Flag) {
+  if (!browser || !theme) return
   document.documentElement.classList.add("no-transition")
+
+  theme.toggle()
   const isDark = document.documentElement.classList.toggle("dark")
   window.localStorage.setItem("theme", isDark ? "dark" : "light")
+
   setTimeout(() => document.documentElement.classList.remove("no-transition"), 100)
 }
 
@@ -40,12 +43,12 @@ export async function sharePageUrl(url: string) {
   }
 }
 
-export function runCommand(id: string, opener: Opener) {
+export function runCommand(id: string, opener: Flag, theme: Flag) {
   const command = COMMANDS.find((cmd) => cmd.id === id)
   if (!command || !opener) return
 
   opener.toggle(false)
-  command.action()
+  command.action(theme)
 }
 
 export const COMMANDS: CommandType[] = [
@@ -61,7 +64,7 @@ export const COMMANDS: CommandType[] = [
     name: "Toggle Theme",
     group: "General",
     shortcut: ["T"],
-    action: () => toggleTheme(),
+    action: (theme) => toggleTheme(theme),
   },
   {
     id: "secret-third-thing",

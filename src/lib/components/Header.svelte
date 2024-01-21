@@ -1,14 +1,16 @@
 <script lang="ts">
   import { sharePageUrl, toggleTheme } from "$/lib/commands"
   import { Switch } from "$/lib/components/ui/switch"
-  import type { Opener } from "$/lib/stores/opener.svelte"
+  import type { Flag } from "$/lib/stores/flag.svelte"
   import { goto } from "$app/navigation"
   import { page } from "$app/stores"
   import { Button } from "$lib/components/ui/button"
   import { Command } from "lucide-svelte"
   import { getContext } from "svelte"
 
-  const opener = getContext<Opener>("opener")
+  const opener = getContext<Flag>("opener")
+  const theme = getContext<Flag>("theme")
+  const isDark = $derived(theme.value)
 
   async function handleNameClick() {
     // eslint-disable-next-line svelte/valid-compile
@@ -35,7 +37,7 @@
         <!-- eslint-disable-next-line svelte/valid-compile -->
         <Button onclick={() => sharePageUrl($page.url.href)} variant="ghost">{$page.url.pathname}</Button>
       {/if}
-      <Switch onCheckedChange={toggleTheme} />
+      <Switch checked={!isDark} onCheckedChange={() => toggleTheme(theme)} />
       <Button onclick={() => opener.toggle(true)} variant="outline" size="icon" class="transition-none">
         <Command />
       </Button>
