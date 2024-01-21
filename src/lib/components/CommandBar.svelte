@@ -18,7 +18,7 @@
   // map shortcut keys to commands for performance
   const shortcuts = COMMANDS.reduce<Record<string, CommandType>>((shortcut, command) => {
     if (command.shortcut) {
-      shortcut[command.shortcut.join()] = command
+      shortcut[command.shortcut.join("")] = command
     }
     return shortcut
   }, {})

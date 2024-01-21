@@ -6,9 +6,14 @@
 </script>
 
 <footer class="-mx-4 mb-8">
-  <address class="flex items-center justify-center not-italic">
+  <address class="flex items-center justify-center not-italic md:gap-4">
     {#each socials as social}
-      <Button href={social.href} target="_blank" variant="ghost" class="text-zinc-500 dark:text-zinc-400">
+      <Button
+        href={social.href}
+        target="_blank"
+        variant="ghost"
+        class="px-3 text-zinc-500 min-[391px]:px-4 dark:text-zinc-400"
+      >
         {social.name}
       </Button>
     {/each}
