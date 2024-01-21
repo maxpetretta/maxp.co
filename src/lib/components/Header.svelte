@@ -20,9 +20,15 @@
   }
 </script>
 
-<header class="mt-8 md:mt-16">
+<header class="mt-6 md:mt-16">
   <nav class="flex items-center justify-between">
-    <Button href="/" onclick={handleNameClick} variant="ghost" class="-ml-4 text-base">Max Petretta</Button>
+    <Button href="/" onclick={handleNameClick} variant="ghost" class="-ml-4 text-base">
+      {#if $page.url.pathname === "/"}
+        <h1>Max Petretta</h1>
+      {:else}
+        Max Petretta
+      {/if}
+    </Button>
     <div class="flex items-center space-x-5">
       <!-- eslint-disable-next-line svelte/valid-compile -->
       {#if $page.url.pathname !== "/"}

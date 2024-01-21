@@ -58,6 +58,8 @@
     --ring: 240 10% 3.9%;
 
     --radius: 0.5rem;
+
+    --cursor-color: black;
   }
 
   .dark {
@@ -89,6 +91,8 @@
     --destructive-foreground: 0 0% 98%;
 
     --ring: 240 4.9% 83.9%;
+
+    --cursor-color: white;
   }
 }
 
@@ -101,6 +105,9 @@
   }
   ::selection {
     @apply bg-[#8A63D2] text-white;
+  }
+  .cursor.svelte-1gv2i7t .typing::after {
+    animation-timing-function: steps(1) !important;
   }
 }
 

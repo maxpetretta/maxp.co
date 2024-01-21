@@ -1,17 +1,20 @@
-<h1 class="text-3xl">Welcome to SvelteKit</h1>
+<script lang="ts">
+  import Typewriter from "svelte-typewriter"
+</script>
 
-<section class="flex flex-col space-y-6">
-  <p class="animate-fade-in animation-delay-1000">
-    Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-  </p>
-  <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-  <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-  <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-  <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-  <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-  <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-  <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-  <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-  <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-  <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-</section>
+<Typewriter mode="cascade" cursor={true} keepCursorOnFinish={true}>
+  <section class="mt-6">
+    <p>hello world</p>
+    <p>my name is max petretta</p>
+    <p>i am a software engineer</p>
+    <p>and i like to build things</p>
+    <p>with code</p>
+    <p>and sometimes with wood</p>
+    <p>and sometimes with words</p>
+    <p>and sometimes with music</p>
+    <p>and sometimes with food</p>
+    <p>and sometimes with other things</p>
+    <p>but mostly with code</p>
+    <p>and i like to share what i build</p>
+  </section>
+</Typewriter>

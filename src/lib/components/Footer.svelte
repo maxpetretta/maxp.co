@@ -5,7 +5,7 @@
   const socials = Object.entries(SOCIALS).map(([name, href]) => ({ name, href }))
 </script>
 
-<footer class="-mx-4 mb-8">
+<footer class="-mx-4 mb-6">
   <address class="flex items-center justify-center not-italic md:gap-4">
     {#each socials as social}
       <Button
