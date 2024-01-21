@@ -7,6 +7,7 @@
   import { getContext } from "svelte"
 
   const opener = getContext<Opener>("opener")
+  const isOpen = $derived(opener.isOpen)
   let lastKey = $state("")
 
   // split commands into their respective groups
@@ -25,7 +26,7 @@
 
   function handleKeydown(e: KeyboardEvent) {
     // always allow escape key
-    if (e.key === "Escape" && opener.isOpen) {
+    if (e.key === "Escape" && isOpen) {
       e.preventDefault()
       opener.toggle(false)
       return
@@ -38,7 +39,7 @@
     }
 
     // run shortcut for given key or chord
-    if (!opener.isOpen) {
+    if (!isOpen) {
       const chord = `${lastKey}${e.key}`.trim().toUpperCase()
       const command = shortcuts[chord]
       if (command) runCommand(command.id, opener)
@@ -65,7 +66,7 @@
 
 {#if opener}
   <!-- see: https://github.com/huntabyte/bits-ui/issues/164 -->
-  <Command.Dialog bind:open={opener.isOpen} onOpenChange={opener.toggle}>
+  <Command.Dialog open={isOpen} onOpenChange={opener.toggle}>
     <Command.Input placeholder="Type a command or search..." />
     <Command.List>
       <Command.Empty>No results found.</Command.Empty>
