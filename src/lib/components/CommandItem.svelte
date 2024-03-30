@@ -10,7 +10,7 @@
     theme: Flag
   }
 
-  const { command, opener, theme } = $props<CommandItemProps>()
+  const { command, opener, theme }: CommandItemProps = $props()
 </script>
 
 <Command.Item onSelect={() => runCommand(command.id, opener, theme)}>

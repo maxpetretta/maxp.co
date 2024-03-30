@@ -1,20 +1,21 @@
 <script lang="ts">
-  import Typewriter from "svelte-typewriter"
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  let index = $state(0)
 </script>
 
-<Typewriter mode="cascade" cursor={true} keepCursorOnFinish={true}>
-  <section class="mt-6">
-    <p>hello world</p>
-    <p>my name is max petretta</p>
-    <p>i am a software engineer</p>
-    <p>and i like to build things</p>
-    <p>with code</p>
-    <p>and sometimes with wood</p>
-    <p>and sometimes with words</p>
-    <p>and sometimes with music</p>
-    <p>and sometimes with food</p>
-    <p>and sometimes with other things</p>
-    <p>but mostly with code</p>
-    <p>and i like to share what i build</p>
-  </section>
-</Typewriter>
+<!-- <Typewriter mode="cascade" interval={50} delay={300} cursor={true} keepCursorOnFinish={true}> -->
+<section class="mt-6 text-zinc-400">
+  <h2>Software Engineer</h2>
+  <h3>New York, NY</h3>
+</section>
+
+<div class="mt-6 flex">
+  <div class="h-4 w-10 rounded-lg bg-white" role="link" tabindex="0" on:mouseenter={() => (index = 0)} />
+  <div class="h-4 w-10 rounded-lg bg-white" role="link" tabindex="0" on:mouseenter={() => (index = 1)} />
+  <div class="h-4 w-10 rounded-lg bg-white" role="link" tabindex="0" on:mouseenter={() => (index = 2)} />
+  <div class="h-4 w-10 rounded-lg bg-white" role="link" tabindex="0" on:mouseenter={() => (index = 3)} />
+  <div class="h-4 w-10 rounded-lg bg-white" role="link" tabindex="0" on:mouseenter={() => (index = 4)} />
+  <div class="absolute h-4 w-10 rounded-lg bg-red-500" />
+</div>
+
+<!-- </Typewriter> -->
