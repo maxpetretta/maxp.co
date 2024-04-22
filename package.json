@@ -9,12 +9,12 @@
     "clean": "rimraf node_modules .cspellcache .eslintcache .svelte-kit .vercel",
     "dev": "vite dev",
     "fix": "bun run fix:eslint && bun run fix:prettier",
-    "fix:eslint": "eslint . --ext js,ts,svelte --fix --cache --report-unused-disable-directives --max-warnings 0 --ignore-path .gitignore",
+    "fix:eslint": "ESLINT_USE_FLAT_CONFIG=false eslint . --ext js,ts,svelte --fix --cache --report-unused-disable-directives --max-warnings 0 --ignore-path .gitignore",
     "fix:prettier": "prettier \"./**/*.{js,ts,svelte,css,json}\" --write --cache --ignore-path .gitignore",
     "preinstall": "npx only-allow bun",
     "postinstall": "bunx simple-git-hooks",
     "lint": "bun run lint:eslint && bun run lint:prettier && bun run lint:spellcheck && bun run lint:svelte",
-    "lint:eslint": "eslint . --ext js,ts,svelte --cache --report-unused-disable-directives --max-warnings 0 --ignore-path .gitignore",
+    "lint:eslint": "ESLINT_USE_FLAT_CONFIG=false eslint . --ext js,ts,svelte --cache --report-unused-disable-directives --max-warnings 0 --ignore-path .gitignore",
     "lint:prettier": "prettier \"./**/*.{html,css,js,ts,svelte,json}\" --check --cache --ignore-path .gitignore",
     "lint:spellcheck": "cspell \"./**/*.{html,css,js,ts,svelte}\" --cache --gitignore",
     "lint:svelte": "svelte-kit sync && svelte-check",
@@ -26,7 +26,7 @@
     "pre-push": "bun run build"
   },
   "lint-staged": {
-    "*.{js,ts,svelte}": "eslint --fix --cache --report-unused-disable-directives --max-warnings 0",
+    "*.{js,ts,svelte}": "cross-env ESLINT_USE_FLAT_CONFIG=false eslint --fix --cache --report-unused-disable-directives --max-warnings 0",
     "*.{html,css,js,ts,svelte,json}": "prettier --write --cache",
     "package.json": "sort-package-json"
   },
@@ -52,6 +52,7 @@
     "bits-ui": "^0.21.4",
     "clsx": "^2.1.0",
     "cmdk-sv": "^0.0.17",
+    "cross-env": "^7.0.3",
     "lucide-svelte": "^0.372.0",
     "tailwind-merge": "^2.3.0",
     "tailwind-variants": "^0.2.1"
@@ -117,7 +118,8 @@
       "rehype",
       "Shikiji",
       "sonner",
-      "tailwindcss"
+      "tailwindcss",
+      "Worldcoin"
     ]
   },
   "postcss": {
