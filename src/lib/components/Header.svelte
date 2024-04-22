@@ -24,7 +24,7 @@
 
 <header class="mt-6 md:mt-16">
   <nav class="flex items-center justify-between">
-    <Button href="/" onclick={handleNameClick} variant="ghost" class="-ml-4 text-base">
+    <Button href="/" onclick={handleNameClick} variant="ghost" class="-ml-3 text-base">
       {#if $page.url.pathname === "/"}
         <h1>Max Petretta</h1>
       {:else}

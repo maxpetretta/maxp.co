@@ -53,7 +53,7 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["Inter", "-apple-system", "BlinkMacSystemFont", "system-ui", "sans-serif"],
+        sans: ["InterVariable", "-apple-system", "BlinkMacSystemFont", "system-ui", "sans-serif"],
         serif: ["-apple-system-ui-serif", "ui-serif", "serif"],
       },
     },
