@@ -12,7 +12,7 @@
         href={social.href}
         target="_blank"
         variant="ghost"
-        class="px-3 text-zinc-500 min-[391px]:px-4 dark:text-zinc-400"
+        class="px-3 text-zinc-500 dark:text-zinc-400 min-[391px]:px-4"
       >
         {social.name}
       </Button>

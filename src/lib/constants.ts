@@ -5,3 +5,5 @@ export const SOCIALS = {
   twitter: "https://twitter.com/maxpetretta",
   linkedin: "https://linkedin.com/in/maxpetretta",
 }
+
+export const RESUME = "https://raw.githubusercontent.com/maxpetretta/resume/master/Maximilian%20Petretta%20Resume.pdf"

@@ -1,4 +1,4 @@
-import { SOCIALS } from "$/lib/constants"
+import { RESUME, SOCIALS } from "$/lib/constants"
 import type { Flag } from "$/lib/stores/flag.svelte"
 import { browser } from "$app/environment"
 import { goto } from "$app/navigation"
@@ -135,5 +135,12 @@ export const COMMANDS: CommandType[] = [
     group: "Contact",
     shortcut: ["L"],
     action: () => gotoSocial("linkedin"),
+  },
+  {
+    id: "resume",
+    name: "Resume",
+    group: "Contact",
+    shortcut: ["R"],
+    action: () => window.open(RESUME, "_blank"),
   },
 ]

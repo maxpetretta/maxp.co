@@ -8,10 +8,8 @@
     font-weight: 100 900;
     font-display: swap;
     src:
-      local("Inter"),
-      local("Inter Variable"),
-      local("Inter Display"),
-      url("/fonts/inter.woff2") format("woff2");
+      local("InterVariable"),
+      url("/fonts/InterVariable.woff2") format("woff2");
   }
   @font-face {
     font-family: "Inter";
@@ -19,10 +17,8 @@
     font-style: italic;
     font-display: swap;
     src:
-      local("Inter"),
-      local("Inter Variable"),
-      local("Inter Display"),
-      url("/fonts/inter-italic.woff2") format("woff2");
+      local("InterVariable-Italic"),
+      url("/fonts/InterVariable-Italic.woff2") format("woff2");
   }
 }
 
@@ -96,6 +92,7 @@
   }
 }
 
+/* Globals */
 @layer base {
   * {
     @apply border-border;
@@ -105,9 +102,6 @@
   }
   ::selection {
     @apply bg-[#8A63D2] text-white;
-  }
-  .cursor.svelte-1gv2i7t .typing::after {
-    animation-timing-function: steps(1) !important;
   }
 }
 

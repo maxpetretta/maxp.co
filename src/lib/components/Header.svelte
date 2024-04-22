@@ -39,7 +39,7 @@
       {/if}
       <Switch checked={!isDark} onCheckedChange={() => toggleTheme(theme)} />
       <Button onclick={() => opener.toggle(true)} variant="outline" size="icon" class="transition-none">
-        <Command />
+        <Command onclick={() => opener.toggle(true)} />
       </Button>
     </div>
   </nav>

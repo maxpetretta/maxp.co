@@ -1,21 +1,24 @@
 <script lang="ts">
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  let index = $state(0)
 </script>
 
-<!-- <Typewriter mode="cascade" interval={50} delay={300} cursor={true} keepCursorOnFinish={true}> -->
 <section class="mt-6 text-zinc-400">
   <h2>Software Engineer</h2>
   <h3>New York, NY</h3>
 </section>
 
-<div class="mt-6 flex">
-  <div class="h-4 w-10 rounded-lg bg-white" role="link" tabindex="0" on:mouseenter={() => (index = 0)} />
-  <div class="h-4 w-10 rounded-lg bg-white" role="link" tabindex="0" on:mouseenter={() => (index = 1)} />
-  <div class="h-4 w-10 rounded-lg bg-white" role="link" tabindex="0" on:mouseenter={() => (index = 2)} />
-  <div class="h-4 w-10 rounded-lg bg-white" role="link" tabindex="0" on:mouseenter={() => (index = 3)} />
-  <div class="h-4 w-10 rounded-lg bg-white" role="link" tabindex="0" on:mouseenter={() => (index = 4)} />
-  <div class="absolute h-4 w-10 rounded-lg bg-red-500" />
-</div>
+<section class="mt-6">
+  <p>
+    I didn't set out to be a web developer. But what I found was the most robust, powerful system for building
+    applications in the world. That's worth sticking around for.
+  </p>
+</section>
 
-<!-- </Typewriter> -->
+<section class="mt-6">
+  <h3>Experience</h3>
+  <ul>
+    <li>Bracket.Game - Lead Engineer</li>
+    <li>Worldcoin - Senior Software Engineer</li>
+    <li>GE Healthcare - Staff Software Engineer</li>
+    <li>General Electric - Digital Technology Leadership Program</li>
+  </ul>
+</section>
