@@ -81,27 +81,6 @@ export const COMMANDS: CommandType[] = [
     action: () => gotoPage("/"),
   },
   {
-    id: "blog",
-    name: "Blog",
-    group: "Pages",
-    shortcut: ["G", "B"],
-    action: () => gotoPage("/blog"),
-  },
-  {
-    id: "uses",
-    name: "Uses",
-    group: "Pages",
-    shortcut: ["G", "U"],
-    action: () => gotoPage("/uses"),
-  },
-  {
-    id: "now",
-    name: "Now",
-    group: "Pages",
-    shortcut: ["G", "N"],
-    action: () => gotoPage("/now"),
-  },
-  {
     id: "email",
     name: "Email",
     group: "Contact",

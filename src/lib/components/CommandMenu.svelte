@@ -72,13 +72,15 @@
     <Command.List>
       <Command.Empty>No results found.</Command.Empty>
 
-      {#each Object.entries(groups) as [group, commands]}
+      {#each Object.entries(groups) as [group, commands], index}
         <Command.Group heading={group}>
           {#each commands as command}
             <CommandItem {command} {opener} {theme} />
           {/each}
         </Command.Group>
-        <Command.Separator />
+        {#if index !== Object.entries(groups).length - 1}
+          <Command.Separator />
+        {/if}
       {/each}
     </Command.List>
   </Command.Dialog>
