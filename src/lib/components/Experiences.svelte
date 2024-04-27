@@ -21,7 +21,7 @@
         {href}
         target="_blank"
         rel="noreferrer"
-        class="-mx-2 block rounded-sm px-2 py-1.5 transition duration-200 hover:scale-[1.01] hover:bg-accent hover:text-accent-foreground active:scale-[0.98] sm:active:scale-[0.99]"
+        class="clickable -mx-2 block rounded-sm px-2 py-1.5 hover:bg-accent hover:text-accent-foreground"
       >
         <div class="flex justify-between border-b border-dotted border-muted-foreground">
           <span>{title}</span>

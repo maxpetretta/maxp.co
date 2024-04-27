@@ -40,7 +40,7 @@
 <ul class="grid grid-cols-1 gap-0.5 sm:grid-cols-2 sm:gap-1.5">
   {#each projects as { icon, name, description, href }}
     <li
-      class="bg-muted transition duration-200 first:rounded-t-lg last:rounded-b-lg hover:scale-[1.01] hover:text-card-foreground hover:brightness-95 active:scale-[0.98] dark:hover:brightness-125 sm:rounded-lg sm:active:scale-[0.99]"
+      class="clickable bg-muted first:rounded-t-lg last:rounded-b-lg hover:text-card-foreground hover:brightness-95 dark:hover:brightness-125 sm:rounded-lg"
     >
       <a
         {href}
