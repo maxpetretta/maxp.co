@@ -3,6 +3,9 @@ const config = {
   darkMode: ["class"],
   content: ["./src/**/*.{html,js,ts,svelte}"],
   safelist: ["dark"],
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
   theme: {
     container: {
       center: true,
@@ -55,6 +58,7 @@ const config = {
       fontFamily: {
         sans: ["InterVariable", "-apple-system", "BlinkMacSystemFont", "system-ui", "sans-serif"],
         serif: ["-apple-system-ui-serif", "ui-serif", "serif"],
+        mono: ["MonaspaceArgonVarVF", "ui-monospace", "monospace"],
       },
     },
   },

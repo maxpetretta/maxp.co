@@ -17,6 +17,13 @@
     font-display: swap;
     src: url("/fonts/InterVariable-Italic.woff2") format("woff2");
   }
+  @font-face {
+    font-family: "MonaspaceArgonVarVF";
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+    src: url("/fonts/MonaspaceArgonVarVF[wght,wdth,slnt].woff2") format("woff2");
+  }
 }
 
 @layer base {

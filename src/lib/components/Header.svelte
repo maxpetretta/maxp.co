@@ -13,7 +13,6 @@
   const isDark = $derived(theme.value)
 
   async function handleNameClick() {
-    // eslint-disable-next-line svelte/valid-compile
     if ($page.url.pathname === "/") {
       await sharePageUrl($page.url.href)
     } else {
@@ -31,13 +30,14 @@
         Max Petretta
       {/if}
     </Button>
+
     <div class="flex items-center space-x-5">
-      <!-- eslint-disable-next-line svelte/valid-compile -->
       {#if $page.url.pathname !== "/"}
-        <!-- eslint-disable-next-line svelte/valid-compile -->
         <Button onclick={() => sharePageUrl($page.url.href)} variant="ghost">{$page.url.pathname}</Button>
       {/if}
+
       <Switch checked={!isDark} onCheckedChange={() => toggleTheme(theme)} />
+
       <Button onclick={() => opener.toggle(true)} variant="outline" size="icon" class="transition-none">
         <Command onclick={() => opener.toggle(true)} />
       </Button>

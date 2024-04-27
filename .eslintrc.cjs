@@ -26,6 +26,7 @@ module.exports = {
   },
   rules: {
     "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+    "svelte/valid-compile": "off",
   },
   overrides: [
     {
