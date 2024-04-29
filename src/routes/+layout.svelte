@@ -7,6 +7,7 @@
   import Footer from "$lib/components/Footer.svelte"
   import Header from "$lib/components/Header.svelte"
   import { setContext } from "svelte"
+  import { Toaster } from "svelte-sonner"
 
   const { children } = $props()
 
@@ -16,6 +17,7 @@
   const theme = createFlag(browser && document.documentElement.classList.contains("dark"))
   setContext("theme", theme)
 
+  const themeName = $derived(theme.value ? "dark" : "light")
   const themeColor = $derived(theme.value ? "#09090b" : "#ffffff")
 </script>
 
@@ -31,5 +33,7 @@
   </main>
 
   <Footer />
+
   <CommandMenu />
+  <Toaster theme={themeName} />
 </div>

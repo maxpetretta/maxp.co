@@ -10,8 +10,8 @@
 
 <section class="mt-16 space-y-5">
   <h3 class="mb-4 font-medium">About</h3>
-  <p>I didn't set out to be a web developer.</p>
-  <p>But what I found was the most robust, powerful system for building applications in the world.</p>
+  <p>I didn't set out to become a web developer.</p>
+  <p>But what I found was the most open, powerful system for building applications in the world.</p>
   <p>That's worth sticking around for.</p>
 </section>
 

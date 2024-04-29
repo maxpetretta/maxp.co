@@ -2,6 +2,7 @@ import { RESUME, SOCIALS } from "$/lib/constants"
 import type { Flag } from "$/lib/stores/flag.svelte"
 import { browser } from "$app/environment"
 import { goto } from "$app/navigation"
+import { toast } from "svelte-sonner"
 
 export type CommandType = {
   id: string
@@ -12,12 +13,25 @@ export type CommandType = {
   action: (theme?: Flag) => void // TODO: should flags be passed somewhere else?
 }
 
-export async function gotoPage(path: string) {
+async function gotoPage(path: string) {
   await goto(path)
 }
 
-export async function gotoSocial(platform: keyof typeof SOCIALS) {
+async function gotoSocial(platform: keyof typeof SOCIALS) {
   window.open(SOCIALS[platform], "_blank")
+}
+
+export async function sharePageUrl(url: string) {
+  try {
+    if (navigator.share) {
+      await navigator.share({ url })
+    } else {
+      await navigator.clipboard.writeText(url)
+      toast.success("Link copied!")
+    }
+  } catch (error) {
+    console.error(error)
+  }
 }
 
 export function toggleTheme(theme?: Flag) {
@@ -31,16 +45,9 @@ export function toggleTheme(theme?: Flag) {
   setTimeout(() => document.documentElement.classList.remove("no-transition"), 100)
 }
 
-export async function sharePageUrl(url: string) {
-  try {
-    if (navigator.share) {
-      await navigator.share({ url })
-    } else {
-      await navigator.clipboard.writeText(url)
-    }
-  } catch (error) {
-    console.error(error)
-  }
+function secretThirdThing() {
+  toast.info("Nothing happened... or did it?")
+  console.log("Secret Third Thing")
 }
 
 export function runCommand(id: string, opener: Flag, theme: Flag) {
@@ -71,7 +78,7 @@ export const COMMANDS: CommandType[] = [
     name: "Secret Third Thing",
     group: "General",
     shortcut: ["3"],
-    action: () => console.log("Secret Third Thing"),
+    action: () => secretThirdThing(),
   },
   {
     id: "home",
