@@ -1,46 +1,148 @@
 {
+  "name": "maxpetretta.com",
+  "version": "2.0.0",
   "private": true,
   "license": "MIT",
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "format": "prettier --write .",
-    "prepare": "husky install"
+    "build": "vite build",
+    "clean": "rimraf node_modules .cspellcache .eslintcache .svelte-kit .vercel",
+    "dev": "vite dev",
+    "fix": "bun run fix:eslint && bun run fix:prettier",
+    "fix:eslint": "ESLINT_USE_FLAT_CONFIG=false eslint . --ext js,ts,svelte --fix --cache --report-unused-disable-directives --max-warnings 0 --ignore-path .gitignore",
+    "fix:prettier": "prettier \"./**/*.{js,ts,svelte,css,json}\" --write --cache --ignore-path .gitignore",
+    "preinstall": "npx only-allow bun",
+    "postinstall": "bunx simple-git-hooks",
+    "lint": "bun run lint:eslint && bun run lint:prettier && bun run lint:spellcheck && bun run lint:svelte",
+    "lint:eslint": "ESLINT_USE_FLAT_CONFIG=false eslint . --ext js,ts,svelte --cache --report-unused-disable-directives --max-warnings 0 --ignore-path .gitignore",
+    "lint:prettier": "prettier \"./**/*.{html,css,js,ts,svelte,json}\" --check --cache --ignore-path .gitignore",
+    "lint:spellcheck": "cspell \"./**/*.{html,css,js,ts,svelte}\" --cache --gitignore",
+    "lint:svelte": "svelte-kit sync && svelte-check",
+    "preview": "bun run build && vite preview"
   },
-  "dependencies": {
-    "@mdx-js/loader": "^1.6.22",
-    "@mdx-js/mdx": "^1.6.22",
-    "@next/mdx": "^12.0.7",
-    "@tailwindcss/forms": "^0.5.2",
-    "@tailwindcss/typography": "^0.5.3",
-    "gray-matter": "^4.0.3",
-    "mdx-embed": "^1.0.0",
-    "next": "^12.1.0",
-    "next-themes": "^0.2.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "rehype-pretty-code": "^0.3.2",
-    "shiki": "^0.10.1"
-  },
-  "devDependencies": {
-    "@types/mdx-js__react": "^1.5.5",
-    "@types/node": "^18.7.16",
-    "@types/react": "^18.0.19",
-    "autoprefixer": "^10.4.2",
-    "eslint": "^8.6.0",
-    "eslint-config-next": "^12.0.7",
-    "eslint-config-prettier": "^8.3.0",
-    "husky": "^8.0.1",
-    "lint-staged": "^13.0.3",
-    "postcss": "^8.4.5",
-    "prettier": "^2.5.1",
-    "prettier-plugin-tailwindcss": "^0.1.4",
-    "tailwindcss": "^3.0.13",
-    "typescript": "^4.8.3"
+  "simple-git-hooks": {
+    "pre-commit": "bunx lint-staged && bun run lint:svelte",
+    "commit-msg": "bunx commitlint --edit --config=commitlint.config.cjs",
+    "pre-push": "bun run build"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
-  }
+    "*.{js,ts,svelte}": "cross-env ESLINT_USE_FLAT_CONFIG=false eslint --fix --cache --report-unused-disable-directives --max-warnings 0",
+    "*.{html,css,js,ts,svelte,json}": "prettier --write --cache",
+    "package.json": "sort-package-json"
+  },
+  "browserslist": [
+    "defaults and supports es6-module"
+  ],
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-svelte",
+      "prettier-plugin-tailwindcss"
+    ],
+    "semi": false,
+    "overrides": [
+      {
+        "files": "*.svelte",
+        "options": {
+          "parser": "svelte"
+        }
+      }
+    ]
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.2.2",
+    "@vercel/speed-insights": "^1.0.10",
+    "bits-ui": "^0.21.4",
+    "clsx": "^2.1.0",
+    "cmdk-sv": "^0.0.17",
+    "cross-env": "^7.0.3",
+    "lucide-svelte": "^0.372.0",
+    "mode-watcher": "^0.3.0",
+    "svelte-sonner": "^0.3.22",
+    "tailwind-merge": "^2.3.0",
+    "tailwind-variants": "^0.2.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.2.2",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@sveltejs/adapter-static": "^3.0.1",
+    "@sveltejs/kit": "^2.5.7",
+    "@sveltejs/vite-plugin-svelte": "^3.1.0",
+    "@types/eslint": "^8.56.10",
+    "@typescript-eslint/eslint-plugin": "^7.7.0",
+    "@typescript-eslint/parser": "^7.7.0",
+    "autoprefixer": "^10.4.19",
+    "cspell": "^8.7.0",
+    "eslint": "^9.1.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-compat": "^4.2.0",
+    "eslint-plugin-svelte": "^2.38.0",
+    "lint-staged": "^15.2.2",
+    "postcss": "^8.4.38",
+    "prettier": "^3.2.5",
+    "prettier-plugin-svelte": "^3.2.3",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "rimraf": "^5.0.5",
+    "simple-git-hooks": "^2.11.1",
+    "sort-package-json": "^2.10.0",
+    "svelte": "^5.0.0-next.115",
+    "svelte-check": "^3.7.0",
+    "tailwindcss": "^3.4.3",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10"
+  },
+  "cspell": {
+    "version": "0.2",
+    "language": "en",
+    "dictionaries": [
+      "typescript",
+      "html",
+      "css",
+      "npm"
+    ],
+    "enableFiletypes": [
+      "html",
+      "css",
+      "javascript",
+      "typescript",
+      "tailwindcss",
+      "svelte",
+      "!json",
+      "!svg"
+    ],
+    "words": [
+      "clsx",
+      "cmdk",
+      "dtlp",
+      "farcaster",
+      "gehc",
+      "keymap",
+      "lucide",
+      "maxp",
+      "maxpetretta",
+      "mdsvex",
+      "monaspace",
+      "monokai",
+      "petretta",
+      "quickcast",
+      "rehype",
+      "shikiji",
+      "slnt",
+      "sonner",
+      "tailwindcss",
+      "twitt",
+      "wdth",
+      "wght",
+      "worldcoin"
+    ]
+  },
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {},
+      "autoprefixer": {}
+    }
+  },
+  "trustedDependencies": [
+    "svelte-preprocess"
+  ]
 }
