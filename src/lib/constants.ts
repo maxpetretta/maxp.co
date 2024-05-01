@@ -1,5 +1,5 @@
 export const SOCIALS = {
-  email: "mailto:hello@maxpetretta.com",
+  email: "mailto:m@maxp.co",
   github: "https://github.com/maxpetretta",
   farcaster: "https://warpcast.com/maxp.eth",
   twitter: "https://twitter.com/maxpetretta",
