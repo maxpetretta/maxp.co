@@ -14,7 +14,7 @@
       icon: AppWindow,
       name: "maxp.co",
       description: "Svelte 5 blog",
-      href: "https://github.com/maxpetretta/maxpetretta.com",
+      href: "https://github.com/maxpetretta/maxp.co",
     },
     {
       icon: Zap,
