@@ -26,7 +26,7 @@
       icon: Twitter,
       name: "twitt3r.xyz",
       description: "Twitter on Ethereum",
-      href: "https://twitt3r.xyz",
+      href: "https://github.com/maxpetretta/twitt3r.xyz",
     },
     {
       icon: Keyboard,

@@ -47,7 +47,7 @@ export function toggleTheme(theme?: Flag) {
 
 function secretThirdThing() {
   toast.info("Nothing happened... or did it?")
-  console.log("Secret Third Thing")
+  console.log("Well you're determined, aren't you?")
 }
 
 export function runCommand(id: string, opener: Flag, theme: Flag) {
@@ -86,6 +86,13 @@ export const COMMANDS: CommandType[] = [
     group: "Pages",
     shortcut: ["G", "H"],
     action: () => gotoPage("/"),
+  },
+  {
+    id: "blog",
+    name: "Blog",
+    group: "Pages",
+    shortcut: ["G", "B"],
+    action: () => gotoPage("/blog"),
   },
   {
     id: "email",
