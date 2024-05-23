@@ -1,5 +1,6 @@
 import { RESUME, SOCIALS } from "$/lib/constants"
 import type { Flag } from "$/lib/stores/flag.svelte"
+import { fetchMarkdownPosts } from "$/lib/utils"
 import { browser } from "$app/environment"
 import { goto } from "$app/navigation"
 import { toast } from "svelte-sonner"
@@ -56,6 +57,23 @@ export function runCommand(id: string, opener: Flag, theme: Flag) {
 
   opener.toggle(false)
   command.action(theme)
+}
+
+async function getPostCommands() {
+  const posts = await fetchMarkdownPosts()
+
+  const postCommands = []
+  for (const post of posts) {
+    const command = {
+      id: `${post.path.split("/")[1]}`,
+      name: post.metadata.title,
+      group: "Posts",
+      action: () => gotoPage(`${post.path}`),
+    }
+    postCommands.push(command)
+  }
+
+  return postCommands
 }
 
 export const COMMANDS: CommandType[] = [
@@ -136,4 +154,5 @@ export const COMMANDS: CommandType[] = [
     shortcut: ["R"],
     action: () => window.open(RESUME, "_blank"),
   },
+  ...(await getPostCommands()),
 ]
