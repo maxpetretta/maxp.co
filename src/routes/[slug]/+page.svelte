@@ -1,5 +1,6 @@
 <script lang="ts">
   import { formatDate } from "$/lib/utils.js"
+  import { Button } from "$lib/components/ui/button"
 
   const { data } = $props()
   const { metadata, content } = data
@@ -10,4 +11,6 @@
   <time class="mb-6 text-muted-foreground">{formatDate(metadata.date)}</time>
 
   <svelte:component this={content} />
+
+  <Button href="/blog" variant="outline" class="mx-auto my-12 block w-max no-underline">More posts</Button>
 </article>

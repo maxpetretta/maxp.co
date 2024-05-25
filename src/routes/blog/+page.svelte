@@ -17,7 +17,14 @@
         >
           <div class="flex justify-between border-b border-dotted border-muted-foreground">
             <span>{metadata.title}</span>
-            <span class="whitespace-nowrap text-left font-mono text-muted-foreground">{formatDate(metadata.date)}</span>
+
+            <!-- TODO: can i use a media query here? -->
+            <span class="whitespace-nowrap text-left font-mono text-muted-foreground sm:hidden"
+              >{formatDate(metadata.date, { year: "numeric", month: "short", day: "numeric" })}</span
+            >
+            <span class="hidden whitespace-nowrap text-left font-mono text-muted-foreground sm:inline"
+              >{formatDate(metadata.date, { year: "numeric", month: "long", day: "numeric" })}</span
+            >
           </div>
         </a>
       </li>
