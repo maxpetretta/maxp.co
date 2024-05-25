@@ -3,7 +3,6 @@ title: Hello World
 date: "2022-02-04"
 ---
 
-<!-- ![Classic hello world in JavaScript](/images/hello.png) -->
 <img src="/images/hello.png" alt="Classic hello world in JavaScript" width="500" class="mx-auto">
 
 Hello, and thanks again for visiting my blog! Before we get started, I'd like to establish some ground rules...
@@ -14,11 +13,11 @@ That's a tricky question. Not trying to be philosophical or anything, but identi
 
 Aren't we more than our 9-5's?
 
-We have hobbies and fears and dreams and much more. I'm still figuring out who I am, and maybe you are too. But, if you'd like to read more about my background, the [About](/about) page is a good place to start. And, as you may have already gathered, I'm a software developer by trade.
+We have hobbies and fears and dreams and much more. I'm still figuring out who I am, and maybe you are too. But, if you'd like to read more about my background, the [About](/) page is a good place to start. And, as you may have already gathered, I'm a software developer by trade.
 
 ## Why the website?
 
-At this point, I've been online for most of my life. I've spent most of that time as a [lurker](https://en.wikipedia.org/wiki/Lurker), passively consuming the content of others, but never really creating my own. This is a common phenonenom, so much so that it has been decribed as the ["1% rule"](<https://en.wikipedia.org/wiki/1%25_rule_(Internet_culture)>); only a small handful of users create the posts that the rest of us enjoy on a daily basis.
+At this point, I've been online for most of my life. I've spent most of that time as a [lurker](https://en.wikipedia.org/wiki/Lurker), passively consuming the content of others, but never really creating my own. This is a common phenomenon, so much so that it has been described as the ["1% rule"](<https://en.wikipedia.org/wiki/1%25_rule_(Internet_culture)>); only a small handful of users create the posts that the rest of us enjoy on a daily basis.
 
 I've been aware of this quality in myself for quite some time. In fact, I built this blog over a year ago, at the end of 2020. But it's sat empty all this time. I think much of that stems from a crippling fear of [being wrong on the internet](https://xkcd.com/386/).
 
@@ -48,7 +47,7 @@ It's pretty tough for me to come up with one or two categories that work for all
 
 ## Wrapping up
 
-This year, instead of setting goals and spending the entire year trying to acheive them, I'm trying something different:
+This year, instead of setting goals and spending the entire year trying to achieve them, I'm trying something different:
 
 ```
 <Tweet align="center" tweetLink="maxpetretta/status/1483882167528669184" />
