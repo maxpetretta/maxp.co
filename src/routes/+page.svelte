@@ -1,6 +1,7 @@
 <script lang="ts">
   import Experiences from "$/lib/components/Experiences.svelte"
   import Projects from "$/lib/components/Projects.svelte"
+  import { Button } from "$/lib/components/ui/button"
 </script>
 
 <section class="mt-6 text-muted-foreground">
@@ -20,7 +21,9 @@
   <Projects />
 </section>
 
-<section class="mb-20 mt-16">
+<section class="mt-16">
   <h3 class="mb-4 font-medium">Experience</h3>
   <Experiences />
 </section>
+
+<Button href="/blog" variant="outline" class="mx-auto my-12 block w-fit">Check out the blog</Button>
