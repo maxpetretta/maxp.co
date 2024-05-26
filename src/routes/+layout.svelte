@@ -1,15 +1,16 @@
 <script lang="ts">
   import "$/app.css"
-
-  import CommandMenu from "$/lib/components/CommandMenu.svelte"
-  import { createFlag } from "$/lib/stores/flag.svelte"
   import { browser } from "$app/environment"
+
+  import CommandMenu from "$lib/components/CommandMenu.svelte"
   import Footer from "$lib/components/Footer.svelte"
   import Header from "$lib/components/Header.svelte"
+  import { createFlag } from "$lib/stores/flag.svelte"
   import { setContext } from "svelte"
   import { Toaster } from "svelte-sonner"
 
-  const { children } = $props()
+  const { data, children } = $props()
+  setContext("posts", data.posts)
 
   const opener = createFlag()
   setContext("opener", opener)
@@ -19,11 +20,12 @@
 
   const themeName = $derived(theme.value ? "dark" : "light")
   const themeColor = $derived(theme.value ? "#09090b" : "#ffffff")
-</script>
 
-<svelte:head>
-  <meta name="theme-color" content={themeColor} />
-</svelte:head>
+  $effect(() => {
+    const themeColorMetaTag = document.querySelector('meta[name="theme-color"]') as HTMLMetaElement | null
+    if (themeColorMetaTag) themeColorMetaTag.content = themeColor
+  })
+</script>
 
 <div class="mx-auto flex min-h-screen max-w-2xl flex-col px-5 md:px-0">
   <Header />

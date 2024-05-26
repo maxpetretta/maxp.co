@@ -6,3 +6,9 @@ export const prerender = true
 
 inject({ mode: dev ? "development" : "production" })
 injectSpeedInsights()
+
+export async function load({ fetch }) {
+  const response = await fetch(`/api/posts`)
+  const posts = await response.json()
+  return { posts }
+}

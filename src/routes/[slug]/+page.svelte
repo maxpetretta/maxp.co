@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { formatDate } from "$/lib/utils.js"
   import { Button } from "$lib/components/ui/button"
+  import { formatDate } from "$lib/utils.js"
 
   const { data } = $props()
   const { metadata, content } = data

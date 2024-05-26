@@ -1,8 +1,8 @@
 <script lang="ts">
-  import type { CommandType } from "$/lib/commands"
-  import { runCommand } from "$/lib/commands"
-  import * as Command from "$/lib/components/ui/command"
-  import type { Flag } from "$/lib/stores/flag.svelte"
+  import type { CommandType } from "$lib/commands"
+  import { runCommand } from "$lib/commands"
+  import * as Command from "$lib/components/ui/command"
+  import type { Flag } from "$lib/stores/flag.svelte"
 
   type CommandItemProps = {
     command: CommandType

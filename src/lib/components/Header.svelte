@@ -1,10 +1,10 @@
 <script lang="ts">
-  import { sharePageUrl, toggleTheme } from "$/lib/commands"
-  import { Switch } from "$/lib/components/ui/switch"
-  import type { Flag } from "$/lib/stores/flag.svelte"
   import { goto } from "$app/navigation"
   import { page } from "$app/stores"
+  import { sharePageUrl, toggleTheme } from "$lib/commands"
   import { Button } from "$lib/components/ui/button"
+  import { Switch } from "$lib/components/ui/switch"
+  import type { Flag } from "$lib/stores/flag.svelte"
   import { Command } from "lucide-svelte"
   import { getContext } from "svelte"
 
