@@ -33,7 +33,9 @@
 
     <div class="flex items-center space-x-5">
       {#if $page.url.pathname !== "/"}
-        <Button onclick={() => sharePageUrl($page.url.href)} variant="ghost">{$page.url.pathname}</Button>
+        <Button onclick={() => sharePageUrl($page.url.href)} variant="ghost" title="Share this page"
+          >{$page.url.pathname}</Button
+        >
       {/if}
 
       <Switch checked={!isDark} onCheckedChange={() => toggleTheme(theme)} />
