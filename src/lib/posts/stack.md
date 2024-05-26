@@ -27,7 +27,7 @@ I was more interested in having full control, and I didn't really like the idea 
 
 Another bonus of Next.js was the dead-simple file router. Here's what the directory structure of this website looks like:
 
-```md
+```
 ├── components/
 ├── lib/
 ├── pages/
@@ -53,7 +53,7 @@ To be honest, I've never really had a knack for design. I feel I can come up wit
 
 Not to mention, I always found CSS pretty cumbersome. For example, here's what it takes to style a button using "proper" CSS classes:
 
-```
+```html
 <div class="container--centered container">
   <button class="btn btn--large btn--green">Click me!</button>
 </div>
@@ -85,7 +85,7 @@ This is known as the [Block, Element, Modifier (BEM)](https://css-tricks.com/bem
 
 Here's the same example using [Tailwind CSS](https://tailwindcss.com/):
 
-```
+```html
 <div className="flex justify-center border-2 p-4">
   <button className="rounded-xl bg-green-500 p-8 font-bold text-white">Click me!</button>
 </div>
@@ -111,7 +111,7 @@ _Note: there used to be `<Badge>` components here in a previous version of this 
 
 In order to insert the above badges, here's what my Markdown looks like:
 
-```html
+```javascript
 import Badge from "../../components/Badge.jsx"
 
 <div className="grid grid-cols-3">
