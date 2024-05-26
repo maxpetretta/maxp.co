@@ -10,6 +10,12 @@
         localStorage.theme === "dark" ||
         (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
       document.documentElement.classList.toggle("dark", isDark)
+
+      const themeColor = isDark ? "#09090b" : "#ffffff"
+      const themeColorMetaTag = document.createElement("meta")
+      themeColorMetaTag.name = "theme-color"
+      themeColorMetaTag.content = themeColor
+      document.head.appendChild(themeColorMetaTag)
     </script>
 
     <!-- Fonts -->

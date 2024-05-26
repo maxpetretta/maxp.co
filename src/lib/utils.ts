@@ -19,11 +19,16 @@ type Metadata = {
   date: string
 }
 
-export const fetchMarkdownPosts = async () => {
+export type Post = {
+  path: string
+  metadata: Metadata
+}
+
+export async function fetchMarkdownPosts() {
   const files = import.meta.glob("/src/lib/posts/*.md")
   const fileEntries = Object.entries(files)
 
-  const posts = await Promise.all(
+  const posts: Post[] = await Promise.all(
     fileEntries.map(async ([filePath, resolver]) => {
       const path = filePath.slice(14, -3)
       const { metadata } = (await resolver()) as { metadata: Metadata }

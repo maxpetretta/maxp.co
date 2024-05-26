@@ -1,8 +1,8 @@
-import { RESUME, SOCIALS } from "$/lib/constants"
-import type { Flag } from "$/lib/stores/flag.svelte"
-import { fetchMarkdownPosts } from "$/lib/utils"
 import { browser } from "$app/environment"
 import { goto } from "$app/navigation"
+import { RESUME, SOCIALS } from "$lib/constants"
+import type { Flag } from "$lib/stores/flag.svelte"
+import type { Post } from "$lib/utils"
 import { toast } from "svelte-sonner"
 
 export type CommandType = {
@@ -59,10 +59,8 @@ export function runCommand(id: string, opener: Flag, theme: Flag) {
   command.action(theme)
 }
 
-async function getPostCommands() {
-  const posts = await fetchMarkdownPosts()
-
-  const postCommands = []
+export async function getPostCommands(posts: Post[]) {
+  const postCommands: CommandType[] = []
   for (const post of posts) {
     const command = {
       id: `${post.path.split("/")[1]}`,
@@ -154,5 +152,4 @@ export const COMMANDS: CommandType[] = [
     shortcut: ["R"],
     action: () => window.open(RESUME, "_blank"),
   },
-  ...(await getPostCommands()),
 ]

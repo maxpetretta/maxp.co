@@ -1,7 +1,9 @@
 <script lang="ts">
-  import { formatDate } from "$/lib/utils"
+  import type { Post } from "$lib/utils"
+  import { formatDate } from "$lib/utils"
+  import { getContext } from "svelte"
 
-  const { data } = $props()
+  const posts = getContext<Post[]>("posts")
 </script>
 
 <section class="mt-6">
@@ -9,7 +11,7 @@
   <p class="text-muted-foreground">Posts, notes, and thoughts</p>
 
   <ul class="mt-6 space-y-2 text-sm sm:text-base">
-    {#each data.posts as { path, metadata }}
+    {#each posts as { path, metadata }}
       <li>
         <a
           href={path}

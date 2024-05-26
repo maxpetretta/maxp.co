@@ -1,7 +1,7 @@
 <script lang="ts">
-  import Experiences from "$/lib/components/Experiences.svelte"
-  import Projects from "$/lib/components/Projects.svelte"
-  import { Button } from "$/lib/components/ui/button"
+  import Experiences from "$lib/components/Experiences.svelte"
+  import Projects from "$lib/components/Projects.svelte"
+  import { Button } from "$lib/components/ui/button"
 </script>
 
 <section class="mt-6 text-muted-foreground">
