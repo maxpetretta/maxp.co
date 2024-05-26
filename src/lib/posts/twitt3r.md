@@ -3,7 +3,10 @@ title: Twitt3r.xyz
 date: "2022-08-24"
 ---
 
-<!-- ![A quick 60 second demo of twitt3r.xyz](https://github.com/maxpetretta/twitt3r.xyz/blob/master/demo.gif?raw=true) -->
+<script lang="ts">
+  import { Tweet } from "sveltekit-embed"
+</script>
+
 <img src="https://github.com/maxpetretta/twitt3r.xyz/blob/master/demo.gif?raw=true" alt="A quick 60 second demo of twitt3r.xyz" class="mx-auto">
 
 **Introducing [Twitt3r.xyz](https://twitt3r.xyz), a decentralized Twitter clone built on the Ethereum blockchain.** Live now on [Goerli](https://goerli.etherscan.io/address/0x3493B7ABE5e6E142D632e6596bc550A73c87Ee79) and [Ropsten](https://ropsten.etherscan.io/address/0x3493B7ABE5e6E142D632e6596bc550A73c87Ee79) testnets. Connect your wallet, send tw33ts, and check out user profiles (with help from [ENS](https://ens.domains/)).
@@ -24,9 +27,7 @@ But what to build? It's easy to go with the classic to-do app, but I wanted to p
 
 To me, the obvious choice for this tech was Twitter. And it seems like [@jack](https://twitter.com/jack/) agrees:
 
-```
-<Tweet align="center" tweetLink="jack/status/1518772756069773313" />
-```
+<Tweet tweetLink="jack/status/1518772756069773313" />
 
 > It wants to be a public good at the protocol level...
 
