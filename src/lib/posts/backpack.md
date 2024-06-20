@@ -3,7 +3,7 @@ title: Travel Backpack Roundup
 date: "2022-09-27"
 ---
 
-<img src="/images/backpack.png" alt="A photo of a backpack on a busy city street, courtesy of OpenAI's DALL-E" width="300" class="mx-auto">
+<img src="/images/backpack.png" alt="A photo of a backpack on a busy city street, courtesy of OpenAI's DALL-E" width="300" height="300" loading="eager" class="mx-auto">
 
 There is just something _satisfying_ about a quality backpack. The ultra-durable materials, effortless zippers, and everything organized into a dedicated pocket.
 
@@ -69,19 +69,19 @@ _Note: For reference, I am 6 feet tall and ~180 pounds_
 
 ![A comparison image between the Tom Bihn Aeronaut holding EDC and travel items](/images/aeronaut.png)
 
-#### Pros:
+#### Pros
 
 - Convertible between a duffel and backpack
 - Good amount of organization w/ two large end pockets
 - Holds its shape fairly well, easy to live out of
 
-#### Cons:
+#### Cons
 
 - Backpack mode is not the most comfortable
 - No "true" laptop compartment
 - Not EDC material, due to its size
 
-#### Notes:
+#### Notes
 
 This is my current travel bag. I am admittedly a big Tom Bihn fan, ever since I got my [Synapse 19](https://www.tombihn.com/collections/backpacks/products/synapse-19) (which is still going strong 7 years later). But the Aeronaut is definitely more duffel than backpack, as the straps are not padded enough when fully packed. And the only slot for a laptop is the empty strap compartment, which can't zip shut in backpack mode.
 
@@ -95,19 +95,19 @@ A newer version with the Edgeless straps from the Synik/Techonaut was just relea
 
 ![A comparison image between the Tom Bihn Techonaut holding EDC and travel items](/images/techonaut.png)
 
-#### Pros:
+#### Pros
 
 - Convertible between a backpack and duffel
 - Great organization with a variety of pocket sizes
 - Nicely padded straps and back panel
 
-#### Cons:
+#### Cons
 
 - Duffel carry is less structured vs. the Aeronaut
 - Straps place more weight on the inside edge (on me anyways)
 - Not EDC material, due to its size
 
-#### Notes:
+#### Notes
 
 The Techonaut is a great update on the Aeronaut, with a much improved backpack mode. It's still not EDC friendly though, since the main volume does not collapse when empty.
 
@@ -121,19 +121,19 @@ If you don't care about reusing your bag for EDC, this would be a great dedicate
 
 ![A comparison image between the Tom Bihn Synik holding EDC and travel items](/images/synik.png)
 
-#### Pros:
+#### Pros
 
 - Best-in-class organization
 - Two-way quick access to laptop slot
 - Collapses down for EDC easily
 
-#### Cons:
+#### Cons
 
 - **Could not hold second pair of shoes**
 - Fully packed bag protrudes from back
 - Larger 30L size looks... turtle shelly
 
-#### Notes:
+#### Notes
 
 The newer relative of my Synapse 19 shares many of its traits. The layout of the Synik, with the organization pockets on top of the main compartment, helps it flatten out when not fully packed. The rounded shape also means it's a less efficient use of space, explaining why I couldn't get my second pair of shoes into the bag.
 
@@ -147,21 +147,21 @@ If you are heavier on tech than clothing, or really love having dedicated pocket
 
 ![A comparison image between the Peak Design Travel Backpack holding EDC and travel items](/images/peakdesign.png)
 
-#### Pros:
+#### Pros
 
 - Most padded of the bags here, for delicate items
 - Highly structured, completely holds its shape
 - Pivoting straps are a great innovation
 - Expansion space cleanly zips away
 
-#### Cons:
+#### Cons
 
 - **Could not hold rain jacket**
 - Interior mesh pockets are not useful
 - Pivoting straps are an additional stress point
 - Straps themselves could use more padding
 
-#### Notes:
+#### Notes
 
 This backpack holds its shape whether full or empty, because of all the extra padding on the backpack walls. I do really like the pivoting strap mechanism, since it allows the straps to completely form to the shape of your body. At the same time, I'm nervous that enough weight on the joints could cause a failure, but I haven't seen any reports of that happening.
 
@@ -175,19 +175,19 @@ If you need to carry more delicate items, or you have a lighter loadout than me 
 
 ![A comparison image between the ULA Dragonfly holding EDC and travel items](/images/dragonfly.png)
 
-#### Pros:
+#### Pros
 
 - Lightest bag in the roundup
 - Incredibly flexible due to its expandibility
 - Tons of external lash points (think tripod or sleeping pad)
 
-#### Cons:
+#### Cons
 
 - Bag pulls away from the back in travel mode
 - "Ultralight" hardware feels cheap in the hand
 - Front mesh pocket is best for flat items
 
-#### Notes:
+#### Notes
 
 I was shocked by how much the Dragonfly held. It's only slightly larger than my Synapse 19 when empty, but can expand to hold the entire loadout thanks to the clever use of exterior mesh pockets. Not without fault though, the bag pulled away from my upper back, digging into my lumbar area. Rearranging things inside did not immediately help.
 
@@ -207,20 +207,20 @@ Last minute, I decided to include this as a dark horse...
 
 ![A comparison image between the Tom Bihn Shadow Guide holding EDC and travel items](/images/shadowguide.png)
 
-#### Pros:
+#### Pros
 
 - Top loader design
 - Most expandable capacity
 - Very comfortable carry
 
-#### Cons:
+#### Cons
 
 - Top loader (cuts both ways)
 - Tons of dangling straps
 - Technically over carry-on size (23" tall)
 - Minimal organization
 
-#### Notes:
+#### Notes
 
 The rumors turned out to be true, the Shadow Guide 23 managed to swallow all of my gear, with room to spare! It's also more compressable than the Dragonfly, and doesn't have the back-digging issue.
 

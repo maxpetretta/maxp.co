@@ -3,7 +3,7 @@ title: Building This Blog
 date: "2022-02-11"
 ---
 
-<img src="/images/stack.png" alt="An image of the Next.js and TailwindCSS logos" width="400" class="mx-auto" />
+<img src="/images/stack.png" alt="An image of the Next.js and TailwindCSS logos" width="400" height="400" loading="eager" class="mx-auto" />
 
 It is 2022, and before anything else _you should have a personal website._
 

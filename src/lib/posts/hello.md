@@ -7,7 +7,7 @@ date: "2022-02-04"
   import { Tweet } from "sveltekit-embed"
 </script>
 
-<img src="/images/hello.png" alt="Classic hello world in JavaScript" width="500" class="mx-auto">
+<img src="/images/hello.png" alt="Classic hello world in JavaScript" width="500" height="250" loading="eager" class="mx-auto">
 
 Hello, and thanks again for visiting my blog! Before we get started, I'd like to establish some ground rules...
 

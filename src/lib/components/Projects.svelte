@@ -46,7 +46,7 @@
         {href}
         target="_blank"
         rel="noreferrer"
-        class="relative flex items-center justify-between px-2.5 py-2 sm:flex-col sm:items-start sm:px-3"
+        class="relative flex items-center justify-between p-2.5 sm:flex-col sm:items-start sm:px-3.5"
       >
         <div class="flex items-center">
           <svelte:component
