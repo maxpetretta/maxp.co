@@ -12,5 +12,5 @@
 
   <svelte:component this={content} />
 
-  <Button href="/blog" variant="outline" class="mx-auto my-12 block w-fit no-underline">More posts</Button>
+  <Button href="/blog" variant="outline" class="mx-auto my-12 block w-fit no-underline">Read more posts</Button>
 </article>

@@ -1,8 +1,7 @@
 ---
-title: Travel Backpack Roundup
-date: "2022-09-27"
+title: Travel Backpacks
+date: '2022-09-27'
 ---
-
 <img src="/images/backpack.png" alt="A photo of a backpack on a busy city street, courtesy of OpenAI's DALL-E" width="300" height="300" loading="eager" class="mx-auto">
 
 There is just something _satisfying_ about a quality backpack. The ultra-durable materials, effortless zippers, and everything organized into a dedicated pocket.
@@ -242,3 +241,4 @@ So, to summarize the above: if you are looking for one bag that can do it all, g
 - If you can't live without full clamshell access to your stuff, the [ULA Dragonfly](https://www.ula-equipment.com/product/dragonfly/) is worth a try
 
 And if you are less picky than me (very likely), any of the other bags here would probably work just as well. Happy travels!
+

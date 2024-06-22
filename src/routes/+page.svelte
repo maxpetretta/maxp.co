@@ -10,7 +10,7 @@
 </section>
 
 <section class="mt-16 space-y-5">
-  <h3 class="mb-4 font-medium">About</h3>
+  <h3 class="mb-5 font-medium">About</h3>
   <p>I didn't set out to become a web developer.</p>
   <p>But what I found was the most open, powerful system for building applications in the world.</p>
   <p>That's worth sticking around for.</p>
@@ -22,7 +22,7 @@
 </section>
 
 <section class="mt-16">
-  <h3 class="mb-4 font-medium">Experience</h3>
+  <h3 class="mb-5 font-medium">Experience</h3>
   <Experiences />
 </section>
 
