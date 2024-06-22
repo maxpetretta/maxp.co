@@ -1,13 +1,12 @@
 ---
 title: Hello World
-date: "2022-02-04"
+date: '2022-02-04'
 ---
-
 <script lang="ts">
   import { Tweet } from "sveltekit-embed"
 </script>
 
-<img src="/images/hello.png" alt="Classic hello world in JavaScript" width="500" class="mx-auto">
+<img src="/images/hello.png" alt="Classic hello world in JavaScript" width="500" height="250" loading="eager" class="mx-auto">
 
 Hello, and thanks again for visiting my blog! Before we get started, I'd like to establish some ground rules...
 
@@ -56,3 +55,4 @@ This year, instead of setting goals and spending the entire year trying to achie
 <Tweet tweetLink="maxpetretta/status/1483882167528669184" />
 
 Writing is one of the habits I've decided to focus on. I'm hoping that by sharing what I'm learning, I can reach a better understanding and maybe help others along the way. So cheers to 2022, let's see where we end up!
+

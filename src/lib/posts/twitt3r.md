@@ -7,7 +7,7 @@ date: "2022-08-24"
   import { Tweet } from "sveltekit-embed"
 </script>
 
-<img src="https://github.com/maxpetretta/twitt3r.xyz/blob/master/demo.gif?raw=true" alt="A quick 60 second demo of twitt3r.xyz" class="mx-auto" loading="eager">
+<img src="https://github.com/maxpetretta/twitt3r.xyz/blob/master/demo.gif?raw=true" alt="A quick 60 second demo of twitt3r.xyz" width="650" height="458" loading="eager" class="mx-auto">
 
 **Introducing [Twitt3r.xyz](https://twitt3r.xyz), a decentralized Twitter clone built on the Ethereum blockchain.** Live now on [Goerli](https://goerli.etherscan.io/address/0x3493B7ABE5e6E142D632e6596bc550A73c87Ee79) and [Ropsten](https://ropsten.etherscan.io/address/0x3493B7ABE5e6E142D632e6596bc550A73c87Ee79) testnets. Connect your wallet, send tw33ts, and check out user profiles (with help from [ENS](https://ens.domains/)).
 

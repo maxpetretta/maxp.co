@@ -3,7 +3,7 @@
   import { formatDate } from "$lib/utils.js"
 
   const { data } = $props()
-  const { metadata, content } = data
+  const { metadata, content } = $derived(data)
 </script>
 
 <article class="prose prose-stone dark:prose-invert prose-headings:text-base prose-headings:font-medium">
@@ -12,5 +12,5 @@
 
   <svelte:component this={content} />
 
-  <Button href="/blog" variant="outline" class="mx-auto my-12 block w-fit no-underline">More posts</Button>
+  <Button href="/blog" variant="outline" class="mx-auto my-12 block w-fit no-underline">Read more posts</Button>
 </article>
