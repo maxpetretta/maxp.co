@@ -3,14 +3,16 @@
   import { formatDate } from "$lib/utils.js"
 
   const { data } = $props()
-  const { metadata, content } = $derived(data)
+  const { metadata, content: Content } = $derived(data)
+  // const Content = $derived(content)
 </script>
 
 <article class="prose prose-stone dark:prose-invert prose-headings:text-base prose-headings:font-medium">
   <h1 class="-mb-0.5 mt-6">{metadata.title}</h1>
   <time class="mb-6 text-muted-foreground">{formatDate(metadata.date)}</time>
 
-  <svelte:component this={content} />
+  <!-- <svelte:component this={content} /> -->
+  <Content />
 
   <Button href="/blog" variant="outline" class="mx-auto my-12 block w-fit no-underline">Read more posts</Button>
 </article>
