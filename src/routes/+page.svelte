@@ -6,7 +6,7 @@
 
 <section class="mt-6 text-muted-foreground">
   <h2>Software Engineer</h2>
-  <h3>New York, NY</h3>
+  <h3>Detroit, MI</h3>
 </section>
 
 <section class="mt-16 space-y-5">
